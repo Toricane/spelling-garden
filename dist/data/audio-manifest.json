@@ -1,0 +1,3917 @@
+{
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+  "engine": "kokoro-js 1.2.1",
+  "voice": "af_heart",
+  "dtype": "q8 CPU / fp32 GPU",
+  "speed": 0.95,
+  "format": "mp3",
+  "clips": 1200,
+  "reviewStatus": "Machine-generated; check unusual words against the printed guide.",
+  "fp32Clips": [
+    "sboc-2027-junior-077-definition",
+    "sboc-2027-junior-077-sentence",
+    "sboc-2027-junior-078-word",
+    "sboc-2027-junior-078-definition",
+    "sboc-2027-junior-078-sentence",
+    "sboc-2027-junior-079-word",
+    "sboc-2027-junior-079-definition",
+    "sboc-2027-junior-079-sentence",
+    "sboc-2027-junior-080-word",
+    "sboc-2027-junior-080-definition",
+    "sboc-2027-junior-080-sentence",
+    "sboc-2027-junior-081-word",
+    "sboc-2027-junior-081-definition",
+    "sboc-2027-junior-081-sentence",
+    "sboc-2027-junior-082-word",
+    "sboc-2027-junior-082-definition",
+    "sboc-2027-junior-082-sentence",
+    "sboc-2027-junior-083-word",
+    "sboc-2027-junior-083-definition",
+    "sboc-2027-junior-083-sentence",
+    "sboc-2027-junior-084-word",
+    "sboc-2027-junior-084-definition",
+    "sboc-2027-junior-084-sentence",
+    "sboc-2027-junior-085-word",
+    "sboc-2027-junior-085-definition",
+    "sboc-2027-junior-085-sentence",
+    "sboc-2027-junior-086-word",
+    "sboc-2027-junior-086-definition",
+    "sboc-2027-junior-086-sentence",
+    "sboc-2027-junior-087-word",
+    "sboc-2027-junior-087-definition",
+    "sboc-2027-junior-087-sentence",
+    "sboc-2027-junior-088-word",
+    "sboc-2027-junior-088-definition",
+    "sboc-2027-junior-088-sentence",
+    "sboc-2027-junior-089-word",
+    "sboc-2027-junior-089-definition",
+    "sboc-2027-junior-089-sentence",
+    "sboc-2027-junior-090-word",
+    "sboc-2027-junior-090-definition",
+    "sboc-2027-junior-090-sentence",
+    "sboc-2027-junior-091-word",
+    "sboc-2027-junior-091-definition",
+    "sboc-2027-junior-091-sentence",
+    "sboc-2027-junior-092-word",
+    "sboc-2027-junior-092-definition",
+    "sboc-2027-junior-092-sentence",
+    "sboc-2027-junior-093-word",
+    "sboc-2027-junior-093-definition",
+    "sboc-2027-junior-093-sentence",
+    "sboc-2027-junior-094-word",
+    "sboc-2027-junior-094-definition",
+    "sboc-2027-junior-094-sentence",
+    "sboc-2027-junior-095-word",
+    "sboc-2027-junior-095-definition",
+    "sboc-2027-junior-095-sentence",
+    "sboc-2027-junior-096-word",
+    "sboc-2027-junior-096-definition",
+    "sboc-2027-junior-096-sentence",
+    "sboc-2027-junior-097-word",
+    "sboc-2027-junior-097-definition",
+    "sboc-2027-junior-098-word",
+    "sboc-2027-junior-098-definition",
+    "sboc-2027-junior-098-sentence",
+    "sboc-2027-junior-099-word",
+    "sboc-2027-junior-099-definition",
+    "sboc-2027-junior-100-word",
+    "sboc-2027-junior-100-definition",
+    "sboc-2027-junior-100-sentence",
+    "sboc-2027-junior-101-definition",
+    "sboc-2027-junior-101-sentence",
+    "sboc-2027-junior-102-definition",
+    "sboc-2027-junior-103-word",
+    "sboc-2027-junior-103-definition",
+    "sboc-2027-junior-103-sentence",
+    "sboc-2027-junior-104-word",
+    "sboc-2027-junior-104-definition",
+    "sboc-2027-junior-105-word",
+    "sboc-2027-junior-105-definition",
+    "sboc-2027-junior-105-sentence",
+    "sboc-2027-junior-106-word",
+    "sboc-2027-junior-106-sentence",
+    "sboc-2027-junior-107-word",
+    "sboc-2027-junior-107-definition",
+    "sboc-2027-junior-108-word",
+    "sboc-2027-junior-108-definition",
+    "sboc-2027-junior-108-sentence",
+    "sboc-2027-junior-109-definition",
+    "sboc-2027-junior-109-sentence",
+    "sboc-2027-junior-110-definition",
+    "sboc-2027-junior-111-word",
+    "sboc-2027-junior-111-definition",
+    "sboc-2027-junior-111-sentence",
+    "sboc-2027-junior-112-word",
+    "sboc-2027-junior-112-definition",
+    "sboc-2027-junior-113-word",
+    "sboc-2027-junior-113-definition",
+    "sboc-2027-junior-113-sentence",
+    "sboc-2027-junior-114-definition",
+    "sboc-2027-junior-115-word",
+    "sboc-2027-junior-115-definition",
+    "sboc-2027-junior-115-sentence",
+    "sboc-2027-junior-116-word",
+    "sboc-2027-junior-116-sentence",
+    "sboc-2027-junior-117-word",
+    "sboc-2027-junior-117-sentence",
+    "sboc-2027-junior-118-word",
+    "sboc-2027-junior-118-definition",
+    "sboc-2027-junior-119-word",
+    "sboc-2027-junior-119-definition",
+    "sboc-2027-junior-119-sentence",
+    "sboc-2027-junior-120-word",
+    "sboc-2027-junior-120-definition",
+    "sboc-2027-junior-121-word",
+    "sboc-2027-junior-121-definition",
+    "sboc-2027-junior-121-sentence",
+    "sboc-2027-junior-122-word",
+    "sboc-2027-junior-122-definition",
+    "sboc-2027-junior-123-word",
+    "sboc-2027-junior-123-definition",
+    "sboc-2027-junior-123-sentence",
+    "sboc-2027-junior-124-definition",
+    "sboc-2027-junior-125-word",
+    "sboc-2027-junior-125-definition",
+    "sboc-2027-junior-125-sentence",
+    "sboc-2027-junior-126-definition",
+    "sboc-2027-junior-127-word",
+    "sboc-2027-junior-127-definition",
+    "sboc-2027-junior-127-sentence",
+    "sboc-2027-junior-128-word",
+    "sboc-2027-junior-128-definition",
+    "sboc-2027-junior-129-word",
+    "sboc-2027-junior-129-definition",
+    "sboc-2027-junior-129-sentence",
+    "sboc-2027-junior-130-definition",
+    "sboc-2027-junior-131-word",
+    "sboc-2027-junior-131-definition",
+    "sboc-2027-junior-131-sentence",
+    "sboc-2027-junior-132-word",
+    "sboc-2027-junior-132-definition",
+    "sboc-2027-junior-133-word",
+    "sboc-2027-junior-133-definition",
+    "sboc-2027-junior-133-sentence",
+    "sboc-2027-junior-134-definition",
+    "sboc-2027-junior-134-sentence",
+    "sboc-2027-junior-135-definition",
+    "sboc-2027-junior-136-word",
+    "sboc-2027-junior-136-definition",
+    "sboc-2027-junior-136-sentence",
+    "sboc-2027-junior-137-definition",
+    "sboc-2027-junior-138-word",
+    "sboc-2027-junior-138-definition",
+    "sboc-2027-junior-138-sentence",
+    "sboc-2027-junior-139-word",
+    "sboc-2027-junior-139-sentence",
+    "sboc-2027-junior-140-word",
+    "sboc-2027-junior-140-definition",
+    "sboc-2027-junior-141-word",
+    "sboc-2027-junior-141-definition",
+    "sboc-2027-junior-141-sentence",
+    "sboc-2027-junior-142-word",
+    "sboc-2027-junior-142-definition",
+    "sboc-2027-junior-142-sentence",
+    "sboc-2027-junior-143-definition",
+    "sboc-2027-junior-144-word",
+    "sboc-2027-junior-144-definition",
+    "sboc-2027-junior-144-sentence",
+    "sboc-2027-junior-145-word",
+    "sboc-2027-junior-145-definition",
+    "sboc-2027-junior-146-word",
+    "sboc-2027-junior-146-definition",
+    "sboc-2027-junior-146-sentence",
+    "sboc-2027-junior-147-definition",
+    "sboc-2027-junior-148-word",
+    "sboc-2027-junior-148-definition",
+    "sboc-2027-junior-148-sentence",
+    "sboc-2027-junior-149-word",
+    "sboc-2027-junior-149-sentence",
+    "sboc-2027-junior-150-word",
+    "sboc-2027-junior-150-definition",
+    "sboc-2027-junior-150-sentence",
+    "sboc-2027-junior-151-definition",
+    "sboc-2027-junior-151-sentence",
+    "sboc-2027-junior-152-definition",
+    "sboc-2027-junior-153-word",
+    "sboc-2027-junior-153-definition",
+    "sboc-2027-junior-153-sentence",
+    "sboc-2027-junior-154-definition",
+    "sboc-2027-junior-155-word",
+    "sboc-2027-junior-155-definition",
+    "sboc-2027-junior-155-sentence",
+    "sboc-2027-junior-156-definition",
+    "sboc-2027-junior-157-word",
+    "sboc-2027-junior-157-definition",
+    "sboc-2027-junior-157-sentence",
+    "sboc-2027-junior-158-definition",
+    "sboc-2027-junior-159-word",
+    "sboc-2027-junior-159-definition",
+    "sboc-2027-junior-159-sentence",
+    "sboc-2027-junior-160-word",
+    "sboc-2027-junior-160-sentence",
+    "sboc-2027-junior-161-word",
+    "sboc-2027-junior-161-sentence",
+    "sboc-2027-junior-162-word",
+    "sboc-2027-junior-162-definition",
+    "sboc-2027-junior-163-word",
+    "sboc-2027-junior-163-definition",
+    "sboc-2027-junior-163-sentence",
+    "sboc-2027-junior-165-definition",
+    "sboc-2027-junior-166-word",
+    "sboc-2027-junior-166-definition",
+    "sboc-2027-junior-166-sentence",
+    "sboc-2027-junior-167-word",
+    "sboc-2027-junior-167-definition",
+    "sboc-2027-junior-168-word",
+    "sboc-2027-junior-168-definition",
+    "sboc-2027-junior-168-sentence",
+    "sboc-2027-junior-169-definition",
+    "sboc-2027-junior-169-sentence",
+    "sboc-2027-junior-170-definition",
+    "sboc-2027-junior-170-sentence",
+    "sboc-2027-junior-171-definition",
+    "sboc-2027-junior-172-word",
+    "sboc-2027-junior-172-definition",
+    "sboc-2027-junior-172-sentence",
+    "sboc-2027-junior-173-definition",
+    "sboc-2027-junior-174-word",
+    "sboc-2027-junior-174-definition",
+    "sboc-2027-junior-174-sentence",
+    "sboc-2027-junior-175-word",
+    "sboc-2027-junior-175-definition",
+    "sboc-2027-junior-176-word",
+    "sboc-2027-junior-176-definition",
+    "sboc-2027-junior-176-sentence",
+    "sboc-2027-junior-177-definition",
+    "sboc-2027-junior-177-sentence",
+    "sboc-2027-junior-178-definition",
+    "sboc-2027-junior-179-word",
+    "sboc-2027-junior-179-definition",
+    "sboc-2027-junior-179-sentence",
+    "sboc-2027-junior-180-definition",
+    "sboc-2027-junior-181-word",
+    "sboc-2027-junior-181-definition",
+    "sboc-2027-junior-181-sentence",
+    "sboc-2027-junior-182-word",
+    "sboc-2027-junior-182-sentence",
+    "sboc-2027-junior-183-definition",
+    "sboc-2027-junior-183-sentence",
+    "sboc-2027-junior-184-sentence",
+    "sboc-2027-junior-185-word",
+    "sboc-2027-junior-185-sentence",
+    "sboc-2027-junior-186-word",
+    "sboc-2027-junior-186-sentence",
+    "sboc-2027-junior-187-word",
+    "sboc-2027-junior-187-definition",
+    "sboc-2027-junior-188-word",
+    "sboc-2027-junior-188-definition",
+    "sboc-2027-junior-188-sentence",
+    "sboc-2027-junior-189-definition",
+    "sboc-2027-junior-189-sentence",
+    "sboc-2027-junior-190-definition",
+    "sboc-2027-junior-191-word",
+    "sboc-2027-junior-191-definition",
+    "sboc-2027-junior-191-sentence",
+    "sboc-2027-junior-192-definition",
+    "sboc-2027-junior-192-sentence",
+    "sboc-2027-junior-193-definition",
+    "sboc-2027-junior-194-word",
+    "sboc-2027-junior-194-definition",
+    "sboc-2027-junior-194-sentence",
+    "sboc-2027-junior-195-word",
+    "sboc-2027-junior-195-definition",
+    "sboc-2027-junior-195-sentence",
+    "sboc-2027-junior-196-sentence",
+    "sboc-2027-junior-197-word",
+    "sboc-2027-junior-197-definition",
+    "sboc-2027-junior-197-sentence",
+    "sboc-2027-junior-198-word",
+    "sboc-2027-junior-198-definition",
+    "sboc-2027-junior-199-word",
+    "sboc-2027-junior-199-definition",
+    "sboc-2027-junior-199-sentence",
+    "sboc-2027-junior-200-word",
+    "sboc-2027-junior-200-definition",
+    "sboc-2027-junior-201-word",
+    "sboc-2027-junior-201-definition",
+    "sboc-2027-junior-201-sentence",
+    "sboc-2027-junior-202-definition",
+    "sboc-2027-junior-203-word",
+    "sboc-2027-junior-203-definition",
+    "sboc-2027-junior-203-sentence",
+    "sboc-2027-junior-204-word",
+    "sboc-2027-junior-204-sentence",
+    "sboc-2027-junior-205-word",
+    "sboc-2027-junior-205-definition",
+    "sboc-2027-junior-205-sentence",
+    "sboc-2027-junior-206-definition",
+    "sboc-2027-junior-207-word",
+    "sboc-2027-junior-207-definition",
+    "sboc-2027-junior-208-word",
+    "sboc-2027-junior-208-definition",
+    "sboc-2027-junior-208-sentence",
+    "sboc-2027-junior-209-definition",
+    "sboc-2027-junior-209-sentence",
+    "sboc-2027-junior-210-sentence",
+    "sboc-2027-junior-211-word",
+    "sboc-2027-junior-211-definition",
+    "sboc-2027-junior-212-word",
+    "sboc-2027-junior-212-definition",
+    "sboc-2027-junior-212-sentence",
+    "sboc-2027-junior-213-word",
+    "sboc-2027-junior-213-definition",
+    "sboc-2027-junior-214-word",
+    "sboc-2027-junior-214-definition",
+    "sboc-2027-junior-214-sentence",
+    "sboc-2027-junior-215-definition",
+    "sboc-2027-junior-216-word",
+    "sboc-2027-junior-216-definition",
+    "sboc-2027-junior-217-word",
+    "sboc-2027-junior-217-definition",
+    "sboc-2027-junior-217-sentence",
+    "sboc-2027-junior-218-word",
+    "sboc-2027-junior-218-definition",
+    "sboc-2027-junior-218-sentence",
+    "sboc-2027-junior-220-definition",
+    "sboc-2027-junior-221-word",
+    "sboc-2027-junior-221-definition",
+    "sboc-2027-junior-221-sentence",
+    "sboc-2027-junior-222-word",
+    "sboc-2027-junior-222-definition",
+    "sboc-2027-junior-223-word",
+    "sboc-2027-junior-223-definition",
+    "sboc-2027-junior-223-sentence",
+    "sboc-2027-junior-224-definition",
+    "sboc-2027-junior-225-word",
+    "sboc-2027-junior-225-definition",
+    "sboc-2027-junior-225-sentence",
+    "sboc-2027-junior-226-definition",
+    "sboc-2027-junior-226-sentence",
+    "sboc-2027-junior-227-sentence",
+    "sboc-2027-junior-228-definition",
+    "sboc-2027-junior-228-sentence",
+    "sboc-2027-junior-229-definition",
+    "sboc-2027-junior-230-word",
+    "sboc-2027-junior-230-definition",
+    "sboc-2027-junior-230-sentence",
+    "sboc-2027-junior-231-definition",
+    "sboc-2027-junior-232-word",
+    "sboc-2027-junior-232-definition",
+    "sboc-2027-junior-232-sentence",
+    "sboc-2027-junior-233-word",
+    "sboc-2027-junior-233-sentence",
+    "sboc-2027-junior-234-word",
+    "sboc-2027-junior-234-definition",
+    "sboc-2027-junior-235-word",
+    "sboc-2027-junior-235-definition",
+    "sboc-2027-junior-236-word",
+    "sboc-2027-junior-236-definition",
+    "sboc-2027-junior-236-sentence",
+    "sboc-2027-junior-237-word",
+    "sboc-2027-junior-237-definition",
+    "sboc-2027-junior-238-word",
+    "sboc-2027-junior-238-definition",
+    "sboc-2027-junior-238-sentence",
+    "sboc-2027-junior-239-definition",
+    "sboc-2027-junior-240-word",
+    "sboc-2027-junior-240-definition",
+    "sboc-2027-junior-240-sentence",
+    "sboc-2027-junior-241-word",
+    "sboc-2027-junior-241-sentence",
+    "sboc-2027-junior-242-word",
+    "sboc-2027-junior-242-definition",
+    "sboc-2027-junior-243-word",
+    "sboc-2027-junior-243-definition",
+    "sboc-2027-junior-243-sentence",
+    "sboc-2027-junior-244-definition",
+    "sboc-2027-junior-245-word",
+    "sboc-2027-junior-245-definition",
+    "sboc-2027-junior-245-sentence",
+    "sboc-2027-junior-246-word",
+    "sboc-2027-junior-246-definition",
+    "sboc-2027-junior-247-word",
+    "sboc-2027-junior-247-definition",
+    "sboc-2027-junior-247-sentence",
+    "sboc-2027-junior-248-word",
+    "sboc-2027-junior-248-definition",
+    "sboc-2027-junior-248-sentence",
+    "sboc-2027-junior-249-definition",
+    "sboc-2027-junior-249-sentence",
+    "sboc-2027-junior-250-definition",
+    "sboc-2027-junior-251-word",
+    "sboc-2027-junior-251-definition",
+    "sboc-2027-junior-251-sentence",
+    "sboc-2027-junior-252-definition",
+    "sboc-2027-junior-252-sentence",
+    "sboc-2027-junior-253-definition",
+    "sboc-2027-junior-254-word",
+    "sboc-2027-junior-254-definition",
+    "sboc-2027-junior-254-sentence",
+    "sboc-2027-junior-255-definition",
+    "sboc-2027-junior-255-sentence",
+    "sboc-2027-junior-256-definition",
+    "sboc-2027-junior-257-word",
+    "sboc-2027-junior-257-definition",
+    "sboc-2027-junior-257-sentence",
+    "sboc-2027-junior-258-word",
+    "sboc-2027-junior-258-sentence",
+    "sboc-2027-junior-259-word",
+    "sboc-2027-junior-259-definition",
+    "sboc-2027-junior-260-word",
+    "sboc-2027-junior-260-definition",
+    "sboc-2027-junior-261-word",
+    "sboc-2027-junior-261-definition",
+    "sboc-2027-junior-261-sentence",
+    "sboc-2027-junior-262-word",
+    "sboc-2027-junior-262-definition",
+    "sboc-2027-junior-262-sentence",
+    "sboc-2027-junior-263-definition",
+    "sboc-2027-junior-264-word",
+    "sboc-2027-junior-264-definition",
+    "sboc-2027-junior-264-sentence",
+    "sboc-2027-junior-265-definition",
+    "sboc-2027-junior-266-word",
+    "sboc-2027-junior-266-definition",
+    "sboc-2027-junior-266-sentence",
+    "sboc-2027-junior-267-word",
+    "sboc-2027-junior-267-definition",
+    "sboc-2027-junior-268-word",
+    "sboc-2027-junior-268-definition",
+    "sboc-2027-junior-268-sentence",
+    "sboc-2027-junior-269-definition",
+    "sboc-2027-junior-269-sentence",
+    "sboc-2027-junior-270-definition",
+    "sboc-2027-junior-271-word",
+    "sboc-2027-junior-271-definition",
+    "sboc-2027-junior-271-sentence",
+    "sboc-2027-junior-272-definition",
+    "sboc-2027-junior-273-word",
+    "sboc-2027-junior-273-definition",
+    "sboc-2027-junior-273-sentence",
+    "sboc-2027-junior-274-sentence",
+    "sboc-2027-junior-275-word",
+    "sboc-2027-junior-275-definition",
+    "sboc-2027-junior-275-sentence",
+    "sboc-2027-junior-276-definition",
+    "sboc-2027-junior-277-word",
+    "sboc-2027-junior-277-definition",
+    "sboc-2027-junior-278-word",
+    "sboc-2027-junior-278-definition",
+    "sboc-2027-junior-278-sentence",
+    "sboc-2027-junior-279-word",
+    "sboc-2027-junior-279-definition",
+    "sboc-2027-junior-280-word",
+    "sboc-2027-junior-280-definition",
+    "sboc-2027-junior-280-sentence",
+    "sboc-2027-junior-281-word",
+    "sboc-2027-junior-281-sentence",
+    "sboc-2027-junior-282-word",
+    "sboc-2027-junior-282-definition",
+    "sboc-2027-junior-282-sentence",
+    "sboc-2027-junior-283-definition",
+    "sboc-2027-junior-284-word",
+    "sboc-2027-junior-284-definition",
+    "sboc-2027-junior-284-sentence",
+    "sboc-2027-junior-285-word",
+    "sboc-2027-junior-285-sentence",
+    "sboc-2027-junior-286-word",
+    "sboc-2027-junior-286-definition",
+    "sboc-2027-junior-287-word",
+    "sboc-2027-junior-287-definition",
+    "sboc-2027-junior-287-sentence",
+    "sboc-2027-junior-288-definition",
+    "sboc-2027-junior-289-word",
+    "sboc-2027-junior-289-definition",
+    "sboc-2027-junior-290-word",
+    "sboc-2027-junior-290-definition",
+    "sboc-2027-junior-290-sentence",
+    "sboc-2027-junior-291-word",
+    "sboc-2027-junior-291-definition",
+    "sboc-2027-junior-291-sentence",
+    "sboc-2027-junior-292-word",
+    "sboc-2027-junior-292-sentence",
+    "sboc-2027-junior-293-sentence",
+    "sboc-2027-junior-294-word",
+    "sboc-2027-junior-294-definition",
+    "sboc-2027-junior-295-word",
+    "sboc-2027-junior-295-definition",
+    "sboc-2027-junior-295-sentence",
+    "sboc-2027-junior-296-definition",
+    "sboc-2027-junior-297-word",
+    "sboc-2027-junior-297-definition",
+    "sboc-2027-junior-297-sentence",
+    "sboc-2027-junior-298-definition",
+    "sboc-2027-junior-299-word",
+    "sboc-2027-junior-299-definition",
+    "sboc-2027-junior-299-sentence",
+    "sboc-2027-junior-300-word",
+    "sboc-2027-junior-300-definition",
+    "sboc-2027-junior-301-word",
+    "sboc-2027-junior-301-definition",
+    "sboc-2027-junior-301-sentence",
+    "sboc-2027-junior-302-sentence",
+    "sboc-2027-junior-303-word",
+    "sboc-2027-junior-303-definition",
+    "sboc-2027-junior-303-sentence",
+    "sboc-2027-junior-304-definition",
+    "sboc-2027-junior-305-word",
+    "sboc-2027-junior-305-definition",
+    "sboc-2027-junior-306-word",
+    "sboc-2027-junior-306-definition",
+    "sboc-2027-junior-306-sentence",
+    "sboc-2027-junior-307-definition",
+    "sboc-2027-junior-308-word",
+    "sboc-2027-junior-308-definition",
+    "sboc-2027-junior-308-sentence",
+    "sboc-2027-junior-309-sentence",
+    "sboc-2027-junior-310-word",
+    "sboc-2027-junior-310-definition",
+    "sboc-2027-junior-311-word",
+    "sboc-2027-junior-311-definition",
+    "sboc-2027-junior-311-sentence",
+    "sboc-2027-junior-312-word",
+    "sboc-2027-junior-312-sentence",
+    "sboc-2027-junior-313-word",
+    "sboc-2027-junior-313-definition",
+    "sboc-2027-junior-314-word",
+    "sboc-2027-junior-314-definition",
+    "sboc-2027-junior-314-sentence",
+    "sboc-2027-junior-315-definition",
+    "sboc-2027-junior-316-word",
+    "sboc-2027-junior-316-definition",
+    "sboc-2027-junior-316-sentence",
+    "sboc-2027-junior-317-word",
+    "sboc-2027-junior-317-definition",
+    "sboc-2027-junior-318-word",
+    "sboc-2027-junior-318-definition",
+    "sboc-2027-junior-318-sentence",
+    "sboc-2027-junior-319-definition",
+    "sboc-2027-junior-320-word",
+    "sboc-2027-junior-320-definition",
+    "sboc-2027-junior-320-sentence",
+    "sboc-2027-junior-321-definition",
+    "sboc-2027-junior-322-word",
+    "sboc-2027-junior-322-definition",
+    "sboc-2027-junior-322-sentence",
+    "sboc-2027-junior-323-word",
+    "sboc-2027-junior-323-sentence",
+    "sboc-2027-junior-324-word",
+    "sboc-2027-junior-324-definition",
+    "sboc-2027-junior-324-sentence",
+    "sboc-2027-junior-325-sentence",
+    "sboc-2027-junior-326-word",
+    "sboc-2027-junior-326-definition",
+    "sboc-2027-junior-326-sentence",
+    "sboc-2027-junior-327-definition",
+    "sboc-2027-junior-328-word",
+    "sboc-2027-junior-328-definition",
+    "sboc-2027-junior-328-sentence",
+    "sboc-2027-junior-329-sentence",
+    "sboc-2027-junior-330-word",
+    "sboc-2027-junior-330-definition",
+    "sboc-2027-junior-330-sentence",
+    "sboc-2027-junior-331-sentence",
+    "sboc-2027-junior-332-word",
+    "sboc-2027-junior-332-definition",
+    "sboc-2027-junior-332-sentence",
+    "sboc-2027-junior-333-definition",
+    "sboc-2027-junior-334-word",
+    "sboc-2027-junior-334-definition",
+    "sboc-2027-junior-334-sentence",
+    "sboc-2027-junior-335-word",
+    "sboc-2027-junior-335-definition",
+    "sboc-2027-junior-335-sentence",
+    "sboc-2027-junior-336-definition",
+    "sboc-2027-junior-337-word",
+    "sboc-2027-junior-337-definition",
+    "sboc-2027-junior-337-sentence",
+    "sboc-2027-junior-338-word",
+    "sboc-2027-junior-338-definition",
+    "sboc-2027-junior-339-word",
+    "sboc-2027-junior-339-definition",
+    "sboc-2027-junior-339-sentence",
+    "sboc-2027-junior-340-word",
+    "sboc-2027-junior-340-definition",
+    "sboc-2027-junior-341-word",
+    "sboc-2027-junior-341-definition",
+    "sboc-2027-junior-341-sentence",
+    "sboc-2027-junior-342-word",
+    "sboc-2027-junior-342-definition",
+    "sboc-2027-junior-343-word",
+    "sboc-2027-junior-343-definition",
+    "sboc-2027-junior-343-sentence",
+    "sboc-2027-junior-344-definition",
+    "sboc-2027-junior-345-word",
+    "sboc-2027-junior-345-definition",
+    "sboc-2027-junior-345-sentence",
+    "sboc-2027-junior-346-word",
+    "sboc-2027-junior-346-definition",
+    "sboc-2027-junior-347-word",
+    "sboc-2027-junior-347-definition",
+    "sboc-2027-junior-347-sentence",
+    "sboc-2027-junior-348-word",
+    "sboc-2027-junior-348-sentence",
+    "sboc-2027-junior-349-word",
+    "sboc-2027-junior-349-definition",
+    "sboc-2027-junior-350-word",
+    "sboc-2027-junior-350-definition",
+    "sboc-2027-junior-350-sentence",
+    "sboc-2027-junior-351-word",
+    "sboc-2027-junior-351-sentence",
+    "sboc-2027-junior-352-word",
+    "sboc-2027-junior-352-sentence",
+    "sboc-2027-junior-353-definition",
+    "sboc-2027-junior-354-word",
+    "sboc-2027-junior-354-definition",
+    "sboc-2027-junior-354-sentence",
+    "sboc-2027-junior-355-definition",
+    "sboc-2027-junior-356-word",
+    "sboc-2027-junior-356-definition",
+    "sboc-2027-junior-356-sentence",
+    "sboc-2027-junior-357-sentence",
+    "sboc-2027-junior-358-word",
+    "sboc-2027-junior-358-definition",
+    "sboc-2027-junior-358-sentence",
+    "sboc-2027-junior-359-definition",
+    "sboc-2027-junior-360-word",
+    "sboc-2027-junior-360-definition",
+    "sboc-2027-junior-361-word",
+    "sboc-2027-junior-361-definition",
+    "sboc-2027-junior-361-sentence",
+    "sboc-2027-junior-362-definition",
+    "sboc-2027-junior-363-word",
+    "sboc-2027-junior-363-definition",
+    "sboc-2027-junior-363-sentence",
+    "sboc-2027-junior-364-sentence",
+    "sboc-2027-junior-365-word",
+    "sboc-2027-junior-365-sentence",
+    "sboc-2027-junior-366-word",
+    "sboc-2027-junior-366-sentence",
+    "sboc-2027-junior-367-word",
+    "sboc-2027-junior-367-sentence",
+    "sboc-2027-junior-368-word",
+    "sboc-2027-junior-368-definition",
+    "sboc-2027-junior-368-sentence",
+    "sboc-2027-junior-369-definition",
+    "sboc-2027-junior-370-word",
+    "sboc-2027-junior-370-definition",
+    "sboc-2027-junior-370-sentence",
+    "sboc-2027-junior-371-word",
+    "sboc-2027-junior-371-definition",
+    "sboc-2027-junior-371-sentence",
+    "sboc-2027-junior-372-word",
+    "sboc-2027-junior-372-sentence",
+    "sboc-2027-junior-373-word",
+    "sboc-2027-junior-373-definition",
+    "sboc-2027-junior-373-sentence",
+    "sboc-2027-junior-374-definition",
+    "sboc-2027-junior-374-sentence",
+    "sboc-2027-junior-375-sentence",
+    "sboc-2027-junior-376-word",
+    "sboc-2027-junior-376-definition",
+    "sboc-2027-junior-377-word",
+    "sboc-2027-junior-377-definition",
+    "sboc-2027-junior-377-sentence",
+    "sboc-2027-junior-378-definition",
+    "sboc-2027-junior-378-sentence",
+    "sboc-2027-junior-379-sentence",
+    "sboc-2027-junior-380-word",
+    "sboc-2027-junior-380-definition",
+    "sboc-2027-junior-380-sentence",
+    "sboc-2027-junior-381-definition",
+    "sboc-2027-junior-382-word",
+    "sboc-2027-junior-382-definition",
+    "sboc-2027-junior-382-sentence",
+    "sboc-2027-junior-383-word",
+    "sboc-2027-junior-383-definition",
+    "sboc-2027-junior-384-word",
+    "sboc-2027-junior-384-definition",
+    "sboc-2027-junior-384-sentence",
+    "sboc-2027-junior-386-sentence",
+    "sboc-2027-junior-387-definition",
+    "sboc-2027-junior-387-sentence",
+    "sboc-2027-junior-388-definition",
+    "sboc-2027-junior-390-word",
+    "sboc-2027-junior-390-definition",
+    "sboc-2027-junior-391-word",
+    "sboc-2027-junior-391-definition",
+    "sboc-2027-junior-391-sentence",
+    "sboc-2027-junior-392-word",
+    "sboc-2027-junior-392-sentence",
+    "sboc-2027-junior-393-word",
+    "sboc-2027-junior-393-definition",
+    "sboc-2027-junior-394-word",
+    "sboc-2027-junior-394-definition",
+    "sboc-2027-junior-394-sentence",
+    "sboc-2027-junior-395-definition",
+    "sboc-2027-junior-395-sentence",
+    "sboc-2027-junior-396-definition",
+    "sboc-2027-junior-399-word",
+    "sboc-2027-junior-399-definition",
+    "sboc-2027-junior-399-sentence"
+  ],
+  "available": {
+    "sboc-2027-junior-001": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-002": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-003": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-004": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-005": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-006": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-007": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-008": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-009": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-010": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-011": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-012": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-013": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-014": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-015": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-016": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-017": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-018": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-019": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-020": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-021": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-022": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-023": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-024": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-025": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-026": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-027": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-028": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-029": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-030": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-031": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-032": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-033": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-034": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-035": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-036": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-037": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-038": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-039": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-040": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-041": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-042": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-043": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-044": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-045": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-046": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-047": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-048": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-049": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-050": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-051": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-052": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-053": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-054": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-055": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-056": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-057": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-058": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-059": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-060": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-061": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-062": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-063": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-064": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-065": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-066": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-067": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-068": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-069": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-070": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-071": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-072": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-073": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-074": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-075": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-076": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-077": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-078": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-079": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-080": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-081": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-082": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-083": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-084": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-085": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-086": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-087": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-088": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-089": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-090": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-091": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-092": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-093": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-094": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-095": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-096": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-097": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-098": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-099": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-100": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-101": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-102": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-103": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-104": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-105": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-106": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-107": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-108": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-109": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-110": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-111": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-112": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-113": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-114": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-115": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-116": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-117": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-118": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-119": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-120": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-121": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-122": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-123": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-124": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-125": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-126": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-127": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-128": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-129": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-130": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-131": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-132": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-133": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-134": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-135": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-136": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-137": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-138": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-139": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-140": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-141": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-142": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-143": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-144": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-145": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-146": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-147": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-148": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-149": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-150": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-151": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-152": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-153": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-154": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-155": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-156": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-157": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-158": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-159": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-160": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-161": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-162": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-163": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-164": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-165": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-166": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-167": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-168": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-169": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-170": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-171": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-172": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-173": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-174": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-175": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-176": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-177": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-178": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-179": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-180": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-181": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-182": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-183": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-184": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-185": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-186": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-187": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-188": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-189": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-190": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-191": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-192": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-193": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-194": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-195": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-196": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-197": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-198": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-199": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-200": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-201": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-202": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-203": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-204": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-205": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-206": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-207": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-208": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-209": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-210": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-211": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-212": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-213": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-214": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-215": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-216": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-217": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-218": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-219": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-220": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-221": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-222": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-223": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-224": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-225": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-226": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-227": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-228": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-229": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-230": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-231": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-232": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-233": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-234": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-235": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-236": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-237": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-238": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-239": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-240": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-241": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-242": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-243": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-244": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-245": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-246": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-247": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-248": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-249": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-250": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-251": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-252": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-253": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-254": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-255": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-256": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-257": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-258": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-259": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-260": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-261": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-262": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-263": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-264": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-265": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-266": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-267": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-268": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-269": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-270": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-271": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-272": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-273": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-274": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-275": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-276": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-277": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-278": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-279": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-280": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-281": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-282": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-283": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-284": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-285": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-286": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-287": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-288": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-289": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-290": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-291": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-292": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-293": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-294": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-295": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-296": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-297": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-298": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-299": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-300": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-301": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-302": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-303": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-304": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-305": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-306": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-307": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-308": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-309": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-310": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-311": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-312": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-313": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-314": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-315": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-316": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-317": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-318": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-319": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-320": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-321": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-322": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-323": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-324": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-325": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-326": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-327": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-328": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-329": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-330": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-331": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-332": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-333": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-334": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-335": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-336": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-337": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-338": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-339": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-340": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-341": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-342": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-343": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-344": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-345": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-346": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-347": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-348": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-349": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-350": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-351": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-352": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-353": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-354": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-355": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-356": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-357": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-358": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-359": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-360": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-361": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-362": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-363": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-364": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-365": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-366": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-367": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-368": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-369": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-370": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-371": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-372": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-373": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-374": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-375": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-376": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-377": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-378": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-379": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-380": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-381": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-382": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-383": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-384": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-385": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-386": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-387": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-388": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-389": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-390": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-391": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-392": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-393": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-394": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-395": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-396": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-397": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-398": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-399": [
+      "word",
+      "definition",
+      "sentence"
+    ],
+    "sboc-2027-junior-400": [
+      "word",
+      "definition",
+      "sentence"
+    ]
+  },
+  "checksums": {
+    "sboc-2027-junior-001-word.mp3": "91cf5fe68a67227571222f872eca74cbc69eae4d56c49e7f87ed82c59f72a909",
+    "sboc-2027-junior-001-definition.mp3": "d5146c3459d40c99047b63c30cb8acba95637ad4b27336a1e8147a45e1a9ed61",
+    "sboc-2027-junior-001-sentence.mp3": "0366945ef064e856625b437d8295940472214f7e73b0816df31e0585e5b954df",
+    "sboc-2027-junior-002-word.mp3": "6048fd1fd44d9998500238ec59ae265d4faf6fee7e76032d33007f7c23c883cd",
+    "sboc-2027-junior-002-definition.mp3": "3df19d403c2c08f11f95209aa5afa5a04afd989c7db35fa22278a8b1f9c5e151",
+    "sboc-2027-junior-002-sentence.mp3": "30bd7e54459d1a74a1932c2f50d187b70c5f1b68dced84f4d650383d78c05607",
+    "sboc-2027-junior-003-word.mp3": "00c9acd52770267e6719b0f8dd1288038aecc609dfef443b46b8d6f2b371c66b",
+    "sboc-2027-junior-003-definition.mp3": "06c821dfdd0833b1dfeb06ad440789db32e4d2af76930b5c9ca6c31196bb742f",
+    "sboc-2027-junior-003-sentence.mp3": "a0a6c19eab1665ac4fe1d03b3c0af18ca4717c49176947215e164bdc05b5e6df",
+    "sboc-2027-junior-004-word.mp3": "116f604f565e82005afad52765cc5aaa31b6090d8887ff5dfdddc937a25b1994",
+    "sboc-2027-junior-004-definition.mp3": "84ae05ef95da44509ed30ee03ea3d449448dc2a4e090650d7e43d96962edb7e3",
+    "sboc-2027-junior-004-sentence.mp3": "eb950afb4fd55b49e8104381981599c367d05a5797374b1d8b88a692905c3c7c",
+    "sboc-2027-junior-005-word.mp3": "3ecf1fc9e9c4cfb47220facd7f3d8c20155066467919c14efad8471ffb171887",
+    "sboc-2027-junior-005-definition.mp3": "29bc792624a4f80b7076bd8a2a295dd7f369cc5aefe97e45ae40b605ffdc3ca8",
+    "sboc-2027-junior-005-sentence.mp3": "c31741bcb24d2ee1ce0081622a7e98b82d2183bfd74b0227e589e6ca9730f2c9",
+    "sboc-2027-junior-006-word.mp3": "6b651e02ed956edf83f9434bda29bb09a7b783790ee3216c57b22ab8545c1353",
+    "sboc-2027-junior-006-definition.mp3": "565ecbed13310fc7051391c99cd6c38e57ac580527ff0b2d26b8cd2f9c266a2f",
+    "sboc-2027-junior-006-sentence.mp3": "596d70303159f32a4c5a1d42ac50ad6829b4ada1f0d52ea5a2f59ee6c54c9507",
+    "sboc-2027-junior-007-word.mp3": "8f59c4aa2bf70336b2c07f197ecacb6a86b374c0821192e780008e25fd163974",
+    "sboc-2027-junior-007-definition.mp3": "70bb16394f2623e565ebc456f2ca5eb9b54f16954b1a152a13c746b595950605",
+    "sboc-2027-junior-007-sentence.mp3": "f349f68e9a5239a21f758b62870b9cd0476d1caf7925dbf8a88b6f105a3ec057",
+    "sboc-2027-junior-008-word.mp3": "7c79ac3cf2a1ae7c97072a6e3f0a71ae1af09a97addfd98331701081aa3b5852",
+    "sboc-2027-junior-008-definition.mp3": "ba645526da74e611dfdc23ce43484d554f242d4f16d16f2cdb2acfb815e46b25",
+    "sboc-2027-junior-008-sentence.mp3": "43d1f1433d31d525f87935c1f5ad2fb7c57aced6ba5453933d4b730efaebabef",
+    "sboc-2027-junior-009-word.mp3": "f900b571217ea87e10aae68a0944779ab290272304e26bcb0dd9acb74314f6e8",
+    "sboc-2027-junior-009-definition.mp3": "a43b7468865320cfa75fb1220306c485d006f95ad6d2326dafa0d9a2df98f374",
+    "sboc-2027-junior-009-sentence.mp3": "b878749e64faddcae283b7945f0be360858aa365f8857daf6807425738e5eb7c",
+    "sboc-2027-junior-010-word.mp3": "f07fcf7f363dbd9b06aa80e27f69a075fa07f2ac4d03d07b84ceb7710285e109",
+    "sboc-2027-junior-010-definition.mp3": "c77b2e560024a7dfd47db7c3df7e4c5b0a4af446bb0c74565aec49c08397c701",
+    "sboc-2027-junior-010-sentence.mp3": "0b4d89321578cf611ad321adc10b1b6e660a30eb598b04305175a7ae393c4b78",
+    "sboc-2027-junior-011-word.mp3": "a7e3d033ab2d7df816b7a154ec33216ae66299fbcc44c83b62f6c474178d70f8",
+    "sboc-2027-junior-011-definition.mp3": "e5022eded51b173739acd8636ef6da5d5be164801cc779471b0537ef0048d01a",
+    "sboc-2027-junior-011-sentence.mp3": "c1259fefe1238ac7d7d7b901da20394089b4dabeb4b5ee6bbbde08d63e648e10",
+    "sboc-2027-junior-012-word.mp3": "4d7b2301c130aade4f64feb1b7813596b31ba3ef71a48f0aed268d1dc7e7ee9c",
+    "sboc-2027-junior-012-definition.mp3": "e3537547964067b4c0a2f8adcb5860aed7563a6b5b0a96be3c511b9b11417bd8",
+    "sboc-2027-junior-012-sentence.mp3": "7c8734edf1085f900c5526a89624f55fdfae5dbd3db9aeed469eb0549787b5e7",
+    "sboc-2027-junior-013-word.mp3": "655587937d02556aeef0945f23d1756457e7f36a21b961c249d4c1d0662691ef",
+    "sboc-2027-junior-013-definition.mp3": "dfa583ae6d189d91b354515a48c5017a9f2035b7a0abc11576946689b7b6204e",
+    "sboc-2027-junior-013-sentence.mp3": "ca883624a21503bedb3d8fef30b2d7f9f67c486a7f094287bd16783492e38ec0",
+    "sboc-2027-junior-014-word.mp3": "99db5c23a3f444683404dd0fc792bafc0d34f58d74a5b9e9b9999d52f347650e",
+    "sboc-2027-junior-014-definition.mp3": "2d3490e55ab962b327b5a2c5c7442f2273b1e02c46b0b5f146cf9f5bb7006ae9",
+    "sboc-2027-junior-014-sentence.mp3": "7f77dbb0fa217dfc769207220aa5ded005138d11a7de5704f14de766da3fcca4",
+    "sboc-2027-junior-015-word.mp3": "0b06187efdbd066558b06b42d915bb20ba0d38380eadfb6e4ee8a126fbec5ece",
+    "sboc-2027-junior-015-definition.mp3": "5983d421eab8b5198c2bed5dadb3874aaac942115a87b674f68f1d62ac8271b2",
+    "sboc-2027-junior-015-sentence.mp3": "212f40287ea58f0a312b499f9224ddf0fcb4cd2fe47c92b6eb9da9e9dc7a6b3f",
+    "sboc-2027-junior-016-word.mp3": "c31cc0890798a28b32b99c9ca070fff378bc4ca03c7a735664c7ceb3c7fe32ca",
+    "sboc-2027-junior-016-definition.mp3": "47d737266550c8025ae0d6f77a11e52bf5369754f48424cde55691341368249a",
+    "sboc-2027-junior-016-sentence.mp3": "d156d217b84c8e6882b84ff901aeae5287db0ddc216832f3a670311cb155bd5c",
+    "sboc-2027-junior-017-word.mp3": "f2d2cae3ba5fe3b0cabfc5698d29b4dd37eeac8b12278de9f0fda8d33afc1558",
+    "sboc-2027-junior-017-definition.mp3": "02b8156546998c0b1049316074ca692d00a3464868a5f6a163b2cd7c891b6f82",
+    "sboc-2027-junior-017-sentence.mp3": "5acbca265eff4cce6baeb2fe5e9910d018947071618cbb2de77125696bf25d01",
+    "sboc-2027-junior-018-word.mp3": "305fc50c672c60bcf3e21b81c9c7c9000d0c03f09876af1501a142e833898e83",
+    "sboc-2027-junior-018-definition.mp3": "b4bbcdab2788188d4e3ff8534c1b7cebbbc102356f3504484509df4c60fe828d",
+    "sboc-2027-junior-018-sentence.mp3": "2c54e7d3e47eed6839a137b674164911db50b891a212b012a0fbb75493df994d",
+    "sboc-2027-junior-019-word.mp3": "41e4d23c36b93df9788d14e6fb97e286a019cee4de2e8502a392d4c381d93477",
+    "sboc-2027-junior-019-definition.mp3": "9c5f8b9c5f57d22ffdffe8f1e1eccc97895fea955d2d44fdcc766ed98760488d",
+    "sboc-2027-junior-019-sentence.mp3": "12413673807635bad415fc952c09d9418996fd880def3b1fb8144fa51642a50e",
+    "sboc-2027-junior-020-word.mp3": "6636aad5032ca54829cf028aa657e20774398686b51c5ec708c0bde86cf94d4f",
+    "sboc-2027-junior-020-definition.mp3": "78f21c649d44eb42e15715fa0716d6eee4bc36733857bc5993b19abdcd7ab66a",
+    "sboc-2027-junior-020-sentence.mp3": "9b24c58ad65c54581f2e02683d88355c727cfc3224dc2d08e7c46657ac38ea47",
+    "sboc-2027-junior-021-word.mp3": "28685253571fcd310716234a7e53c60481f486cec7cdd0e33cd0833ea3a0d71f",
+    "sboc-2027-junior-021-definition.mp3": "57a03d7d36d47a4a2f1a6f3a2c528680e85b172bd0b64e7796069478554c1603",
+    "sboc-2027-junior-021-sentence.mp3": "3f1194db9b3b733108dce46b2a19ae118a7d534c6d414940e6cc37a65638c684",
+    "sboc-2027-junior-022-word.mp3": "eb23af88b29622c304d927ae5cd0db57768c506c22f83fee98c14e67c7a519d3",
+    "sboc-2027-junior-022-definition.mp3": "19bd4f604cf3e6681cffb1e99e00f1f4afb8561cbc057f27e6ff93b1b73190d6",
+    "sboc-2027-junior-022-sentence.mp3": "5ffb782d5ddc1c8886e24fdb203e27494ddebc0eb8858bbc144a6dbfc327ed87",
+    "sboc-2027-junior-023-word.mp3": "4ef03812f035e84489dfffedf9936f4bb62aa9cde8cace4a2a1082ec2b5b12e1",
+    "sboc-2027-junior-023-definition.mp3": "8545378d6f55687211fd224be36e97e31dc77589b084223f3d50685b54535cba",
+    "sboc-2027-junior-023-sentence.mp3": "324b0d7e70527c28e7a5c86501ca600dad643b6fa8b99bfab2a78d2378b70a69",
+    "sboc-2027-junior-024-word.mp3": "add751e12a2378d28a982bf8a21c1a1d37d070f05c5253826567609d576a4cbd",
+    "sboc-2027-junior-024-definition.mp3": "29c84bbd913c9645cea1ccc855abdf1645cc17d3135009f7604409085ec54240",
+    "sboc-2027-junior-024-sentence.mp3": "0d46daa495ce81ac37707e03290711403b5577e19faa40c2e9cae40381396f5b",
+    "sboc-2027-junior-025-word.mp3": "99df4bec3ae368219b3640ff24be4be3406725de3748a9ce535b70da84b75483",
+    "sboc-2027-junior-025-definition.mp3": "d01c015bdc89e234b25dc42b81aa718fb661e647cd46275623a905b08612c423",
+    "sboc-2027-junior-025-sentence.mp3": "a6da3aa691ff710ece6572720b832939a5da28a87eb52c846ed8a6aea24b74c4",
+    "sboc-2027-junior-026-word.mp3": "35f8675a0cb274da6131df14acb7192ea60b40a9fb5fbf632bd70edda42e1332",
+    "sboc-2027-junior-026-definition.mp3": "f38f6832e47bf26ffde1d55d4b5a80fb082b0890f359129088e6d21654552afa",
+    "sboc-2027-junior-026-sentence.mp3": "f0d7fd3c6e0dd3951b0c90d0b594e3e716e760e95438f1a43219438ce82c4db3",
+    "sboc-2027-junior-027-word.mp3": "8a68f605a1749fa7b69317d1aeb2b5380c6584402efa0a5876105935aa2a9a7c",
+    "sboc-2027-junior-027-definition.mp3": "936459d6508086a487661da24279543f9a9ca71eeb160edb19c48bcbcb6539c2",
+    "sboc-2027-junior-027-sentence.mp3": "9c68e2e59e6c4e8cca9f74d284b0e1c4e81a3227ffd952b3f01745d29b35f3a7",
+    "sboc-2027-junior-028-word.mp3": "ebfd9f69af6662c78067bd4a98e14b23f362285adb40dfe348a3419f39d04db6",
+    "sboc-2027-junior-028-definition.mp3": "f6a3fe00787c098a6cf74b7f982e0c11ca4c349e6b56dd821e8e9270b03b4a48",
+    "sboc-2027-junior-028-sentence.mp3": "e0f20af5672e81b1ed12b6fbb9668afc3cb820dd6672ee3a566a16bcd20d0a51",
+    "sboc-2027-junior-029-word.mp3": "ef5def45b5aaf49b145866cc004d075452f5c610685303aab1c4b68957bcd107",
+    "sboc-2027-junior-029-definition.mp3": "3c7b4141a83964a7017a8edeecc40f0128d8307c6afa210ebab657832461cf3f",
+    "sboc-2027-junior-029-sentence.mp3": "810c605e3d878f86440bd11151c3302b06099300408c1dc40247ef87b8e14b16",
+    "sboc-2027-junior-030-word.mp3": "837260b54d8fd426f4532ed89a9a4222e94b4dde360c6c25861dce65f39d0f98",
+    "sboc-2027-junior-030-definition.mp3": "5201207b8d241c6aae32288858d32735c8fc383f517e3b05f0dbab81364c7906",
+    "sboc-2027-junior-030-sentence.mp3": "8e26745baf9bf40e76337b5e8fdc2bfe245d4c0810765bdf6946ff38f5593550",
+    "sboc-2027-junior-031-word.mp3": "7513e3d3b66d98069e17d535129e5ca6cf32e888c07a110166d98a26db492656",
+    "sboc-2027-junior-031-definition.mp3": "72af320870f670a0a4e6e3a03d851a0f4183ea98e2f1b124fe7e168f9965af24",
+    "sboc-2027-junior-031-sentence.mp3": "32a4bd529f51eab8c20d4aea38e9dcd31fbb280bf9bb859a0e7d29012a8de294",
+    "sboc-2027-junior-032-word.mp3": "a34a038ef94f63a211b62348443cdbc3deec890419bc80f6a81f9bb5ae359a7f",
+    "sboc-2027-junior-032-definition.mp3": "2f3baf5386b0ed0a6d8bea6891a867f3a24b8050d698885435148bdbef9fb27e",
+    "sboc-2027-junior-032-sentence.mp3": "e79d847b2e9089e5051c554d91d7a8fcfd6e0ba9b4989460f7516b4371a72539",
+    "sboc-2027-junior-033-word.mp3": "61cd5015096987b4acba8a6c1d6f262e4be886fe45f24c34fb6791c691765bf4",
+    "sboc-2027-junior-033-definition.mp3": "a8a4bb34a47dea7886d194be47cae65f4929264faf8820218566bbd573238b25",
+    "sboc-2027-junior-033-sentence.mp3": "3273569d0ae52a4afa1fd5307cece51d64e144a65828ca210b2fba9422007efe",
+    "sboc-2027-junior-034-word.mp3": "2a6eca020180979bd9dafe0c25a14671503577e1cc26aed039a23dbec32b90d3",
+    "sboc-2027-junior-034-definition.mp3": "be92502024ad9cf2a0efadc7a6a05ae7ff82454bf9e9c7baa54c4e8d753dc3e1",
+    "sboc-2027-junior-034-sentence.mp3": "b835af54da6d508e146de79d58d002bdf7ce4131e2f81657fbd3c3cd31d178ef",
+    "sboc-2027-junior-035-word.mp3": "3d130db8e0c3a2b0432a173b3696ca73dfcefa3abbb869cc64e94503cebf0b64",
+    "sboc-2027-junior-035-definition.mp3": "908f3f4317525cc6c345b2288ad7bb905107feaca91023488bb9bae170928afc",
+    "sboc-2027-junior-035-sentence.mp3": "8600ceaf493f0e66773a42d2c583abbc8bce5f5ac113a6b34dda1983eac1a309",
+    "sboc-2027-junior-036-word.mp3": "56961a1e0a01c23c7363bc57d91c1ace005db907345bf7187bdbbb1e1f613907",
+    "sboc-2027-junior-036-definition.mp3": "116da05c3032ca5212d37d4e061f87fd494b9b15e42a014aa7a98573ff0cf0a1",
+    "sboc-2027-junior-036-sentence.mp3": "a7af0c9f881872723531ec3d78b9768a910848b810241a6f9bf9c8f83d159750",
+    "sboc-2027-junior-037-word.mp3": "e6b3498b290bab1eb9e517d2214da9d03922beb6a152fd5aebd5a2208986c6df",
+    "sboc-2027-junior-037-definition.mp3": "d54084f920717d355c409b0f9844b429c738ccaf893db9570acf176ff4f93aa9",
+    "sboc-2027-junior-037-sentence.mp3": "ec01a1a290ff2b9cdce66f284e60089ae568b152f6f38a39fc66652a0ad85858",
+    "sboc-2027-junior-038-word.mp3": "1bec3ab12bf77adb5631c675301cee3801bf8b1f86f20fbb134b3909faf6f254",
+    "sboc-2027-junior-038-definition.mp3": "6ea106de0000f3ffcf3f16f3a5a5ad74fe51ed2ea73b94b57d522bc9a9f52329",
+    "sboc-2027-junior-038-sentence.mp3": "fd0eff350348d7b887b85f5a0c6b2820a2d853062efdee9713e57b9c789fc679",
+    "sboc-2027-junior-039-word.mp3": "de1be50a0f03515fa30ae9c21b8888ca5d0513813414f8d1a50e627164973901",
+    "sboc-2027-junior-039-definition.mp3": "49ae63b78a0b42007fc89f1662b9c0443247fae9999502196fac2a08a5d2091e",
+    "sboc-2027-junior-039-sentence.mp3": "5a4ad87a1d0bcf5df1afe3173041f2a1866c9f4408daa7214c35155af0ae88f1",
+    "sboc-2027-junior-040-word.mp3": "680cbd0b8e07dfcc3296611e1f6a52e235a7672b71f0506a3ab377c4b8e72721",
+    "sboc-2027-junior-040-definition.mp3": "cd8e6b8df2947f9c375f27c2767e50a24b9e649cb8792d9b841dc99e58762416",
+    "sboc-2027-junior-040-sentence.mp3": "8e4b4fece87b086f0746be862ceb26221a464b95f7b188f596f2aac5a399786d",
+    "sboc-2027-junior-041-word.mp3": "1ec677c853bddb7fe87f84bcc670602cb5710b3400ddf0c6bf23d6b4564b44c2",
+    "sboc-2027-junior-041-definition.mp3": "17b89a362c25f91efd71fdf89e091c0b18f64dd9a22d825eeb19b0eeaec73ba9",
+    "sboc-2027-junior-041-sentence.mp3": "90197610dba008f83decde6144912e59224e8f47be55dcbb0de8f77873010f21",
+    "sboc-2027-junior-042-word.mp3": "3f6e5034b096961cb208e7c8fb592630290f945698bb9f45f284b7ad1443f309",
+    "sboc-2027-junior-042-definition.mp3": "03fef275b237050060e9ed45b81201fd17b0a43bf233599788269c5a968bc65a",
+    "sboc-2027-junior-042-sentence.mp3": "9607c74e560072dca848ae62dc9242190ad8431f43a063001b323d66e751960e",
+    "sboc-2027-junior-043-word.mp3": "e64e75d5b9d615c1034e09a28875444debc17264c8497ca491f61007eb05549f",
+    "sboc-2027-junior-043-definition.mp3": "cc750e5865309a2cf7bd9392a753fe76153319f2bfdbbf6d707b1e80e3d8ea23",
+    "sboc-2027-junior-043-sentence.mp3": "aa596498b233f750e0d0e9772c83fd1664ca45ae4ee8e47a9e19969b5307dce7",
+    "sboc-2027-junior-044-word.mp3": "851fa39cd506963d7f62497813f6ffef57686185c420b92deb4f91d3ea551b73",
+    "sboc-2027-junior-044-definition.mp3": "f928ba3f4d61a41c479270ab507252b9a46410e58997c5771b3a09a54f889fbb",
+    "sboc-2027-junior-044-sentence.mp3": "a7cc5516803b9a4478e9c91b36eecf37055718a595dc95eac92f604c3a966167",
+    "sboc-2027-junior-045-word.mp3": "c57ad0d1409c2a11aa1b9b68ab1b0c8eb5d56484864710fdccd467f7f558d11c",
+    "sboc-2027-junior-045-definition.mp3": "469ce806b379b9925c7df49a35bec2f4bd6ad24cbc0405865d5796727d252152",
+    "sboc-2027-junior-045-sentence.mp3": "244becf138cdfd8e9ce23f0548c865f785b6704da43d115829aaeeb993132feb",
+    "sboc-2027-junior-046-word.mp3": "734a9afba98c92b2befa0781bdad21ce98e3b31a4fcabd1560e5d81d293fbd22",
+    "sboc-2027-junior-046-definition.mp3": "54584c0ae7969ab9652ce50b4c821fccb3300c1285911e410c94b2d5c05ed0ab",
+    "sboc-2027-junior-046-sentence.mp3": "35c1c9222781fe7dd546335a1fb0a5717705b38650194ebe22ee6216124fc1c1",
+    "sboc-2027-junior-047-word.mp3": "ef656e4f687011b77031f04ff8437dbbc55ca7d1b369a7f2f8b4985a08e75bcf",
+    "sboc-2027-junior-047-definition.mp3": "583ecd8186ce785668eb33a06021999185084098f5ce1f7e277cb757b6359022",
+    "sboc-2027-junior-047-sentence.mp3": "b16f69b5c22d8e5ad900d1d5d1c53575b92e8c4d2b3329fa982978bc947f8d15",
+    "sboc-2027-junior-048-word.mp3": "b72dedea42e882d46fc2383f9c3565a53fbff8de9a6322f6a47af34364d9b09d",
+    "sboc-2027-junior-048-definition.mp3": "c3e33ef4d2e33ecfa9ff4967decc988322be547d79f345d3f1b511e894deacaf",
+    "sboc-2027-junior-048-sentence.mp3": "3072e1b4ea8cc66133be92d8e30405f956010e7a52e97678f1886106880d477f",
+    "sboc-2027-junior-049-word.mp3": "a48422d874641e3ad1423db29735b1bb45b1dd9f614166d13884b579dbe8bede",
+    "sboc-2027-junior-049-definition.mp3": "e20f9032b27484fcd21e90f37644c86f78f55aba5f52796d7656cb93d72fce72",
+    "sboc-2027-junior-049-sentence.mp3": "57f61de0a1e0a7cc72a822eea04a8669aa6963a101cdb2f840fb67e62579b0a1",
+    "sboc-2027-junior-050-word.mp3": "c13abc6256a454b64235f7cf1ce4227699e28e17c4702a862f73f1b71e0fea39",
+    "sboc-2027-junior-050-definition.mp3": "cb06f584deb82f0cdf4abc9a3a9ae26ca16a6e783b96a8278e260709fe8c8c43",
+    "sboc-2027-junior-050-sentence.mp3": "b6cf94bb1c1e3cdc104e9b5b22b56762341c3137066cce267f73cc976fb8e9d8",
+    "sboc-2027-junior-051-word.mp3": "c108d979346378afaf3cf212962e36e0f39a5f4b6a4c044a6b1a4f8cb2b4d81b",
+    "sboc-2027-junior-051-definition.mp3": "bf72353d339cfb792567c0757381b1efe3fcd9fffd5cf0cb90f82ccfe3d95836",
+    "sboc-2027-junior-051-sentence.mp3": "0559a8b07be91f804ea84df07155b38228c491a3b0a92a917a040e1f0655a644",
+    "sboc-2027-junior-052-word.mp3": "a15099695df9dad7bb0b261408f7ecf18de6b0f7a4f6663d68410e3b1dd5dda1",
+    "sboc-2027-junior-052-definition.mp3": "f2e95bdf543ac0a11b06a728c4d4e4cd1bd006ba766a0de375f89eac2ba9dc15",
+    "sboc-2027-junior-052-sentence.mp3": "0677300ff02417ee17ca7940750d30f9355efd28dc3c9f84f4d8b6f1ce957031",
+    "sboc-2027-junior-053-word.mp3": "63a95cdb6db45f969f675edf6190722a3dec4e738fbaa048af80d2583fe11df9",
+    "sboc-2027-junior-053-definition.mp3": "ca0425a236c377f38f4b2855a04b69548fb5fee70b751d2d67cb874d57abcd9f",
+    "sboc-2027-junior-053-sentence.mp3": "497e95fe95b25da77834158673ac0b39572a6415928ada60e45d0dcbce9840e5",
+    "sboc-2027-junior-054-word.mp3": "2a7015705cd967c058fdd8f117d9760c8cd463bac9d20bd882a38bec9c997bc5",
+    "sboc-2027-junior-054-definition.mp3": "aaf987b728ac3088e510c8ecc73021d81a68f0e88289264a86adf14c6ddbb282",
+    "sboc-2027-junior-054-sentence.mp3": "52af38f9185d4bcf3422fa656a9dbc65ff500e3c0b4511f23588835c2826832b",
+    "sboc-2027-junior-055-word.mp3": "65cc0b6ce7b6c83a59633abedf3ff32efc9a5e85fe1fd3719508d0a0aa88326a",
+    "sboc-2027-junior-055-definition.mp3": "bc5c760667dffbbebcde0f7c6b4987678197c80ba5d241568381ebd1cde5fe8e",
+    "sboc-2027-junior-055-sentence.mp3": "5cafce244888ee3f8a212b49ecd8900b2debd91c108b12ca827e02d37775806f",
+    "sboc-2027-junior-056-word.mp3": "82e99273084a21a6e96ac4314a39331222a721249c509c9c4db58c962437deb5",
+    "sboc-2027-junior-056-definition.mp3": "ed12490609d3341d933c14ba40d3f3b97b31f599209a8df57ba8a7f51075df45",
+    "sboc-2027-junior-056-sentence.mp3": "235ee61ffebfc5bb94acfd68f897148da122b017be3f9b9295557b200eb727e6",
+    "sboc-2027-junior-057-word.mp3": "5c130f0a09be118447eb8d4d41c78126095ff41c64b37dca039e4370789d97ed",
+    "sboc-2027-junior-057-definition.mp3": "86038fd30f0335ac3e8f0c1946672979b5cd0a023617618618ee521ddda2db2b",
+    "sboc-2027-junior-057-sentence.mp3": "7eeb628103f7115072d4dda982d96ec45bc526c6c4f66021c530609af297b183",
+    "sboc-2027-junior-058-word.mp3": "c20091506f0367b0d777308fa4335055e9740a6959ad2566e98201c7e0e88e0f",
+    "sboc-2027-junior-058-definition.mp3": "9c1e19c517c4d85943172fa9389e67743152c42dfbce2485631b690d21f9c624",
+    "sboc-2027-junior-058-sentence.mp3": "133d44b81bbf31fd2467f8ca419e6897e85e4a954d67bb3cc967b7a316d1eba5",
+    "sboc-2027-junior-059-word.mp3": "cfe9ee89186cb141e208d1d8847e9409218b074219e0b1b12b11d72ad24772e1",
+    "sboc-2027-junior-059-definition.mp3": "bb35d86943fcaf86dcb1e9ab8ca912e47b9c12f0d25042414ec35fd56c673a05",
+    "sboc-2027-junior-059-sentence.mp3": "0f9f6faf7d60a7bb6461671bab4d05c1c11d268831403eb7930a9f5dbad1b469",
+    "sboc-2027-junior-060-word.mp3": "573c0f56e8dc0260695c2c896d5be63e7f67c6a6745921243e27fb34664ef02a",
+    "sboc-2027-junior-060-definition.mp3": "b43d7527a221a041f7ba4c971174de33fcfca557d8bcbdefde6a1789919890af",
+    "sboc-2027-junior-060-sentence.mp3": "94711e40a202ccb62832ac4a555b499f2c28da839c6a160636376bcf2bee84ca",
+    "sboc-2027-junior-061-word.mp3": "6d731277fb83df4ec403fb3966a3f401037f3b720f6d0b8951797418fd546c47",
+    "sboc-2027-junior-061-definition.mp3": "b786a88a6441a5fe3a45679f63a436aabed1dd7eb9956e3520ac2d7c3b77c030",
+    "sboc-2027-junior-061-sentence.mp3": "a960abee99d7c973adfe5ac5371311c11e4a3fdcbebdfe2ef8cf858d716cb4df",
+    "sboc-2027-junior-062-word.mp3": "3a893522c8e46ab190635ebbede3f9889d4e35d227585deda3371088a1f4a95d",
+    "sboc-2027-junior-062-definition.mp3": "33627456a1a364a543d523815f70ac86f01cb8fce8a01d526b12121cd2b089bf",
+    "sboc-2027-junior-062-sentence.mp3": "8615b7525ec126e9e99d714a72ccd416dbe4b3d329c4413c86f236b89825b1ad",
+    "sboc-2027-junior-063-word.mp3": "03c7de9c41d4540190864463d45825f0c19925eed90da2d577d60a3eaefe90e7",
+    "sboc-2027-junior-063-definition.mp3": "54c2725d598a2c2fa7774bb8d1615b031ef2af7611335ac4ad1148442ffed11b",
+    "sboc-2027-junior-063-sentence.mp3": "ecc6dd55e8a3cf50b99d9b122954d6d5bad148fcb3236c62d1b8c2f41edb80a4",
+    "sboc-2027-junior-064-word.mp3": "1350db9c951bd413da1139db63f54b48a7b89cc63ffbc10be3fbf40765e3848a",
+    "sboc-2027-junior-064-definition.mp3": "8aa8a930928e7273910bdf783774bdcf0c2566d1b5621ac0f60701caa37a10a7",
+    "sboc-2027-junior-064-sentence.mp3": "c398e6cd98672d90218c71692bfc6a5791a2c4b84527813ce4fd4c98f9b218ff",
+    "sboc-2027-junior-065-word.mp3": "4477c8d436f75ac6d71eea9e80d9a56313e883cd4d7770ccc1117043b833d340",
+    "sboc-2027-junior-065-definition.mp3": "915cc244872e227c5a35f6f075a65c65763dc56a95f11e693e806f504c090909",
+    "sboc-2027-junior-065-sentence.mp3": "86952ce86eee76fc82c80c073441592783644baa391bd6ed0f810f647b258a60",
+    "sboc-2027-junior-066-word.mp3": "282cd6f6f70300c968930970668491a70ba46add9baf9457b5418fc3bc9dfa0b",
+    "sboc-2027-junior-066-definition.mp3": "c09a010eb5a370efb1bf321e723631ce0c679d56a350463dc62d648fe3f45628",
+    "sboc-2027-junior-066-sentence.mp3": "ffe7c304f80183f105287c097e1444eaffdd8e0c535a41c51c16c39786a492cb",
+    "sboc-2027-junior-067-word.mp3": "ce767b997c347f62f17aa3be77de389999e2a3cbba070e052a49fb176f1e4bf6",
+    "sboc-2027-junior-067-definition.mp3": "be3cf6d174340960fc2331704ab55fb6eb99de08b022ae990bec69f0841ec139",
+    "sboc-2027-junior-067-sentence.mp3": "e27a65cbc5cba7f5015f1dc810e9b3df865d0a95ea66735408a86a196a9787fb",
+    "sboc-2027-junior-068-word.mp3": "763fa79728cf9aa5d040245b9e2074c521035bf57409a05dc6b84e483d0b6a6b",
+    "sboc-2027-junior-068-definition.mp3": "3a9017072780869f4d21f453fd668b071cd2ecbe3b3dafb3b683c003966d72b1",
+    "sboc-2027-junior-068-sentence.mp3": "5439d41456681d5c56f06ebdd9e508f4331814e6023d179b010efd51cd32872e",
+    "sboc-2027-junior-069-word.mp3": "70bef0c6eff8955cda0d3a7bce0e20347c752a52bc3eb1fcc7879a600aca4b78",
+    "sboc-2027-junior-069-definition.mp3": "15dcee7a3180f36d44bceb24099c4e3d36998bd9770c8fc67379f5d6d10ca492",
+    "sboc-2027-junior-069-sentence.mp3": "ff6a54d0762328e21ddc3ae574b09f124ee465bfddfd7ac069212f0052788d2a",
+    "sboc-2027-junior-070-word.mp3": "6c4f3d39bd7f7235f58756bb43006776d20affbcfb794d00f0038f19d781118c",
+    "sboc-2027-junior-070-definition.mp3": "20a6f6304a361e18085c39b41cac95aecb0628752da2a2307be8120a72a7a695",
+    "sboc-2027-junior-070-sentence.mp3": "0fdbda92e7c444d32b956da64e0291d58c3b77b433c6d82f1f9ec7a6f9b6d638",
+    "sboc-2027-junior-071-word.mp3": "12ecc50b6118cb109f765b3ff4718914bc0bf7d70bf9c61677898a01f22c894b",
+    "sboc-2027-junior-071-definition.mp3": "cb4a2504a707ce392037f563929b30b31b9bb6cb5ad478f4b9f0404d5fb9d75b",
+    "sboc-2027-junior-071-sentence.mp3": "1f4060bb445fff964550dd718b6fed720d477c9e1b3be909651fbd6fa28a4386",
+    "sboc-2027-junior-072-word.mp3": "97ae668e3831e409a4364bdcb251d8194d030638b6a7df148dca43211822fe1f",
+    "sboc-2027-junior-072-definition.mp3": "ccca29bbed6d8beead515441593cd896a58ecf237aab630454f4c543e8300469",
+    "sboc-2027-junior-072-sentence.mp3": "4d6ac37bcdf68abe8523a3c5db4ce9376f6633e204f158b21e7b2c41748469e2",
+    "sboc-2027-junior-073-word.mp3": "70f19a4d6c632d8a375b5f7436b61d3cfb5372fb473fd60bb81cf1f67e71d058",
+    "sboc-2027-junior-073-definition.mp3": "08aff98b88e99b3694405d17a41da39b8bb0f0bbe5fdff088de8c1c794b227d8",
+    "sboc-2027-junior-073-sentence.mp3": "ecef95088bf88c9782eba453585fdfb0d4139190cdfb74cac2a87b1b50625ec9",
+    "sboc-2027-junior-074-word.mp3": "5a5e28972d4631a357c735928cf89ecb03076395a157ee608a7fe333860b8e70",
+    "sboc-2027-junior-074-definition.mp3": "2ca166ece5315e0490258c17426053a96a030fb0a702365f3e1ab683778bc952",
+    "sboc-2027-junior-074-sentence.mp3": "20d50c2d1a800fa3566918bce7bac4017b2cc3cd0caa6dbc8869ecdcb591a413",
+    "sboc-2027-junior-075-word.mp3": "fca1e9b190741aa355e5638cc548d63faa3a077ef610e1c4ce40f87fa33b1ba3",
+    "sboc-2027-junior-075-definition.mp3": "6cd454f4e3e21ec377d10e4019d01f12658508a24c32a08a548be47bf4b6402b",
+    "sboc-2027-junior-075-sentence.mp3": "4cea0cf32e87e0312904221aeb1c4f8e06aa22a21bf066437ba6a94ab584d26d",
+    "sboc-2027-junior-076-word.mp3": "a49d82ad0054385293b86e0dd333e83b3edc9c8677777b1c9debd8ff0f815ebd",
+    "sboc-2027-junior-076-definition.mp3": "55dcd5dadad53a301c6a15932d42e33fa962b705624e6fe1e5fcfa4ee6c3b353",
+    "sboc-2027-junior-076-sentence.mp3": "873d02e83822a232aa725c1c62d4d1d24ae41b8807b206131e1f97ebee19e3a5",
+    "sboc-2027-junior-077-word.mp3": "e8ae26c838f800ba738fb104752812e135e5686694e87dbf55b2476c49354531",
+    "sboc-2027-junior-077-definition.mp3": "37850e85393c4732ce0b38881249fd07a308ddb68daafb9181873de63007109d",
+    "sboc-2027-junior-077-sentence.mp3": "869c6504ef41fba0b74649714539708f053a47c873180c783a1645549687d285",
+    "sboc-2027-junior-078-word.mp3": "6c431aee6142a8f0099c77215e36500123ce804a89add9911107038ed72e37b1",
+    "sboc-2027-junior-078-definition.mp3": "bc733fd79c55c98db4761550204909d80e8a39526f06ad4199d36c61250b4535",
+    "sboc-2027-junior-078-sentence.mp3": "33e204b27b4cf3c2a039c8171f05b662394825eb8db98aacb23a21efb61559a4",
+    "sboc-2027-junior-079-word.mp3": "1fbdc6f8f16594fcb0444ba4a16b80b8a6b23072c71aa047dd21d7898b77f28a",
+    "sboc-2027-junior-079-definition.mp3": "04c11b40485af2bdedbd09c223aa44403008f837140478ef0f0e24f2b5568e32",
+    "sboc-2027-junior-079-sentence.mp3": "4a91b98017b84f00866da5f72891645ae69e76ffa9a4b67479a3cf344062b423",
+    "sboc-2027-junior-080-word.mp3": "22b08caed7e51041aca926b22543eff0d91b2ca054cfdde4e3a6956a83c169ed",
+    "sboc-2027-junior-080-definition.mp3": "a7263b80d0d74adad1bd01651e8ef1e35f8902e23b19f2fa1ae87b80a9297eb9",
+    "sboc-2027-junior-080-sentence.mp3": "2d783989b67b048e4a1f581fa6223c315c3538bcb9261a05aa0e39339a7976bd",
+    "sboc-2027-junior-081-word.mp3": "b1e7b167a6e983e157d1014baced5b11ca63541a1ee31f727bc22e1ae0817bdc",
+    "sboc-2027-junior-081-definition.mp3": "3c0076510ad7b19d5c8de1155ba5b02f9f931341971960d875fc06c3e34cf27e",
+    "sboc-2027-junior-081-sentence.mp3": "fdd95cbe4e8330a2a5f216004d23c092e03851627d7ffac6837307cae969a9dc",
+    "sboc-2027-junior-082-word.mp3": "df157c1bf85cf6afcb35cd2de9988a0c409571377012b6bd82deca077ffd453e",
+    "sboc-2027-junior-082-definition.mp3": "58193a5107cf24905960b93b7a5a57dc591fd5011039ded010ba63c00cd3536b",
+    "sboc-2027-junior-082-sentence.mp3": "e9469029337fc9736bd5510bc2c024e9fb0597a66c67f5c373b23fc066ece77f",
+    "sboc-2027-junior-083-word.mp3": "9de7df580aab39e5cb48794c4fce5ec7835b50de4d14aeb2ecacb5b639279127",
+    "sboc-2027-junior-083-definition.mp3": "0b99850dca906cfb5873064558d6300bd78e6ea6145d43ba51ee7a9d4486bb62",
+    "sboc-2027-junior-083-sentence.mp3": "7335c07d0dcea756c7e8fabf9a7fed5109b1dd0fb8a64e4943c25289af564fc8",
+    "sboc-2027-junior-084-word.mp3": "77dc81aabf04dbf9b8aa96ce47171b27493a4f9fe9713d2447fbc1779880420b",
+    "sboc-2027-junior-084-definition.mp3": "091bfbbb712b2337a7214e467514784cac9a09edec2b43daf4c8e7465b3ff106",
+    "sboc-2027-junior-084-sentence.mp3": "3fed0cbc33979f974606fbf056f58584464d683895bbbd18f0e5521c66b32302",
+    "sboc-2027-junior-085-word.mp3": "a87ba48b3972da98f110f899cc0d8c9a22b4c40ce836495672d8630e373af264",
+    "sboc-2027-junior-085-definition.mp3": "a7bd97bbd945e19eed81639874d3f71bfc2040f0488a9b0eddd9e629045c0800",
+    "sboc-2027-junior-085-sentence.mp3": "1bf1aa4e89c5f536da58448a5b605d768c2dfe4d69ac82448f846f8fe87820d1",
+    "sboc-2027-junior-086-word.mp3": "3ee57b9e8ca703f00d22af98c5f88fb95a93cc5789eaedf178ffc0029539e684",
+    "sboc-2027-junior-086-definition.mp3": "ed6b08982011a9f2172c13bf54d6e63fc1cd65d9fe784b7e2fd0df8d261ea489",
+    "sboc-2027-junior-086-sentence.mp3": "35e213677d85452aa6dd4d19bedbe4ee27c18d9384f51162d9819c59c807db3b",
+    "sboc-2027-junior-087-word.mp3": "6ce1fbd0f745d13b0024890ca157c421e1681cc837f91cd42ff1672cf472aaba",
+    "sboc-2027-junior-087-definition.mp3": "c20b8c18bd4e4965b64a4799f1724ce34defb6fceee99d99e07067d2e8330ff9",
+    "sboc-2027-junior-087-sentence.mp3": "a328dc4a48559656b51cd3f4852565b83e8d6d656a92914d1bfce45a43a772be",
+    "sboc-2027-junior-088-word.mp3": "0c51a6669ae8729583200f19ec2e241f638a14b4b616e27ec13acab255acf8e2",
+    "sboc-2027-junior-088-definition.mp3": "e4c4533fba90a281f0eba59debba881bd7e335d70e46edf776e308a6cefc13db",
+    "sboc-2027-junior-088-sentence.mp3": "a7b2f6b5e9377dcfcffb0c63d03aadcac00a444bae112d3513e0e1567771f1b3",
+    "sboc-2027-junior-089-word.mp3": "7051daa80914fb4e88ad9d9231f8d2519adf9878b0aa423256c712e489f0851c",
+    "sboc-2027-junior-089-definition.mp3": "af8287f884d9af1e1cdf7c049c710badc517508fee8220e24ff8479d728a7c49",
+    "sboc-2027-junior-089-sentence.mp3": "451fef42a1d6260fdf020a4e2bc679b0bd9a98889f3a48fa5bae688f04b8ce17",
+    "sboc-2027-junior-090-word.mp3": "30ff2f37f7653fca71a4e3f2fc027a4ff2a0a11a6e27c36e0c47b165c51c3d86",
+    "sboc-2027-junior-090-definition.mp3": "f252d5cde2696c92c33940126e02ca41abbb5645292b6c8f71f339ebe6fa4776",
+    "sboc-2027-junior-090-sentence.mp3": "fc166d6cb0d5429e455102756f3856a64a27add2e7a6421925a01404daacf57e",
+    "sboc-2027-junior-091-word.mp3": "7378c660d65f8644123bba731527bc9b32fc578ae5c0dd2f92f54307f512ac41",
+    "sboc-2027-junior-091-definition.mp3": "4c71cb03c2394b240df71161aea5e3cad930a0c84151ffe3f0b40d737acf07eb",
+    "sboc-2027-junior-091-sentence.mp3": "bec07d8a5ffc2699ccc946b903286d028a2130c73bcad5f18167f9494b06a388",
+    "sboc-2027-junior-092-word.mp3": "b2ca08e1a2107485e17f72c863ca6d1d208f9e1e88da235a2b649a5052fa2f15",
+    "sboc-2027-junior-092-definition.mp3": "5382b5a926b4a682b08e62093f7d6850ea705ab5253c3d311c08362e267b30ce",
+    "sboc-2027-junior-092-sentence.mp3": "666ca27e4eee2530ba23e523a60868910d40c42ab27ea7748dae4f2e9dc70a4b",
+    "sboc-2027-junior-093-word.mp3": "be576f325d6e938fa985273ed386749046c5fd6ca7aaf27cabf2cdc5af60f6d1",
+    "sboc-2027-junior-093-definition.mp3": "1e0fc507c4ca864d2ffc421e166a7c0b2e77a50a0c704c6def843892ed7b0528",
+    "sboc-2027-junior-093-sentence.mp3": "95425876eeb02a64dd84f7178859ca4cac7e3edadb9c52e1d443847de5c93110",
+    "sboc-2027-junior-094-word.mp3": "88627a433b71789ad4291a7f5c744a86bd182de2b9dd9ad0194d159c576fc3f6",
+    "sboc-2027-junior-094-definition.mp3": "c41dd2375a5a42480baf1d2a2c808f54b83a2d5e772c2fdcf6ee1ec9711aa3dc",
+    "sboc-2027-junior-094-sentence.mp3": "7770afe7f0bc038c2f1a16c3a0a167c62b88147e666af408500f86545e5dcc27",
+    "sboc-2027-junior-095-word.mp3": "79e5f410bb0835436d3770bc97d63b6f7db94a57842e3fc8b457d3a6b1b775db",
+    "sboc-2027-junior-095-definition.mp3": "54b47cb89276a16fa6f9b271354880a25e5079d4d15e05fbe01fd8d36db4ea82",
+    "sboc-2027-junior-095-sentence.mp3": "06561d2e3a912d4a832255825ceaa0b80b2ad03eb0a5c260a4655b1311757dab",
+    "sboc-2027-junior-096-word.mp3": "d17abf3aefb8d0b4ef9fb1e9bc81c27567da63c266be15c05be2a9c14059c27b",
+    "sboc-2027-junior-096-definition.mp3": "f33fa6410aa9a9c654ed677fbd6fc14c2a75cbf79df552bc5f84d53307b11341",
+    "sboc-2027-junior-096-sentence.mp3": "511e73533ffbabc0ca9b833333baec6d4c090d1ff1315a5441638c2add0ff52b",
+    "sboc-2027-junior-097-word.mp3": "de8da071d94b3e9533177c3f87d3ec0657bc91368de425ce3af20f803682cd67",
+    "sboc-2027-junior-097-definition.mp3": "4e6ccdfe3f39d4c6c30223a48c2010a4fac7a4152fbba26d764a05dda531f85a",
+    "sboc-2027-junior-097-sentence.mp3": "a8cbc261794f9fa59074f2083bce02fdb8eb34d14ce2a9d5ee5cd7ce16f07e97",
+    "sboc-2027-junior-098-word.mp3": "49c1fb94fb84d5b0b0263e61c06afecca534fc004b713b77bdc808cd95b79450",
+    "sboc-2027-junior-098-definition.mp3": "84e7bb2c84d28afea3eeed7899b93e4f7c57dd2b9e70d7b607eb7fb1f691968c",
+    "sboc-2027-junior-098-sentence.mp3": "a3c32ece11b46a3606782cf580e6b4e6f7b5f4f095200c18eb6c1aec77991a4a",
+    "sboc-2027-junior-099-word.mp3": "d12653e2835666fbb0bdce778e291755920f32e0c824abf81ea437672a821468",
+    "sboc-2027-junior-099-definition.mp3": "d2350c72619e09327f4329ead5fe57957f2844175c4ff6a35827cdc12783db68",
+    "sboc-2027-junior-099-sentence.mp3": "71dc5cdc464ecdb2cd9564b017c618348e7981747d59e3a70d85336f9f63483e",
+    "sboc-2027-junior-100-word.mp3": "c06dd2415d8a7baf911f9b1856d0a5228609f0419323596658006e6cfdd9f27d",
+    "sboc-2027-junior-100-definition.mp3": "c4c4e285e421d539882f8bdd619f97d6934e299b0b183d7d03d5599625743215",
+    "sboc-2027-junior-100-sentence.mp3": "80494ad8b7a58c4c84eeb178691f7c8840ed38dcd6481c7b09ae5506c028bff1",
+    "sboc-2027-junior-101-word.mp3": "3b65b26d3f7fe83586c726eb8882a47865cdc87fe5674e9318053c090fdbe1e5",
+    "sboc-2027-junior-101-definition.mp3": "2857658b3845f1bb803efa87170041a4b1ef30334fda416f245f7cbd92b95a85",
+    "sboc-2027-junior-101-sentence.mp3": "1fde4b1d8b19d2589e7410e2ec49da1c83d6f9a0e7dce61ef16ff8cb325472b5",
+    "sboc-2027-junior-102-word.mp3": "993788bbc45e1babc2bf3117d155b837549119813a7344c8b55dc4ad69309776",
+    "sboc-2027-junior-102-definition.mp3": "0d8387697a1f060235fc3e1d2fdc1467df8a4be9e5bccef1c89ed9f2ec70688a",
+    "sboc-2027-junior-102-sentence.mp3": "7dae32792aa2156ff33b4ea63a2d000441ef01c123545a9ce67ccd5c8e2bd304",
+    "sboc-2027-junior-103-word.mp3": "a1ae1094159a8ff2072d1eed23a5bd59d8f40032f151fe42796a36b1ef969deb",
+    "sboc-2027-junior-103-definition.mp3": "cd081552b58874b2509e3d72129dabdcc6f5fbbda7f5b4d9a43016b605960bb8",
+    "sboc-2027-junior-103-sentence.mp3": "62d0c60427209d17c159685315a2c9d2988812ca395b9fd2b1bcf752f3765377",
+    "sboc-2027-junior-104-word.mp3": "03cc485f7e029fc9cc924fe8eb81b21e982ea72b369604cc51a649325fa4542e",
+    "sboc-2027-junior-104-definition.mp3": "11be16492af71681c0a67c49e9f354102c3de2d50e5f97d9e0f5e00742c16094",
+    "sboc-2027-junior-104-sentence.mp3": "665c4960b964a05ef5f07ae30f3a77be219ae89a57a80b13f2562184df538277",
+    "sboc-2027-junior-105-word.mp3": "1f807db0502b8ae22996d60cd9cdad83515c189d3191aa2bd2291b53241c8edc",
+    "sboc-2027-junior-105-definition.mp3": "02ca80647c77fd1f2c7961540c037b6361bbabbc4e8969bdcdb1fc81316e1fc4",
+    "sboc-2027-junior-105-sentence.mp3": "04e94c84773e4cf1917827df8c39ced86eed22a74bbada424371c092a0c0ffdd",
+    "sboc-2027-junior-106-word.mp3": "30ca3868f1002c774f560194a2ac6efa1bab8e3b0817f5e0f2b960a020e334d2",
+    "sboc-2027-junior-106-definition.mp3": "7f797e2eb5f8d4da47930abb40201986c3cad2d3ddd36d565e9c25d0404bece7",
+    "sboc-2027-junior-106-sentence.mp3": "f582b26ce90f1b5efd7f4e0933abf4ec1daf3e70660c5822b3da0247ff2aced1",
+    "sboc-2027-junior-107-word.mp3": "38245a930f9e96b13133ad5b6baab4cc98ca81b547ab073a876dcb46b3120f74",
+    "sboc-2027-junior-107-definition.mp3": "a3e1f1e73b2987a61ca840c869478250b4d835b61831f6856c6acd2aafcdcd6d",
+    "sboc-2027-junior-107-sentence.mp3": "164a3867126289abeb85e2cf628b5256562b02f0fe8aafad73a2d8e9b76022b3",
+    "sboc-2027-junior-108-word.mp3": "aaff246837ea5cbb1a43a97967d84df2da85d68aa5669d774aa223b13419b1dd",
+    "sboc-2027-junior-108-definition.mp3": "6d8c133a9b9846a85e0ae9cc043f3db6ab3a15d2271910e51be1eb5d82cd10c5",
+    "sboc-2027-junior-108-sentence.mp3": "e6de138f1146a8e7b5fd14fadd7a5f2661a293ed0589f099801151f53c93665e",
+    "sboc-2027-junior-109-word.mp3": "41738ff8fea8ca228a35991ba4986f13716122f2ee6e8bdc8395dae6e0f2e763",
+    "sboc-2027-junior-109-definition.mp3": "138f2834df090fe903175ad00e0554b7d0bb054f21d68ca3b75abf7ea13f46e1",
+    "sboc-2027-junior-109-sentence.mp3": "4aae83ebb2283c7cb4f88cc7a5d77fb057e5d080f9c605f66dcc0c78a1fa2d06",
+    "sboc-2027-junior-110-word.mp3": "3f65fa6f01e616fdbcb5c320677af2cd730d9b3c8ae22a1bd0a278f5cd1ac467",
+    "sboc-2027-junior-110-definition.mp3": "627bcf545eba0fdf435e715d4e2109f7b7dfb1ce45a32b0bbfe31d000f33ad58",
+    "sboc-2027-junior-110-sentence.mp3": "ba2270a7cd56fcd525b954395a06f9aa3a1c97f7a1ed4f5a592da77f9a1e32fd",
+    "sboc-2027-junior-111-word.mp3": "2648034b04bf79973fdb28c6ee1f67be842f90bcb5545c13d13292e5b40e2b4d",
+    "sboc-2027-junior-111-definition.mp3": "51c9379df3ce72addf974830e39f60f403502e16579fcc103e3998205bc367df",
+    "sboc-2027-junior-111-sentence.mp3": "598f90a2a19de1e5b30c90f13ab087372f99fd8769c30e9b6ee0091d1b6d0bd5",
+    "sboc-2027-junior-112-word.mp3": "293b7ac82de81e5cd5ebf37a1de72a9f598e9588aba11e8f4b68c4c3015ffc38",
+    "sboc-2027-junior-112-definition.mp3": "eec2bd26f1c40044afeae21b9a86f7800120122de76c966dad11c4fc8197bba7",
+    "sboc-2027-junior-112-sentence.mp3": "cf619e5b006342962385439e1706692ad87e98cd0b9101d923412ec55fa263c0",
+    "sboc-2027-junior-113-word.mp3": "f06fa2fc9b1b71fe5a5ba7ebaf95e1b02e50fa64be3eb625b629a312d0d43253",
+    "sboc-2027-junior-113-definition.mp3": "88ffe50976ce9443ad108b4fbc3c29e8e4a3e4bad08c909472b3f47a27d956ec",
+    "sboc-2027-junior-113-sentence.mp3": "3b0fe932d54fff7a9a8b95d680b9fbf9d89aa5c0c74518514399af61f7249afe",
+    "sboc-2027-junior-114-word.mp3": "4a44f42fb597dbda17ac63ef4f0c7af9925c6fe904b7c9ae967d777dbefb081f",
+    "sboc-2027-junior-114-definition.mp3": "c8437749b290824cbc12c52db0b0212ba983a071f5c4faedc9a45ee543579552",
+    "sboc-2027-junior-114-sentence.mp3": "ea7d6fe57e9a8d1d3fd7a6d9ef77a01b1e0458192c07369407802142eb7ee630",
+    "sboc-2027-junior-115-word.mp3": "931caab972b512a1d2e89dc7b9f75520fbcb87119bb3616adc153570cb850fb4",
+    "sboc-2027-junior-115-definition.mp3": "64ce9d098472b82330f71a0c4025bf9ddd218162b04da7dfd2683967609c7ac9",
+    "sboc-2027-junior-115-sentence.mp3": "50e7aa5a0f5bc1a62dc80717929f837e8edd65923716ca76ada375d0bcd59bf6",
+    "sboc-2027-junior-116-word.mp3": "a17a3044747415382ed86eecc835b6ce1be339288cc4c98b482cb7fe08e17d98",
+    "sboc-2027-junior-116-definition.mp3": "c495daf9904ef4d5c2719bf6acb423d276a683d275aea6cdca4ea110c2dda0ae",
+    "sboc-2027-junior-116-sentence.mp3": "d724af9937a5255bf6cf45ce4750e537c6c8b557a4155becffe486a9a3c9fda8",
+    "sboc-2027-junior-117-word.mp3": "aacec021ef65863d27fbf04d376fe64c66ab7c8718f4840b0a63b7726988a565",
+    "sboc-2027-junior-117-definition.mp3": "7a3da6fda85d01f5b65966ae1d7373a492a6bf9698c0f588f824b07d4e7663e4",
+    "sboc-2027-junior-117-sentence.mp3": "3c68210c0986795f8ed5884b640a2a0ce9a0f2ba33a6736039eaff53dea257a5",
+    "sboc-2027-junior-118-word.mp3": "9b2fddd3e92ec3c7caac7b448396a883c8c8f88b0a1d643c76caa73f3777a0a0",
+    "sboc-2027-junior-118-definition.mp3": "7ad074d7cb5732513ba8e704c8d5cbc72a613bda69cdd958f97ad555dff5dbb8",
+    "sboc-2027-junior-118-sentence.mp3": "b3235b6fe3c78175fb3782f944d566400f4533c5f7d6d84675251fa7133c8dbf",
+    "sboc-2027-junior-119-word.mp3": "9d50ff4de8dc5d9db3f82506f653ca096ace8fc93c3361d6aee7004324adf709",
+    "sboc-2027-junior-119-definition.mp3": "b461de5e390006e91398659446e7de81a44abc6e81cb2ce44ad24fbf29e5baeb",
+    "sboc-2027-junior-119-sentence.mp3": "520bc08f475ddee7aac93499aac6dfcb254f628b3cff0ac78b10b5aef39380d8",
+    "sboc-2027-junior-120-word.mp3": "74ef58f1a7b80b38f55eeb189c422aeb774c522cc0b9d18300b07a8157f901be",
+    "sboc-2027-junior-120-definition.mp3": "92c2e0d7fb54d243c10840d4370f2b701c4fde5c5a3ae73d256b52a95720d22d",
+    "sboc-2027-junior-120-sentence.mp3": "59f4abbd6416ae94fb7eac463d42e8ae77e353a6b5265375a79e24b76571db67",
+    "sboc-2027-junior-121-word.mp3": "e86d3d98df5b966e6c4c807b5cb33d14c77b9f62616189d8497e85734192587c",
+    "sboc-2027-junior-121-definition.mp3": "930e6368dc99109e4a0ceb1a7f4e51ab2e10587c4f8812eaddfbd64f6191af01",
+    "sboc-2027-junior-121-sentence.mp3": "7c33a6b6f44b1d061795be15f4c018a2c28238ff7b77903ffa21b02e343d2b23",
+    "sboc-2027-junior-122-word.mp3": "2b99645d19fe2a146c13f2e4ba821ff5637cdfae4a75f6a00db5a9188a0af148",
+    "sboc-2027-junior-122-definition.mp3": "3c7cb7b2c8b24a416dbd3a3fbf8c316c9334f70da9aa26b93628ce831055f512",
+    "sboc-2027-junior-122-sentence.mp3": "e9a7ba8b5f31dee2f2f524a435f1f2318e1ba5d9af40fea018764545e51768d1",
+    "sboc-2027-junior-123-word.mp3": "d2382fe289bbaf0821f5c2f6e261123bbc6e4d5eacd01f9f27a4b5735e4a2858",
+    "sboc-2027-junior-123-definition.mp3": "8aaaac89b420971d119b11b1802743ffee652a734088d82f8bf70e96c55746ff",
+    "sboc-2027-junior-123-sentence.mp3": "2c92bffe8def0155b742b7758a5dfa9015071e92c08deb76964f1daddaf0d597",
+    "sboc-2027-junior-124-word.mp3": "35a1c64fee79433bf23c67892425b1e7fd3e7d67391712692bb85b4a83f32c79",
+    "sboc-2027-junior-124-definition.mp3": "58965d7a87a2387591b42124d808627c176d392ad6a026f2c8a4572f58c146e7",
+    "sboc-2027-junior-124-sentence.mp3": "01012e4620154fd147947a686af8fb59123f50b2eeda66e2c6ff5e47d360c8aa",
+    "sboc-2027-junior-125-word.mp3": "abf9c26b192782132b5b8f74cae1679d04846ac9f6cb52b91f2baa61fb99ed3e",
+    "sboc-2027-junior-125-definition.mp3": "75fa52c71b38b0d470ec669105c048c4a3698c41b3ec695612032489bd5c931b",
+    "sboc-2027-junior-125-sentence.mp3": "0a3d133e6795bfdafcf96c87546f9513a7066343859dfef19eb49ebecf864abc",
+    "sboc-2027-junior-126-word.mp3": "0a5d83f95d38583b9289e443df05ffa83f2e74c3c22338b956d055b6a2a4653a",
+    "sboc-2027-junior-126-definition.mp3": "4f9294cfea78729ca5268a3840647f4ce5bd4a10650227b784adeebc6d517f5c",
+    "sboc-2027-junior-126-sentence.mp3": "c3dba6f06f8bca89dcb14e9d8cbf3c52a67de022ce7fdec705999b043ce1b84e",
+    "sboc-2027-junior-127-word.mp3": "96f6d7e27edf9452f53a3e47e10e8fb55852859da0b32fed7839ecc5c3fea9ed",
+    "sboc-2027-junior-127-definition.mp3": "2e269e56c1446bf7f4124472b36288750c403abf9efde369c6eddc4650244b84",
+    "sboc-2027-junior-127-sentence.mp3": "8765f509bcbeb9417c3e35e235ff0e34e7fa4be83437bc95b357157fc4d2aae2",
+    "sboc-2027-junior-128-word.mp3": "c55cf8c260afda89380eb43285ac09f82f81e36fd1fe254871d1142f0e9ef94c",
+    "sboc-2027-junior-128-definition.mp3": "324a90b73e21c3134a4f73b824793e5130f6b0a509086847854843f0091aa5c0",
+    "sboc-2027-junior-128-sentence.mp3": "8cb5b96508f3e5fae8bf27cb324567be4563aea526349293b5c55563fb427b27",
+    "sboc-2027-junior-129-word.mp3": "ae3712b0f35cee461b02279c0e5d70ece349830a59b910c99c57321ac0c3bed3",
+    "sboc-2027-junior-129-definition.mp3": "f7496bb176026617e7f727af80139534f8a73f2f2ab1af2013b2b634440ce72a",
+    "sboc-2027-junior-129-sentence.mp3": "306144a92ecfa4848916ee06e063c134d4f9c934c862098328d5ae219355575f",
+    "sboc-2027-junior-130-word.mp3": "e88a3a96f28a34f4876e22c5d1547b9cbd21e46f5a59a4cb29cd1d763064f6ae",
+    "sboc-2027-junior-130-definition.mp3": "e4705b86a92b2098c9eff8c941dd77ba2c5d9c015525bca38d284951837b2e04",
+    "sboc-2027-junior-130-sentence.mp3": "44c945c5529410b3bd8e0b4b271d195f10f03c2dc4cd6470a0fbc935f8bce487",
+    "sboc-2027-junior-131-word.mp3": "d5e39519e092582f3bb7f7253d6355d6b696efb40745fb101e31de577d1a935b",
+    "sboc-2027-junior-131-definition.mp3": "4ef77d0641c85713768c13bd24bd491dcaea8364ff81ab89fa3ea183d8c6f9f1",
+    "sboc-2027-junior-131-sentence.mp3": "d085e7eead8f616edbd488989b65b0cc7126f5758e81d04f38f1ce4f110ef561",
+    "sboc-2027-junior-132-word.mp3": "a00b5f033e73176a8cbc7ed8b83377901a8de7d31e2cafe5fb3245408602a955",
+    "sboc-2027-junior-132-definition.mp3": "e3281d022e6647a08acee7391365148860e43c23a44d32f35d3c314885e761c2",
+    "sboc-2027-junior-132-sentence.mp3": "6c3faeab33459b8c0b982d6c7e3059e6bc2861cebd45890e10cd93c9d29682e3",
+    "sboc-2027-junior-133-word.mp3": "360b335d7211552938fbdeeabe1552195c64e0417031d223439782021e76d40b",
+    "sboc-2027-junior-133-definition.mp3": "549cf09d380903905c58877d606d7af66388a5223d7592ad30c7fc86d5be9df4",
+    "sboc-2027-junior-133-sentence.mp3": "03659749c43be69520bae0f65c508b0330751a0243eafc58a1791e131282a38d",
+    "sboc-2027-junior-134-word.mp3": "a65e61f3cc3661c41ea654bd62a81ff64fcacdc39aef1ebd146d9f4a2efd384f",
+    "sboc-2027-junior-134-definition.mp3": "9a4d36d3822bf0aeb4a6c6bc5d3bb74b14416b6e9033350a74e810c5e56a44c1",
+    "sboc-2027-junior-134-sentence.mp3": "5000bae8f1db208ec579e9c8f08fccef11422a3a9c54d85f9ef9f6ee3259de4e",
+    "sboc-2027-junior-135-word.mp3": "39ba64b62fc89be36b20ef274ecd45aab100db2bcfe6f7584eaf195142565069",
+    "sboc-2027-junior-135-definition.mp3": "d555e256c58ec4c065743f4e56b58c31ae29f0f9916edad93ae30fdfc57ba30e",
+    "sboc-2027-junior-135-sentence.mp3": "5d0f1e41f9681b9298f671ad25b23ea03f7a125e8dd79e2201455d9ecc5602b7",
+    "sboc-2027-junior-136-word.mp3": "cb287ed66545fa0dabc805adcd43315bcd347f04db9634aa8298c583090be097",
+    "sboc-2027-junior-136-definition.mp3": "fe56bc9ecb1533942cc8b9812b197f2bf02b93e53971691ca926d80c036e4099",
+    "sboc-2027-junior-136-sentence.mp3": "c1b5811af22693cca776c773aac331b2c0a02f275b6181b90e760d58b3d01365",
+    "sboc-2027-junior-137-word.mp3": "c46b20f5cab162c5235aea6355d49b108892ebcf5dec52968bd1f98633f7f50a",
+    "sboc-2027-junior-137-definition.mp3": "50df31024807cf1edaca41fdf496b25663ba80f0047250a83e29958c9e5de65f",
+    "sboc-2027-junior-137-sentence.mp3": "c73b92dfcf812c26c1d044b169aad06b02f7b08237a46d735643c207618d7bf5",
+    "sboc-2027-junior-138-word.mp3": "e88ca08e72758557181ada608278befc3bf32d2559e29d846f3da61a6eef4fff",
+    "sboc-2027-junior-138-definition.mp3": "99786454af3cc62ccb134c400d696f8a6f5a67eb496e2e5916eba687617679df",
+    "sboc-2027-junior-138-sentence.mp3": "05df3cdf07ae419dde8796d853ec666fe893a5c14061f758ed53b2275bc6887f",
+    "sboc-2027-junior-139-word.mp3": "d93973751ab14c172692934d6b6404e2f2d00b95c7cf604063d9cecb7fb030e0",
+    "sboc-2027-junior-139-definition.mp3": "5995b3cb58b1a3ac65e9a99920c3715354781717b90d1ec89ba33da866b3ed9d",
+    "sboc-2027-junior-139-sentence.mp3": "59470d1a03451620fbdac83c0f5e870920a8397381e485f45cf8b699bec583f4",
+    "sboc-2027-junior-140-word.mp3": "06d15655c35050cc02961ddc319cdf38c4cfa580c2ed35b488ea0fda4884197d",
+    "sboc-2027-junior-140-definition.mp3": "3888115973ac164e195cd625d26c18256f81ca3d3617f18c2668e7f7dba5da91",
+    "sboc-2027-junior-140-sentence.mp3": "0684542e22e5e750bcda0d0f121b1b23fb58e13b1cad6e5b3c945c8a1ae58284",
+    "sboc-2027-junior-141-word.mp3": "357d9ee39801b18f735de0dab43369aea1b46d1b10a007b0895ba65a0f184340",
+    "sboc-2027-junior-141-definition.mp3": "d61ece6934f632a733c7682da592523fc1d94ebbc649f05a57e98746dcf7c517",
+    "sboc-2027-junior-141-sentence.mp3": "ef103972fdffbeaf1900d6a7c88034ed2106dc74eea4263d7cf32b6c80f521d0",
+    "sboc-2027-junior-142-word.mp3": "c5e6c0292a3a4361972aa8f29e4639cfa681e7d1a6d6f216153945c0f31b891e",
+    "sboc-2027-junior-142-definition.mp3": "7e4cf81ca3561c3f73eb5e5fbc0d0829455aca8285de307a75181dea97bcd037",
+    "sboc-2027-junior-142-sentence.mp3": "016874dd7012a46ff0784f21ff3069ab7b466b3f7b703c68acec30228c07e482",
+    "sboc-2027-junior-143-word.mp3": "ffb09701f8ac362dc94aa429f71869dd3db3eb6772f93944df0003b4e7eae24a",
+    "sboc-2027-junior-143-definition.mp3": "f6665c564fb32728173dd91a7f288c9d7a31a091aa4dd5acc81aa6e09d8a75c1",
+    "sboc-2027-junior-143-sentence.mp3": "cadde5d350aaa55d341167d9297a16ddcb3fb4b1cf3c2b42c83e26ac68bd68e1",
+    "sboc-2027-junior-144-word.mp3": "aaa8e4b054e4dce5209f877c788cc0b7254abd167a339c21c0b2a1eaf53e665d",
+    "sboc-2027-junior-144-definition.mp3": "83bed9f807450802d73ee429aab52ad5844e0cb7f49dadb9f9f84f58473b96a7",
+    "sboc-2027-junior-144-sentence.mp3": "26e807009656f48e2716439766028f5ee5d0e99973290b4b193bd7af1ee2794a",
+    "sboc-2027-junior-145-word.mp3": "94f3252053803bafa03734c1d218479276eb6367deaa1fe848590936a9402e26",
+    "sboc-2027-junior-145-definition.mp3": "5c13a820bf5991745272308bd89ab2bf0e0aeffe22444d20ef55f63642aa376c",
+    "sboc-2027-junior-145-sentence.mp3": "c624bfdd4a720890548221206edef3f5af243ab01251fe8a845fcc19503be5de",
+    "sboc-2027-junior-146-word.mp3": "a4939d54a7c9923e457b80f842077017bb8de8ca81d9ef09275d3813d8168db6",
+    "sboc-2027-junior-146-definition.mp3": "78fbc201e9c4364b908e97d2bb18f832741cf423958b08ee10c11788a454fbcc",
+    "sboc-2027-junior-146-sentence.mp3": "71900295ea16847843de317683fa3ac57401ba17950ab2f56bab3fc0e70c4b25",
+    "sboc-2027-junior-147-word.mp3": "23ce53280e36e49f695a4efdd64014b10e46511219b1be61edcd43c1d4c46711",
+    "sboc-2027-junior-147-definition.mp3": "e50293506c38a04d6a20563af83597383f3356df0498a5e396dc914108baf7ab",
+    "sboc-2027-junior-147-sentence.mp3": "2f5a3ca3659f80f707d9c37898a3401e19666aa5ba8cd3544e7433dca5202b97",
+    "sboc-2027-junior-148-word.mp3": "4856fb6424b208cb17e2fbe1d4ec2b3464538a2db08ad52a2d5810cd5e31dbdd",
+    "sboc-2027-junior-148-definition.mp3": "2284c809c354376edce504d98710cc9b6b610bde3a7274d0cd54046149d5c396",
+    "sboc-2027-junior-148-sentence.mp3": "567431bed1d9e5b976131e1be910364fe5022478ad8d5486f92be4b1b8e2bf01",
+    "sboc-2027-junior-149-word.mp3": "ac543267b53d33b58f57cf2c902c939f7e6d093c8597dd36aa547e59c1d0c210",
+    "sboc-2027-junior-149-definition.mp3": "82e266379d5a8548d88ee98c6815a12583fca5c554e693e12fd771a24f7c66b1",
+    "sboc-2027-junior-149-sentence.mp3": "66a8542d749835056eb0e980015b62c477e5c1e71821306ec8a3bba50541ca18",
+    "sboc-2027-junior-150-word.mp3": "39d7cffd52eff81323bf359cba26298ae7366cc9af4346eeb183ba79bcd93679",
+    "sboc-2027-junior-150-definition.mp3": "72d094a63e4eab1dd777eeeb6c1e5c0912ef5d58f94338385031be8c72906659",
+    "sboc-2027-junior-150-sentence.mp3": "e3ae7a090d33a0c9d01c0760bd7577bc193efc5551475317898fe5d2e73fbe91",
+    "sboc-2027-junior-151-word.mp3": "04ad57ba15be06991b8d76015173850880c99b0cfb8a11feb7c9872261d3ef93",
+    "sboc-2027-junior-151-definition.mp3": "64b91259a16e700128f6240cde930fe0112316bc2c712bdb5d23a2a8449b5783",
+    "sboc-2027-junior-151-sentence.mp3": "f29bd5b0ad1cdd0e2bf26d693a3427adff5a2d33ea000c0fa8f7dc00ccfbc370",
+    "sboc-2027-junior-152-word.mp3": "0984b92614d7b2d7ff6f9abd868e2a10ac7713d30d0d778e3c67ee067812aad3",
+    "sboc-2027-junior-152-definition.mp3": "e02233cd125a32f3392c65efc43c194d450322e8b3f6def8f39830efb6bd39ad",
+    "sboc-2027-junior-152-sentence.mp3": "7e7c3a6c5960445f3f50d96f401bde466d1e1f9e58a6b1fabbce556996266837",
+    "sboc-2027-junior-153-word.mp3": "ed6a75fb2097fbb6a12481c4ce40a59cd14b715ed0064438642a0807c835da2b",
+    "sboc-2027-junior-153-definition.mp3": "aec4f153c94693642891f9e56c657503b8fb678cb4abd53eb460ac3337f2204f",
+    "sboc-2027-junior-153-sentence.mp3": "47aa697c6ebbe9d2393270f6667077dc4cbd1b82eff724253fce584c5a9820db",
+    "sboc-2027-junior-154-word.mp3": "6a52aead6c42e237023a1a83b248f2fbba80d347b46dcbe6eee287a017042d24",
+    "sboc-2027-junior-154-definition.mp3": "e02063627b13f7d7e80124e073e3f3241df74c8872997942d1ad149b9964690b",
+    "sboc-2027-junior-154-sentence.mp3": "bb17a9468e31cc9f1c6c137b6917756592517d2a33e594455ff3bd783ccfb064",
+    "sboc-2027-junior-155-word.mp3": "cb23379689c7f22f8c2b6b69bc61c34716b50eb597bb8009a2e5005cf095a4a7",
+    "sboc-2027-junior-155-definition.mp3": "a9664db4984b8d2c758fb3936175942831001ca941cd4b3f9dc2928f6201ad23",
+    "sboc-2027-junior-155-sentence.mp3": "a3ebaa093aee98c47eb70f9efb07df3422a959b8e1fd1e1b4ca7b525a076a252",
+    "sboc-2027-junior-156-word.mp3": "5a3efefa73bcaee019a16240d9a326632902d6bfc5babce411f7d80ad4900567",
+    "sboc-2027-junior-156-definition.mp3": "ae89b3b12602b2bbb96f8a9d5587e1c665162226f2c2258c9992cc3d14eacfe9",
+    "sboc-2027-junior-156-sentence.mp3": "18465c13ce1c538362633e2f76dd22fb60e1b9c3db03a8e1b876e2287f997248",
+    "sboc-2027-junior-157-word.mp3": "d70c618f3cb880e2acd861f8a908f911abc3205a04603907715e24984d294353",
+    "sboc-2027-junior-157-definition.mp3": "05919c4fc725fe6b12d17580f102c7f9930cb6f2145dfd5696975420c62c92ef",
+    "sboc-2027-junior-157-sentence.mp3": "1ca7f22047ac91f1eb2799896016729ca0f2b524c104ff3fd2dd3519825095f0",
+    "sboc-2027-junior-158-word.mp3": "f79b0671c4f7e8cce45d2cc46b47a6a82a4b827abb08a20375f3129acfdfefb8",
+    "sboc-2027-junior-158-definition.mp3": "6fe650f0df33b94fa47f7a40da15a59be343abdd102e58d2c43812d05ee7c241",
+    "sboc-2027-junior-158-sentence.mp3": "cb6109e58573e736f8c329973b99678f1f01f38d57aae8a14056698c264136bf",
+    "sboc-2027-junior-159-word.mp3": "ffa023e2776a6076129e087db127347eb16af49d86182a7ccf84e7bd152f3476",
+    "sboc-2027-junior-159-definition.mp3": "7d155863f6830f79b557cf6db36ef79836a5876a68bd50adda90ec9eb861ef71",
+    "sboc-2027-junior-159-sentence.mp3": "c0985ba2b2448b92f9454737fa663e9338b627f939e00229ea129a780bcb4e3f",
+    "sboc-2027-junior-160-word.mp3": "085f0a0fbf1f961a018efae9c76f7a3bd84828517507791212e7b894f0a90f1b",
+    "sboc-2027-junior-160-definition.mp3": "1d6eceb62e4e2a51caaf5cecceb995a7837c3456015c6e115bf4723958265ad7",
+    "sboc-2027-junior-160-sentence.mp3": "dcaa64a2a1ba97327676601e8c3199bfe39f81a4e293e6d8a0b8fe5fec7a2011",
+    "sboc-2027-junior-161-word.mp3": "d018ead366faf57118c383517ab1d94a0c39a064e7d88511a9626b5575e5f408",
+    "sboc-2027-junior-161-definition.mp3": "ad5f651ab74f3ea794f255970da87390fb93f1e285b4e198770f12f79a330b71",
+    "sboc-2027-junior-161-sentence.mp3": "850d7aeffe2fe1cbce6596f85f9cd7906d8f48b266768c99ab8c61afab46d64e",
+    "sboc-2027-junior-162-word.mp3": "d6adf2841875f5725730cf40e350aa7e4a55921ef5b95b322f23eab5d141c84d",
+    "sboc-2027-junior-162-definition.mp3": "77a0cb9ff7983055d20a59116223347e08ea27e3f7d23dd8e9398582e1dbb34a",
+    "sboc-2027-junior-162-sentence.mp3": "277fe40e882bdca9532f03bdd1a065918c89721070216915ba28e935ebe925cb",
+    "sboc-2027-junior-163-word.mp3": "ee1186eb9befb0319eaa28270ef5d807e239b90bfd10762784e601f78656511b",
+    "sboc-2027-junior-163-definition.mp3": "b7d31c84894291fe42649ca48691e24373cea8984d5febca65d7be97724c049d",
+    "sboc-2027-junior-163-sentence.mp3": "a1f6fc89aed73cafbcbf9c0a3e96c7575dc81fb8553ecfbc49df936870b72608",
+    "sboc-2027-junior-164-word.mp3": "3320f203018ef873ac20a1b0c51134de47724c30ee31cc5f9cfdab0c221b6423",
+    "sboc-2027-junior-164-definition.mp3": "a2078cd82f57cb913505c6184ebb2d337ad55f925f3979cb676a44804a5c5d20",
+    "sboc-2027-junior-164-sentence.mp3": "b10787b9cd2ab470b724f4fa29d77ff3ad4fda710674229c9cabd2d61d804927",
+    "sboc-2027-junior-165-word.mp3": "c6bc201f8a437b17c613f87ea68d15e61a4d9ca5f328b401b2d7f3d5149a4bb1",
+    "sboc-2027-junior-165-definition.mp3": "de59c2a7be2038c66a18fb99afbbb2f87036b453979695b217300ada8ff79b45",
+    "sboc-2027-junior-165-sentence.mp3": "c2de5f6bd1e897900332fc969d634ce17013c5fc36b9e82097a2448b2bb7de92",
+    "sboc-2027-junior-166-word.mp3": "0641fb9b7d06dee3f2b10bbaefb78a4cc3877a7b8a9ca59ad93d137a55730fb3",
+    "sboc-2027-junior-166-definition.mp3": "b3015290c83292501c5f792ce0257784cc92079702d1936ea517abda57762a52",
+    "sboc-2027-junior-166-sentence.mp3": "9280e502f6bb5151426f0f7d5d83795b1966ea2f812444b5f314daa75b3f4a0f",
+    "sboc-2027-junior-167-word.mp3": "36e5d9144a2cb9644c00b03fc3e2a0b39db54d2de3df7ca8fb287391aaa3846b",
+    "sboc-2027-junior-167-definition.mp3": "7ab89fb58bb1b429bc387f04dd1e8f1e3ecbb4fb9ecb387eb3dddd5918fb28fc",
+    "sboc-2027-junior-167-sentence.mp3": "4d8fc49b9d04cda2ce6cd0e3eceff09c52798081440ce43629037e0d440b75b8",
+    "sboc-2027-junior-168-word.mp3": "02437c02993b5a2017be690fb1a1b8545633c05c02a56137444db84c305935ad",
+    "sboc-2027-junior-168-definition.mp3": "7a0871442b903e9a2e89db02047a7c9f5ccf11b1de5846566b4048756f911e22",
+    "sboc-2027-junior-168-sentence.mp3": "5490c648b3989f9969085285a1398f2d0eba8f1e7808aa0f5f480fc29175c468",
+    "sboc-2027-junior-169-word.mp3": "dbb00db74eb2b95c5f8e9c2521d89c0fd9563f7a56b482a3649900ec234e07fc",
+    "sboc-2027-junior-169-definition.mp3": "87f4d26115da0952a02ed3208a132a6c10186a5c6525726db5d943d8e46b01b9",
+    "sboc-2027-junior-169-sentence.mp3": "81da0cc46df2e1ac7b36e29159b1537a2a5b42cbae99591a27b3129b5969b3b5",
+    "sboc-2027-junior-170-word.mp3": "8c472bf83014af184e98a2920c7cd95fcaa3cc584a07bf91611135e3dba436ab",
+    "sboc-2027-junior-170-definition.mp3": "bcbff711b60517f410502ec5a0f27e8cf3095589534d5e968c602dc90c5a49a5",
+    "sboc-2027-junior-170-sentence.mp3": "73f56f17715e8420e4db05f51c87c3b7e014b994d8a7720e60127c27c217a8b6",
+    "sboc-2027-junior-171-word.mp3": "4b5bcf2d82ed16e4367cc37a4b719918f7cd20b5c78d52e7503cf0b822fc5e61",
+    "sboc-2027-junior-171-definition.mp3": "7fd82ad6349756a0fed24824e336135060605fb0577ae223fb9e55e87c617f7c",
+    "sboc-2027-junior-171-sentence.mp3": "2ebb860cca844e68f18b9f640f7895088d8efa7f622e955c79834239bf52f5b1",
+    "sboc-2027-junior-172-word.mp3": "53d6b8cf572d23048f0b61d51d086850acaaf011f662416e1186aa3cd3f32453",
+    "sboc-2027-junior-172-definition.mp3": "a37ab037a7f59ed7d30d819cd54c1edf81ff97882dc4ea73cd3a906cc312671d",
+    "sboc-2027-junior-172-sentence.mp3": "e26dab1357f440e328a5b98ad44b2822bb2c01393f68abb1ded6726fb667649d",
+    "sboc-2027-junior-173-word.mp3": "9969a6fb98ffd35322c22067f5ea8549a521f9260e233db0d9bd8e97acc207bc",
+    "sboc-2027-junior-173-definition.mp3": "7451a5cb1ba9720f070bbec1b5169bc7989afeedbbec703266899936cec74653",
+    "sboc-2027-junior-173-sentence.mp3": "8f0a061b303ac21faa9ff9cefafe47555b437f7f6d17ea9870a2bf969aa66d51",
+    "sboc-2027-junior-174-word.mp3": "7713f8ea860bf196e4cd4427d66d4cda06fa54b0af78044fcdae2535fb4786f5",
+    "sboc-2027-junior-174-definition.mp3": "43498b8196122bf946b73b07b3741e0c68825ec969f3cb759d3d64fb43c86d37",
+    "sboc-2027-junior-174-sentence.mp3": "558e3d59eb9ec29f9351f276829b63b8ee2fbd976df1e7fc00b5a8069b62f5ba",
+    "sboc-2027-junior-175-word.mp3": "6d2a512bd104c54fd57cb4dd29b187b6574fdf713f9dbd2c4cf1c64de5979bd8",
+    "sboc-2027-junior-175-definition.mp3": "4d3cca7256344be028c6ca1590e5a4072b479e2987f3d48245aa2a08970e9711",
+    "sboc-2027-junior-175-sentence.mp3": "6d53c4f8713b6dc6d490e054bd1916269ceacb4f8d2cde3cc0fbdc09fb8205dd",
+    "sboc-2027-junior-176-word.mp3": "ada57c025dfad490841de05045eec3b44817059411e7f4055bec4be0c915e16a",
+    "sboc-2027-junior-176-definition.mp3": "726027df61d28fe83e81965392149fde944ed50bfdc199fbb5c37d4d75712dc4",
+    "sboc-2027-junior-176-sentence.mp3": "ce5c8bb29073572001fc8b736c28d6a09cb37bef20158ab29eb4d58a6069d517",
+    "sboc-2027-junior-177-word.mp3": "960a08af0beaca8767a5a6cf18298b220962dbadb65df9ababd36bcc12dc391e",
+    "sboc-2027-junior-177-definition.mp3": "ee9c02aaf088c06d57f688e44fcc52217e575088410cbe551fcc29bac802ee37",
+    "sboc-2027-junior-177-sentence.mp3": "cb63c920ed3942bfef533f68b951166b9fc4c2bcdffce8c1c6d4ea210929f8d9",
+    "sboc-2027-junior-178-word.mp3": "5a240af20d8f81dd7ae8299e4d17200268031ab446104a6dff780ca844ee43b6",
+    "sboc-2027-junior-178-definition.mp3": "0869eea50dd8997d628393cd9d7e377122b07481e8cccd7f29f8fda506183948",
+    "sboc-2027-junior-178-sentence.mp3": "4ce9f79025e5a65cd9a30af9421bd0258bbad6ed63f886c9f5a5dc99e648483e",
+    "sboc-2027-junior-179-word.mp3": "4a8ed87decc5806043af2d48ffa974133d821216d84c9e7ab4749fa8e697b9e4",
+    "sboc-2027-junior-179-definition.mp3": "df63a2136446b1b90d48b0203c71873c5a5b7d5d722a4c9f5b36de86d523fae4",
+    "sboc-2027-junior-179-sentence.mp3": "b64d7f43366492a9534ef41dca34def475138b96416554bd277e6895139e7032",
+    "sboc-2027-junior-180-word.mp3": "237e95f4c43bc4c47d46bce7db4ec28c53831bb96df5bbe48feab5b2b6f18e48",
+    "sboc-2027-junior-180-definition.mp3": "468a051ef339a2fe76b5677ded6aabedb7fd80259cbeb39f54ddb6cf5c1ad67b",
+    "sboc-2027-junior-180-sentence.mp3": "4cf5a8e5ba843da3c4f4b9a8aff9629c269c5e87f59538fc8c9fde87af943ae4",
+    "sboc-2027-junior-181-word.mp3": "64b389ecdaecb20aa28f5216f9a415c485c7e9ae04c617b07fa7d6c4b1b3cef2",
+    "sboc-2027-junior-181-definition.mp3": "47cd6224082e94ce262536eb9ec580ba44371096570be4b1ee2311248ea3cdc7",
+    "sboc-2027-junior-181-sentence.mp3": "829dac49897d2b37a7b7af0acc9d877dd6a1bee5035b2839fb0cbe3ae9341e8c",
+    "sboc-2027-junior-182-word.mp3": "dd98c3f8d53f84d093dafe677a62b174661f66a3fcdb98dc2295af56d08e315a",
+    "sboc-2027-junior-182-definition.mp3": "15c4c7a6948530c9ed8775f17febc638fb900736be7bf97494641a9806b7f018",
+    "sboc-2027-junior-182-sentence.mp3": "cdbdb66a2acd9dab1826d7b1d8cc1fbedea799143f74b9a014cfabdd0f1334f9",
+    "sboc-2027-junior-183-word.mp3": "670a7a1438d589d65cc230e4e23019a1af02eb3ffa53238f15747919e41fa537",
+    "sboc-2027-junior-183-definition.mp3": "6daa3be8534b1e844a2d54ef8839756f35f5f3843cbe03ab64f2747de5dcc01c",
+    "sboc-2027-junior-183-sentence.mp3": "6a252af6c32df52a17d710487197d33b94197e6d0a145cf35639ab56f754b0eb",
+    "sboc-2027-junior-184-word.mp3": "3e443db13986b7a4c0c0e1447a15ba2b696275382033ed0beebab41aeca2a530",
+    "sboc-2027-junior-184-definition.mp3": "9ca7ebd1c9670970570f7c2bf7b591b54b7c567d9d393fa767603a3a8d2d54d9",
+    "sboc-2027-junior-184-sentence.mp3": "d6fac81797064546b1b750b5cdd42dbdbb1ad51591c7bae3a56cb8ef6a855e93",
+    "sboc-2027-junior-185-word.mp3": "f18039808b5b02ea3a548a3aa9df6584589831580039f9fac431cc2c2a10eff1",
+    "sboc-2027-junior-185-definition.mp3": "0d598c7a7078a44e721a1b89684c0d831a3f69043a17b50291ac3a891837baa9",
+    "sboc-2027-junior-185-sentence.mp3": "741bafa22b19369e2e95e618549eef6229f660c2a8249b4f49454ca9a6a54eb2",
+    "sboc-2027-junior-186-word.mp3": "36c1e82b0b1dd30483ead81d09415003733ff049704fcb41f81fbd28f793356b",
+    "sboc-2027-junior-186-definition.mp3": "27559f8fdc41bbb29c9946df7571c09f69a8df0d96969ba64d58dcf7ef9316b5",
+    "sboc-2027-junior-186-sentence.mp3": "69210d30e76edeeb550551c8bfd2864361fd8ec1f5e31c741b925df215b31aa8",
+    "sboc-2027-junior-187-word.mp3": "c57347d468cbb364edb6b738342024dcab23635b9c05bb1caeca6bf9f51dd12b",
+    "sboc-2027-junior-187-definition.mp3": "f40bda11e77abc525af5cc2f15e47890ebcba553a50bc8671dd8967adacbf25f",
+    "sboc-2027-junior-187-sentence.mp3": "2e81956ea7c79fec85c65bca9582c6b17d69b04e61f2e22f298db8c362bf0257",
+    "sboc-2027-junior-188-word.mp3": "f20cc48d5401baed1209fdb7a86e96a971fdc3b64993edde4731ce6c4819493d",
+    "sboc-2027-junior-188-definition.mp3": "cf58a62a9c76f08cb1bd2f9ffca7f867bb5127b4f58a858b0066005b7e801aa8",
+    "sboc-2027-junior-188-sentence.mp3": "6d183b018e5446ccfab370e62d3ce003b92a728a3b29419d6d2c21c34d1e6237",
+    "sboc-2027-junior-189-word.mp3": "8a585d85e857f8c58320c053e8f66db54ec2411dab4234d18c1c3906dace7aab",
+    "sboc-2027-junior-189-definition.mp3": "4efb824989c4a6900f7a4a42f10edd4a4285d60131fac53e89f7ce27fe4a45f4",
+    "sboc-2027-junior-189-sentence.mp3": "70ecfcf2ed26e02321c634df4640863d027b9cb8ada59ff54ab87b096b7d0a90",
+    "sboc-2027-junior-190-word.mp3": "e231200900e281bae07f5253e4ef9650a806a4971c3fbd872aea1c5a36dad086",
+    "sboc-2027-junior-190-definition.mp3": "4d87a70038766ddad48b99ac4fb9cb1a63d65a698e7ad88bbb1f8b575af6fb2f",
+    "sboc-2027-junior-190-sentence.mp3": "97711991e8f092baf9da73505136553ed3255b1e5bc7c79f46d89f6e6647edf5",
+    "sboc-2027-junior-191-word.mp3": "d2e457969f0589d89474ff0433a394b2fa0a45e53b97cf0edb378868edb591fe",
+    "sboc-2027-junior-191-definition.mp3": "d8fa8d19be799caad93c287535944f0396d4e2fb7825e9cd6bfde770168594df",
+    "sboc-2027-junior-191-sentence.mp3": "b94c41e4f7a26b874d9038e310439881b9aa19df654b712f885eac33e20d9b29",
+    "sboc-2027-junior-192-word.mp3": "8cc063707e96ecad290b209ea8bacbfe13008230afba0364f4481a2b355d916f",
+    "sboc-2027-junior-192-definition.mp3": "3ae50b0d949ada9d808c6d8eb87ad42e88562b80e81b87b06162ad6c07af0b85",
+    "sboc-2027-junior-192-sentence.mp3": "11239506617643a5464c537582e6ddb5d7322367bb57d55edbd33646b13ac473",
+    "sboc-2027-junior-193-word.mp3": "7e4f3a7da9e77305adc2074bdc1d95c47906b1b8296833420064b2d92cbfb2df",
+    "sboc-2027-junior-193-definition.mp3": "4acaf69fa8c2d7df49920e539a50b145aecb6562d79817d90972268c116785cb",
+    "sboc-2027-junior-193-sentence.mp3": "c1a2907688fa939a76aedba6e90873edd5d81accc5a0aed8ec5cdcb23148ece0",
+    "sboc-2027-junior-194-word.mp3": "7449fa81577b232b245f182fb27007791bdb306e8e0103702da25f0b0edc5d45",
+    "sboc-2027-junior-194-definition.mp3": "cce41dc666bf13dfce44274f1ec779dc44b7771dc349db1ad6764ef495544e43",
+    "sboc-2027-junior-194-sentence.mp3": "c187f3d1cdf55b19c6eadab05d12ef9fbcd301e48e02465edafa6ef8ab0f2e0c",
+    "sboc-2027-junior-195-word.mp3": "f7e54f0693269fca0f9eaf65699d498aa554abd413237cc921c4a6c2ac541d9e",
+    "sboc-2027-junior-195-definition.mp3": "6d2eed901744168039394c09353f5c18d2d6c22c28238f507c48624b61b69cd1",
+    "sboc-2027-junior-195-sentence.mp3": "de1296cac4ecdbe53c7c8cf2f26b40e8578c586bb3f45ce3ff93a71d5f6eff77",
+    "sboc-2027-junior-196-word.mp3": "5d217eb58be20615bfc79463f63bff91d62a0d487eb59c2aeed83159c9564150",
+    "sboc-2027-junior-196-definition.mp3": "073fb0753bdba052f9366733c322329952a0026c63120ff89950752c46cfec94",
+    "sboc-2027-junior-196-sentence.mp3": "e1e7d0184118c8a3dd387f3a03ceec3383d3131719103458aa455f6254b89b22",
+    "sboc-2027-junior-197-word.mp3": "2c08e659e4f3107e678bf86a9b0d00e44b7e7b720c806f2a3483f85964cf9a4c",
+    "sboc-2027-junior-197-definition.mp3": "539c9b1bd5d352ff1d63b106abcd96c56051a8b80c9d3093444614fa4f4238dc",
+    "sboc-2027-junior-197-sentence.mp3": "28b103046df6bc461004974b9388e06b569f1a0def0175672ed53a6f549398d3",
+    "sboc-2027-junior-198-word.mp3": "6539afe335d5ffb845bc04b79b0b7cc00085ca3cc47acbad8fb7fb186d1f5876",
+    "sboc-2027-junior-198-definition.mp3": "fec3111f3949b922b036ccc6da45a3982e440b3e848ade79f51d9e416e895f4b",
+    "sboc-2027-junior-198-sentence.mp3": "075cdef10a270979031895064442bc36295ac0cd53ae831b1d8f16a9419be4c2",
+    "sboc-2027-junior-199-word.mp3": "36fbdf1e3f3821355151444e374115e80ddc958b5bf35aadd22c67b98b0dee7b",
+    "sboc-2027-junior-199-definition.mp3": "4c8958a0e46cd7e14ed38362378207665da409d5771c151a2cdce871d7edee9f",
+    "sboc-2027-junior-199-sentence.mp3": "dbb45459387223d1ffdef45853dca0f8e182dd0bae76c9a8896e57e580ae64dd",
+    "sboc-2027-junior-200-word.mp3": "149361545703947bc762d686c8541a872f235a191740c91fe476de9f9990dffc",
+    "sboc-2027-junior-200-definition.mp3": "5e76716c5edd5a439faee140cc15fa44637b47d1b25c982e1e7800d3a42585e1",
+    "sboc-2027-junior-200-sentence.mp3": "e174e27ac5e1b049d6166eccf8607b233d2adbde2bcacf7e6e6c10897a6bb4d3",
+    "sboc-2027-junior-201-word.mp3": "13725ef5e051ba694e787000dd2cda4fc450236e565fb06aef50ca9fa32fb4e6",
+    "sboc-2027-junior-201-definition.mp3": "cce86a8bccb0062e955fdf9a736ac69e14d00bc66cf98ee75a740b73c9096d47",
+    "sboc-2027-junior-201-sentence.mp3": "811bb4a541a07f6cd49dbfe82c45131e12aafa820c1baca7b173e7857af61bd4",
+    "sboc-2027-junior-202-word.mp3": "a7490d846dbe68c2cb308a3c4e8bc219f05bb02d59bba3cf028778f8f8a0241b",
+    "sboc-2027-junior-202-definition.mp3": "831ee517c8a67f2c7c2fd1c4414c761f4aeb9c181910fa33972392254f10ce08",
+    "sboc-2027-junior-202-sentence.mp3": "a8da53bfcf476567807ea6730abe7a925b6ae7a11c9273d502af3322c1118363",
+    "sboc-2027-junior-203-word.mp3": "e017a3359ed23ef639ca4a964b0295c018a1a0800cdf29784dc82943573c2923",
+    "sboc-2027-junior-203-definition.mp3": "ffddb505e02b4c44dea7f7566f1c1af325e93377859a7a014f99e7022203cc90",
+    "sboc-2027-junior-203-sentence.mp3": "35ed722fd322ec074d16ae3dfc7295e5ec34746a8e2b0ceabd5f87e03f4eb246",
+    "sboc-2027-junior-204-word.mp3": "ed242c35371be3b1341eecd8e63d4c10597fd94abcb2e006a61c180a60674a85",
+    "sboc-2027-junior-204-definition.mp3": "f14a735a2c3fee1a9cc8efc3350c4f343d2ddc439692780f4bf3acb12ee6579c",
+    "sboc-2027-junior-204-sentence.mp3": "6b5fafb73c2e21b6e70087f1c5a9cde7286bac61195adc1010273cdf17d8dd9a",
+    "sboc-2027-junior-205-word.mp3": "8f040cbbfef6c50321c223d41f698782bba51be84bfcd33fe2f040873d931548",
+    "sboc-2027-junior-205-definition.mp3": "a83f59733a70e303c3f420ae7b257255ddaec2d4360dc1441a4fc7a68bbcb08b",
+    "sboc-2027-junior-205-sentence.mp3": "fd3d225d8141cf8d0dcfc166c6600ecea68e292b85202817031674bd134cf925",
+    "sboc-2027-junior-206-word.mp3": "2cc0fa3ec377838a38b7944378cab37eaca7bad139c23ebaae723254928ccd9a",
+    "sboc-2027-junior-206-definition.mp3": "3ec2c219fbe2afe6afdc7a26a9d598f3a26ef1e044c7502487d20a9fffe0f594",
+    "sboc-2027-junior-206-sentence.mp3": "afa4ff325cde6aab5e23edbed7fc75c485ea48aa2d0cef877b1d9111647838dd",
+    "sboc-2027-junior-207-word.mp3": "73e524b562183abe26efdc13e110792bf38d78e29437734e4ebb301e24daea9f",
+    "sboc-2027-junior-207-definition.mp3": "78a3437d5f74410a1a285ecc854ddc0e4c2cd5bc7b2107dc84fab25818a10f83",
+    "sboc-2027-junior-207-sentence.mp3": "7c35cd0c0199ef1d10a2b6088f4fd17e4b955e516b26b53557f5e78db2eddeac",
+    "sboc-2027-junior-208-word.mp3": "f59b83a76e5db4f4cb742baa5ad15a4153bcbf0a82f80027e8efd888786d38e7",
+    "sboc-2027-junior-208-definition.mp3": "6b5ceec404f25eaa27208663c8eba688331e0837de3506a9000a8ba35a8912f9",
+    "sboc-2027-junior-208-sentence.mp3": "77acd5bb4d97f029e02faad4e8f5a5b183fd27b51b5c8f400cadf24be71828b0",
+    "sboc-2027-junior-209-word.mp3": "7cbf9d8035043bd2998e9700efbb2dd9d7fc837a37e8dd4b4417cdde7b47d6ec",
+    "sboc-2027-junior-209-definition.mp3": "5523a28ec378be4449fc5ffdc21d6a60f58704bdfbeb5653a6ba10f5cfc356ac",
+    "sboc-2027-junior-209-sentence.mp3": "2bc6411e15c8f673898e5f08e391605a046c1af670c2d3d2e8a6b3b92d06f9cd",
+    "sboc-2027-junior-210-word.mp3": "4f6241967493161c957c2e876ab807bd83c157293c7476664cfe4080c12529cb",
+    "sboc-2027-junior-210-definition.mp3": "70979ad6d1d1d30bb497c4db6a631d9e56f46b212dee77b09141a36f8659684e",
+    "sboc-2027-junior-210-sentence.mp3": "a2b50a7f6f02621048a2f2a63fd8de0466af4663d0be93fd854c51839d8d77b2",
+    "sboc-2027-junior-211-word.mp3": "28516f1a8ea33a8dbc429373fbe05d736dca28aaa7be74e7b48decca3a241d88",
+    "sboc-2027-junior-211-definition.mp3": "14de6c0ae75296b84363a3d9879cfef2a3669d7caaa57a3cb377842406cbd734",
+    "sboc-2027-junior-211-sentence.mp3": "27471811b1928e037745e12c3b2f7a1ab4a15b378e8765cba1590b4df14027ae",
+    "sboc-2027-junior-212-word.mp3": "9cdb98215190c5350dc401804f8fcc6225566386c50e381db1450227753298d5",
+    "sboc-2027-junior-212-definition.mp3": "963840b2b70d08428fed830dc54756805754d54b3fb8f90a3063d229f9a1fc7a",
+    "sboc-2027-junior-212-sentence.mp3": "1f9e0edfd099552dedc95fcc1446fe86f25328a16724c017130d6f497541aaea",
+    "sboc-2027-junior-213-word.mp3": "8765bd6460929da9bc561d1bebe1fcc7cab61a6406e9dea10466b558ad726abd",
+    "sboc-2027-junior-213-definition.mp3": "0ce7a93c23f211297607097f99084c9332df0825e306aca13acf06812ee85f2b",
+    "sboc-2027-junior-213-sentence.mp3": "62e3487067794476c80d51b2c755149d5156cd7e10fe06a45c88d12840506d45",
+    "sboc-2027-junior-214-word.mp3": "a47485c033992c8f8045a4577a8e83a885d3e6344991536c8116b805d4d90d63",
+    "sboc-2027-junior-214-definition.mp3": "325ffc265a011faefb29d3356157c8f9948671f71a41fbfb1be8628086782185",
+    "sboc-2027-junior-214-sentence.mp3": "fb6f6f2cb92dc9c38bb9beda81186833782072b9e120091eecc04b241ff1908e",
+    "sboc-2027-junior-215-word.mp3": "98c5a10d812c102f17d01b56350fbc1acbb76ef21a57e38f81575ee5960d88e7",
+    "sboc-2027-junior-215-definition.mp3": "2643ddcf0ec3578c82da06df89d1fbd0af67c002d87587c163d4bae8fc6df40b",
+    "sboc-2027-junior-215-sentence.mp3": "3f2f8edb73c3f1ebdc9ddefd2478ab03705a5bdced0eab0c818c83111bfdb3f5",
+    "sboc-2027-junior-216-word.mp3": "8e2e22c93ac2c1240baf7425c35f54ba836ade90c2528ae40d1d4728e6fd0a7c",
+    "sboc-2027-junior-216-definition.mp3": "c0f6ff456e359af435531788f7502217f9fbbfe60f46345466864a159548281a",
+    "sboc-2027-junior-216-sentence.mp3": "dde3735342b489ece94b6c509f4fe4cd84146787fd82dd9e28f173e57a56fbad",
+    "sboc-2027-junior-217-word.mp3": "795b3e25a29a43b57de7e07882b79137b2dc0547236b09542fd604c3d45d6f73",
+    "sboc-2027-junior-217-definition.mp3": "3a769e3b878f02aa658da4c931a5c1ccc1357b743da823f0c5a6576eeba51586",
+    "sboc-2027-junior-217-sentence.mp3": "db86d532084c1e2753ff4e998bdbcd70b75ec8df77b20724927217dc01837d35",
+    "sboc-2027-junior-218-word.mp3": "d393a18ba6effdb3504f4362bc9c4e5610f3c11856cb64882df950b2d64edecd",
+    "sboc-2027-junior-218-definition.mp3": "be2797ebbbeabcc66958663bf99caae87388f6c61ed092beb933bb8549ddae56",
+    "sboc-2027-junior-218-sentence.mp3": "e2e5e1c4e0845dc4c9fd0c3ac0d8f8450cf2c972c8cf1abf08d60967afab1a9a",
+    "sboc-2027-junior-219-word.mp3": "a244699ee1da46959af01dcca1ae5cf41ea4e9208debd8f0d8e254b024e57d57",
+    "sboc-2027-junior-219-definition.mp3": "7caec6c18337e785ebd5323115943f9c7e60c95df4f206efe73becc476b05d39",
+    "sboc-2027-junior-219-sentence.mp3": "e9fcd0ba4198a821201b900908f756e367f2857c53d0e4f4e8e8e8e573449a73",
+    "sboc-2027-junior-220-word.mp3": "f4502fd95f3b3fe806e9a0dc7ea1d5e9b6abd7aaf6270f659230cbf99afa56ab",
+    "sboc-2027-junior-220-definition.mp3": "0363c59d4de19510676ca26793ea5104413d976ba89c40cbcbb0a140224d4591",
+    "sboc-2027-junior-220-sentence.mp3": "4abd4d393435684ab94f90b35a2395c4e3eff628b525d8ca25a0cdbb4028e8a9",
+    "sboc-2027-junior-221-word.mp3": "9916d0e7974d73f78ff66b9f0ab43f8852a28c71bd9b6b52f0d63b0dff7b9297",
+    "sboc-2027-junior-221-definition.mp3": "21208a0a9a24fc7aef01c39187cb08216b569231c7b62cff3855c6a788e00c42",
+    "sboc-2027-junior-221-sentence.mp3": "b5c6257d23f75aae95d8f26fce986ac89690a86d4dc1df0c7680b6834fee090e",
+    "sboc-2027-junior-222-word.mp3": "3218e5047b9af1aa864ceabfe9b09f58a3b40750b3f5a587556c21104e0cda0f",
+    "sboc-2027-junior-222-definition.mp3": "825897061deac3b8fc8bf219b0691efa14917e74376a190e584edcec54a328ae",
+    "sboc-2027-junior-222-sentence.mp3": "2d501582590fae15f99f4e3df3595402738ced4e94fd620e448d38474e3209d8",
+    "sboc-2027-junior-223-word.mp3": "1249ccbafdf08ab7006dd256337b77fc0baba43664ba05d7522eda3ce1642cb8",
+    "sboc-2027-junior-223-definition.mp3": "7f29f616025521795ef5e01d7628c34046692034d125c7fa9ce9d65902fbb672",
+    "sboc-2027-junior-223-sentence.mp3": "79a8c5adf78917c61777a567dbca4f9811da44bd3e1986e308dee6414b544782",
+    "sboc-2027-junior-224-word.mp3": "232dc06dbc1802098d6e0ad73729e572b898b2cb8ba5461bf517480637fcad94",
+    "sboc-2027-junior-224-definition.mp3": "bafd5322024d5cc5fd5053324042e3704891c4d882c58c82b9578b89951ea9a7",
+    "sboc-2027-junior-224-sentence.mp3": "1c28c72779f7699513aaf76035ad3e2e0dab449da616f77e60ff6ff670eb38f0",
+    "sboc-2027-junior-225-word.mp3": "252005c6e6be92bc8ec2fcbbbbd5ef78fc630b1c317729e16a26b6d8ad6722dd",
+    "sboc-2027-junior-225-definition.mp3": "6c6e116837c779aef2f096ee261b3a58c4ab36d29c5a6a3625ceefa47bc59bbb",
+    "sboc-2027-junior-225-sentence.mp3": "83187c1fb3b3898a2651fd0d8923dbfcd8531e2cac5cd765844f23618082c9fb",
+    "sboc-2027-junior-226-word.mp3": "e212f517923f4cc81677c1354a9390f756b93f2dc088ca1ea15fe66425a22868",
+    "sboc-2027-junior-226-definition.mp3": "039a5beb2ed1b3b98a0302e50abb819a93289d79cbd0208b4b870d11833cf77b",
+    "sboc-2027-junior-226-sentence.mp3": "3396799f6f5e12616df17237be2541ebf39b8e604bda2f86553c15592bea8724",
+    "sboc-2027-junior-227-word.mp3": "13d82ea76ea7e0fbf77bffec9e218028f4235f5a318b21fb1f57bd514aaac961",
+    "sboc-2027-junior-227-definition.mp3": "a945ca2a4e39b47c1a9369ac3d0d88c74a945e4e9a7cd928ef02c6b400f4021d",
+    "sboc-2027-junior-227-sentence.mp3": "10143a7c38e62da046e887ba6cad06ab0cf15c0b10785c6aac5b486920b9db97",
+    "sboc-2027-junior-228-word.mp3": "a9013f734b39d018aa43823d8e3c911baa1eb1d2dd9ae321d53017517184d8b7",
+    "sboc-2027-junior-228-definition.mp3": "69c539a2290f939e6e39066e6cdb58e305868a3804ff08062f5df1b88242748f",
+    "sboc-2027-junior-228-sentence.mp3": "314f019368af861d3afd2fc490f818bd60d12107f1a0e1525207b6145b17b94c",
+    "sboc-2027-junior-229-word.mp3": "8fb07eea56753cf65505b6afb30cf5f3964e01366213f82e8d0e80be2179af9f",
+    "sboc-2027-junior-229-definition.mp3": "ca9ceb235ecf4b684f9648b50096d021a17fbad0e56f473fa3aec233fa570afc",
+    "sboc-2027-junior-229-sentence.mp3": "efc6686ce4a69f592f8dafc89576145681d72ab2b6008fab969d3c3f9b026f28",
+    "sboc-2027-junior-230-word.mp3": "18aa770e874cec95d7692bfd80c332dcf9e413e2098c0e9e712712052a6f5edc",
+    "sboc-2027-junior-230-definition.mp3": "891b96e7025b17f3a3d8c7328292137e01a782305778ffc4ee1c91a49bdae2b0",
+    "sboc-2027-junior-230-sentence.mp3": "b3b56b232d1c66c7dd73d899b535086a110f707e70521ae24589291ab37ed8fb",
+    "sboc-2027-junior-231-word.mp3": "439b183e6a96025dceb13029e877a0963d70eaa6801e49d429d883e3a05098f5",
+    "sboc-2027-junior-231-definition.mp3": "c6f4806a5a7237d49d2a70a88efeea7cba9ee4f4094cbb7adb120766833524a0",
+    "sboc-2027-junior-231-sentence.mp3": "9ab6eec0a83f598d4beb0e300a9fef4fd700d5efbc1a95a057c9f3e4995a0501",
+    "sboc-2027-junior-232-word.mp3": "1d299ae8f9f6828b5ae21d7ef0f7935f658bfc2edcbcb79c07904e4aaf4b87cb",
+    "sboc-2027-junior-232-definition.mp3": "2b72e1ea34f798bac57d2b065e8d6fc317e7b12c5871a35a00d5fcea64b3e0b7",
+    "sboc-2027-junior-232-sentence.mp3": "ec15c10fa53ba6fcf9d67d07fe5e6ac19d281c72fc7d75204ef8d4fc43197d74",
+    "sboc-2027-junior-233-word.mp3": "87915b679811ac1aa01e9fed397aa64b199fbf6635c2d0df3ec4955fcb5c6c26",
+    "sboc-2027-junior-233-definition.mp3": "0a4f275c9f7ec85bcfe6dda1ef1d5462dced29055d54672eedf4eaf6f1a24eaa",
+    "sboc-2027-junior-233-sentence.mp3": "689fb8d0ba1a9eea8ddef6393b5810c73ddb09dfe7381cbc89e17915f7a50a7b",
+    "sboc-2027-junior-234-word.mp3": "1ef8017038a6fe55122b02b219181b1bf405e3f44eaf35275e77dee1fc72660a",
+    "sboc-2027-junior-234-definition.mp3": "c936e665c13d752ac030b7b35e17a3094c81f519433c6209753c67986cb54bd9",
+    "sboc-2027-junior-234-sentence.mp3": "ae441988154a64dae7bd4a73a64a31493187d5cbc7cb4fa7bb3f36d6c0b99d21",
+    "sboc-2027-junior-235-word.mp3": "504c589412e2c594c9f1a9783b1d856e23d3fc24b5112c8fa8024a148dbefdf6",
+    "sboc-2027-junior-235-definition.mp3": "e7360c4ee58ca29d9d3f399fcc9a89f16ae8808b60d316e3f31e18d019a237e4",
+    "sboc-2027-junior-235-sentence.mp3": "ddb065d9734c617ee39d4ccca3796a79e9a0a5c7513e6032ac133e77d629723e",
+    "sboc-2027-junior-236-word.mp3": "6c86fb5ed91ff862bfe6c1964e066c5f0f95bd25a9db74ae283daadb058a55e8",
+    "sboc-2027-junior-236-definition.mp3": "dd67ffd62ea17f3fc166dcc9398bfab3d59199f8f4f065b49993ec91b4fead52",
+    "sboc-2027-junior-236-sentence.mp3": "7d9969dc54856b1382569fe1592e2d9f5c74d64e80869aaefa41837dcde8235e",
+    "sboc-2027-junior-237-word.mp3": "f519d420b6c4543ec0712fcd3186af7686b4356fb3f952ce2ca16ff923501c29",
+    "sboc-2027-junior-237-definition.mp3": "2d25acfce379d77b9eb1361e913cf79eeb1845e87e6daf5fd5862208e6cb7254",
+    "sboc-2027-junior-237-sentence.mp3": "3df8156bde909bd1e62544ccd4a2ed70a927040f90ed86eca6ee6b97ebdb1c10",
+    "sboc-2027-junior-238-word.mp3": "288f5d97d25e74cb51a4c2f2f955eddf444b1170b68e20027dc92faaf47aa756",
+    "sboc-2027-junior-238-definition.mp3": "5eac9a25da8d4d0e61ca48fc530891d482723df633c036d15d57cd586bd96724",
+    "sboc-2027-junior-238-sentence.mp3": "2be2f640abe30909fd285a0bdad7a20eb57f3e416c49971d30284210986c6bbb",
+    "sboc-2027-junior-239-word.mp3": "0815a44a312d39cf8e82e06134031decca1b91b749b71c2a3fd800a82a87ea48",
+    "sboc-2027-junior-239-definition.mp3": "9b19282cd2460c582d2951c1a09dd4a872daa9884166889b99910fc6ac912c9f",
+    "sboc-2027-junior-239-sentence.mp3": "802c459a5f7aefd8fed1c01ab739e7206632b01f392ed2c956c6919cc0c8c4c9",
+    "sboc-2027-junior-240-word.mp3": "a1f4b8a6be2fbf26ce462c1702274f53ff82225d7a9470cf575b4463623ad87d",
+    "sboc-2027-junior-240-definition.mp3": "2c2a7c9f8de96c151676aae66b0a6b3265ee7e0f47baaa2a3e05873d10f4e2f8",
+    "sboc-2027-junior-240-sentence.mp3": "cd795228c27af731b7fba56c388f67b591da4ab1619cbf9ea0a1bd254530be54",
+    "sboc-2027-junior-241-word.mp3": "20bcc0f3351ffc3d26d9aec5e36d9faecdbf2a62c05ea8987231f7cf9cfe55f9",
+    "sboc-2027-junior-241-definition.mp3": "ea48ca259b8940f6f16972ab9134c824292a4135243a0e2b1447f1460fa628cf",
+    "sboc-2027-junior-241-sentence.mp3": "bc1305c2e6381c3267d44aa9ed42bc4f17cadcec8ec85824f99b7fd031d24cd8",
+    "sboc-2027-junior-242-word.mp3": "50d9a91da135530beaa855497c85413ee0fb0056d5b78871b16c92676de1e652",
+    "sboc-2027-junior-242-definition.mp3": "297cab3730de77958af22a3fbc6778c4d5f2bade1f969e8d21b7c72b14b88a0f",
+    "sboc-2027-junior-242-sentence.mp3": "6b843deb951b2986a3b227f03488362df885e08adbddcb93a945fc91b4ed2657",
+    "sboc-2027-junior-243-word.mp3": "5f126c7e048165d630a479219097e866f995e4792cbd22b598426fb523b6ae2a",
+    "sboc-2027-junior-243-definition.mp3": "76156a4fd7d2390fee4c0b5364a686c6d021554564991e40e9900a65b3928228",
+    "sboc-2027-junior-243-sentence.mp3": "aada67262dd0d5ed89610543c2ff62dda7d460ad103e70a353ba59750e1808b1",
+    "sboc-2027-junior-244-word.mp3": "5c90be8613f8d0096611c4085d6f49df64140ecd3c0370e2cd22816a7e46cb6a",
+    "sboc-2027-junior-244-definition.mp3": "13c78637ca5bf22da8faa940f5ed51b63b7a0c6479000f7623f97fdd4555ac17",
+    "sboc-2027-junior-244-sentence.mp3": "07fee8970ca868ee45809ddc1243ee4ff9336a762ab6b9bfd04b981caa00f29b",
+    "sboc-2027-junior-245-word.mp3": "30c17004879eb46f6f5fe18c4952f6b415608eb7799256037a0b936a9c5f840f",
+    "sboc-2027-junior-245-definition.mp3": "21f36ac2e6f8cc8cf0bdce81ed3210bff162031580a30a784c8d28c0c2efecef",
+    "sboc-2027-junior-245-sentence.mp3": "a6a33c62022f729a18101f3164f5fbb5be92a3bb34953bb0568e3d9f554b38bf",
+    "sboc-2027-junior-246-word.mp3": "2b7f89e9977d05ce71bc25a23d0c6cc3bdaacdde203afe6fdf9e8d6d463b1ee6",
+    "sboc-2027-junior-246-definition.mp3": "45ef75b0300a0de555f648e2659561442b46137837ba83d35bd009815bc02b25",
+    "sboc-2027-junior-246-sentence.mp3": "a7b8617fc2cbc4886f2fe0721728c51c2ca91086b4856f167da259d9f2533d7a",
+    "sboc-2027-junior-247-word.mp3": "5848726f0124d5aa66a81b1795b64d055e760629b3edc811899f5417e8a179bd",
+    "sboc-2027-junior-247-definition.mp3": "a9ed613ba6b6bcaea9cc9245270e4bbd90626f0238124d188cecac6ce5069280",
+    "sboc-2027-junior-247-sentence.mp3": "f586f036b5ee702af6cd856386fee5bd84d179f8b62fe15d3c3dc5734954fa93",
+    "sboc-2027-junior-248-word.mp3": "e07f2e79c7f284bc01983b88874b223daeed4bc64e7a0c84510adee1b2f56fe7",
+    "sboc-2027-junior-248-definition.mp3": "9ea572e6bef7e63e11809fb073bff021f68850edd0e0aa849544e1194575fe6a",
+    "sboc-2027-junior-248-sentence.mp3": "697027d47d3ccef8a7b6e85438b99112120cbd179b5b018158c756f5d0c36b4e",
+    "sboc-2027-junior-249-word.mp3": "34153ebe8c9a81abaa69706bbde0acb8c72dcd559c63c7a75b65ffb23471585a",
+    "sboc-2027-junior-249-definition.mp3": "c223da1a66af7464f2f25dbbe603f69587e376887320d36a45ad971e8681e6b2",
+    "sboc-2027-junior-249-sentence.mp3": "be7653af78811ceb3eb3530ba271f0922bc0967aaa1ced88bcb88c6ea55032ec",
+    "sboc-2027-junior-250-word.mp3": "1cd474c778413c0300b3551d52271a11021dd22bff00dde7fee5fbb6a1d9023c",
+    "sboc-2027-junior-250-definition.mp3": "940af894ae9c8fb5d9ab25a8ff023dce4c02023066825349ed86d7166a4c7ec9",
+    "sboc-2027-junior-250-sentence.mp3": "b43527cba170120924c0c906a32699461eab36a8d9b3b2538ffa468ba1f62552",
+    "sboc-2027-junior-251-word.mp3": "5400ac36eb6cd223b1616a58760083ab813a4d249877f27694eea392e2f29fab",
+    "sboc-2027-junior-251-definition.mp3": "6b5c117e6cb7c5388a28f6a2c30b900d38c3d8d22bcf1036f3443372420a21a3",
+    "sboc-2027-junior-251-sentence.mp3": "bc00f42f7e23cbc6abd96820668686cba08b90e749d8e32c1b92301d04002171",
+    "sboc-2027-junior-252-word.mp3": "ae004073062ea1ee2e59cd8e9a8aa2d889524cc3f809f59f410d5d345f0805a6",
+    "sboc-2027-junior-252-definition.mp3": "b7ee22984321d313847aa47b089ac154f0d7cdc2e0387fd456934a1565b8fd19",
+    "sboc-2027-junior-252-sentence.mp3": "66a966d2cf882e23931d42a33029a5de2e61cd997c88b2e55d7ee498cededa3b",
+    "sboc-2027-junior-253-word.mp3": "13eb627fe6d3bf2cd2829027724dc1f86e78d8e7bec89c3aef2fc1dc5bfd3f5c",
+    "sboc-2027-junior-253-definition.mp3": "e478db33357b1efda15b6bb14d5f22c6d93ebb2f1396b22c5493181ec4d37a4e",
+    "sboc-2027-junior-253-sentence.mp3": "a76d3603ac6d81ad8996036fafe99820ec5bc5da01c0bbc52a3241fcf026a5c2",
+    "sboc-2027-junior-254-word.mp3": "91ce5df84731a05901473f39809f571e43cdbfe300ce33244c2315c0fd2be8fe",
+    "sboc-2027-junior-254-definition.mp3": "528abdd108f1db3cdc303a770c896dd8133adafe03a8ace621675e6f9696d272",
+    "sboc-2027-junior-254-sentence.mp3": "bb46d19b1837203d855a232a3cc53389c9cfbf168fb9f705c96c66078bdf0fb5",
+    "sboc-2027-junior-255-word.mp3": "9962206d3446f5ed125880b51ecac794a8255f7e569d021f5ebc74195f88c394",
+    "sboc-2027-junior-255-definition.mp3": "e0cab28f217a1a825a3c5f6ebe2e958ba14ba69cbdccd5c03da8361723819e3f",
+    "sboc-2027-junior-255-sentence.mp3": "db1edd771f8ab09f36eedd0b4cd43e561140635b741264664f5e5c4ebba250d1",
+    "sboc-2027-junior-256-word.mp3": "1c31cd81333f9cbd7780bd046002c552ac8f2dd437c7f59f04f9b8f0a276fafe",
+    "sboc-2027-junior-256-definition.mp3": "2c0f74a021900e184698d3ab87e05d162a6032dc094acebaeea0ba6c49a062bd",
+    "sboc-2027-junior-256-sentence.mp3": "4975c2582b88617bab1b0c6ca5d9fe94e5700c79b1c746cacdc85f3f2526cb1a",
+    "sboc-2027-junior-257-word.mp3": "4802e8348fc2ec790d20b1e4f0414b6774f46a142f59355cab3fc5d31fd183a8",
+    "sboc-2027-junior-257-definition.mp3": "83ec2708817034f9e2e70f6338554660ceffa16af21bc291d4987912c7383413",
+    "sboc-2027-junior-257-sentence.mp3": "6af373716b880e1f8025213f1d35761138ff0f7240ca32bc04e524bd5ae63c6e",
+    "sboc-2027-junior-258-word.mp3": "3f428bdc892b07ffcb0c35d8adade436013d9c294545e9e84a6d860b2372014c",
+    "sboc-2027-junior-258-definition.mp3": "eea7188cf07102bd7a3ee43164af2bd8662bd9802018f03df8dee13ca3a59a51",
+    "sboc-2027-junior-258-sentence.mp3": "982f03516fb888d0eb6d72dd648737c103df65b3984cf4fcebdd8b5ceb0ad477",
+    "sboc-2027-junior-259-word.mp3": "b8e4955e9fc1ba182bd2bde1acda8f2b384cfacff89a6daf44f09f921bb5bfc7",
+    "sboc-2027-junior-259-definition.mp3": "d93166ff40f08e528a4827662cc16c3563df3e0dd3dc22af7d6875786be5c30d",
+    "sboc-2027-junior-259-sentence.mp3": "1470c5f12c2e093bfb1417eb80ff0fcf77b254582171a2868d4c591cb0a24cc8",
+    "sboc-2027-junior-260-word.mp3": "227cdd3bc421666b8506a1403abac9394e93b4d8e938f2acc8844107f26ebe1d",
+    "sboc-2027-junior-260-definition.mp3": "bdb4af38eecaa880db435dd2745d9e34d16fe518a965cf2ecd5eaea8b8dea3c4",
+    "sboc-2027-junior-260-sentence.mp3": "63f1884b74311329c2a3af258709f609cc8d359c97dd53ea062596bbc5ad6355",
+    "sboc-2027-junior-261-word.mp3": "f8ee6b98440d7662bd75ed75f4dccf19969e108d9255460df0c1c85c64349d98",
+    "sboc-2027-junior-261-definition.mp3": "be93d2b2e35ad699a0117dbd7cb00ea238668e9216faaaee1c15261b60127ffb",
+    "sboc-2027-junior-261-sentence.mp3": "a7660350c7a41f360efe03271776bf8dbdc29771b6a31894078f27450751c80f",
+    "sboc-2027-junior-262-word.mp3": "45d7720a9a3acd994dc063c247cb23465e328256ef90b68974240143b2fd173c",
+    "sboc-2027-junior-262-definition.mp3": "c7251597073142789a3837317b8e84818e4fe60e59b455507b06aabf8a56cf75",
+    "sboc-2027-junior-262-sentence.mp3": "3f1b8687a4993c25b5c04c316dbddae2926094427db18f4a511ba8dba09a12ab",
+    "sboc-2027-junior-263-word.mp3": "f082e73b267bc92c5e6705c5b20241a0285e9624b619a5454caffcb346f119e6",
+    "sboc-2027-junior-263-definition.mp3": "26601c3fa735fa2099629a10f62ebd34cce21069acd8a81110ad1458dd81dd06",
+    "sboc-2027-junior-263-sentence.mp3": "0668286dce7fdad3e20338653d9a4fa71c6240ce333010691aef0042947e9b96",
+    "sboc-2027-junior-264-word.mp3": "adbac89d1fc664ed415d2e5247456533c4d61a41fd9c9348d423de8c3ac5a520",
+    "sboc-2027-junior-264-definition.mp3": "d041d4726ba42a647ed1e10fc56ffc90c32d4c1e251dc8a4299b1767a192fd3f",
+    "sboc-2027-junior-264-sentence.mp3": "297b0f32d60a671a153dff01001b2103702f424be915935030bd0013ac8b58e3",
+    "sboc-2027-junior-265-word.mp3": "7ace8f2c14661adf960360c1c6db2bcb1f88cf190ff3b4219de90608b2c85ca3",
+    "sboc-2027-junior-265-definition.mp3": "ae96e6b81109247fd109b5eea44f3188c2cecccc0beefdaaf0ba63fdb7350b09",
+    "sboc-2027-junior-265-sentence.mp3": "40d187daf00a181379eb2aec00c4303cfa4a886e2126fa0588fba8810e43a92c",
+    "sboc-2027-junior-266-word.mp3": "1cf37c7bb3bee846f16a3555cd2cb1508bc7980ff46e5a8dd1621439a96fea5f",
+    "sboc-2027-junior-266-definition.mp3": "c8965edaaa245ce7cc79298e147e9d40a6be1423a189fb20184203036b565394",
+    "sboc-2027-junior-266-sentence.mp3": "bd831b0753effea909e969e9e2942eb921098d65aba4c8285a4c17a7fd731e15",
+    "sboc-2027-junior-267-word.mp3": "7786b90db6a9ff093e7a6a52369097515ef440fe9c3d3978dff203c151c64d3d",
+    "sboc-2027-junior-267-definition.mp3": "eb947f896a96f31a81956a9c73bb1791684855c8897911fdc5062cc21fcced17",
+    "sboc-2027-junior-267-sentence.mp3": "e537e08c1c38a006c1be42e6053fd10896bd73965344a17085fd888900c7ed2c",
+    "sboc-2027-junior-268-word.mp3": "a79fd0bd432d8498934069cc75c332eedac284716daa4f3c415bfb04d6952578",
+    "sboc-2027-junior-268-definition.mp3": "277f690ee4be5adc2eb8945dd69391e426760b08c7b7ac665539ba80d3e01e09",
+    "sboc-2027-junior-268-sentence.mp3": "3be7598e76746aac5c4fda9f729a783269e37173892349c4ae1f42a2a620cdcf",
+    "sboc-2027-junior-269-word.mp3": "20677e9c7d637f31bd758c09d462dbb136029c8dbbee10fc62eafd13d474eae8",
+    "sboc-2027-junior-269-definition.mp3": "732c79e0f759792ef80583eb4cbee378b6c7425f43c544028ccd0dda4cb1c510",
+    "sboc-2027-junior-269-sentence.mp3": "0ce0f97f61002e91cf35cbe9f103f01c4a5c0aebdadc5b6576cd8f487ce1ef9d",
+    "sboc-2027-junior-270-word.mp3": "5fc79b1ede9a1fbe5eeb02855eddca1f28dd4224a84819da41fb746fefced9d2",
+    "sboc-2027-junior-270-definition.mp3": "8ab6dacf74f53844280bd512c457617fb56d17724629f90f2247ce1cdb8515bd",
+    "sboc-2027-junior-270-sentence.mp3": "588ced7781bfb46b3f06d24f1fddc16933465aced2859e18640a0ae6658cc9ac",
+    "sboc-2027-junior-271-word.mp3": "a41698a1f502731e2d72c0333605a7c4ca6c7f1192cda5676ca1caaba62c6872",
+    "sboc-2027-junior-271-definition.mp3": "1f3fa6c2043960bc57c5214d2ad075510bf589537fd53606fe3e7d8b52ffc8f3",
+    "sboc-2027-junior-271-sentence.mp3": "f47a63186c9021f693f29ad9777f524a66a2ccf058fcddfa972723814f8df1ff",
+    "sboc-2027-junior-272-word.mp3": "3c8e6f91a002721e3636c7271c9fe735434bc691a5afe0a10912685febaff305",
+    "sboc-2027-junior-272-definition.mp3": "7b68869f381582e171f1c85661f88500061ceab382f738b3235c221b6a1baa55",
+    "sboc-2027-junior-272-sentence.mp3": "e6d6e0d3cb04a3053eac8ac6d1c3195c5d83acfe3c4c6bf2c62d30df7bc0da76",
+    "sboc-2027-junior-273-word.mp3": "71ef6374791cc45dc61542da7718931df4e4ddee06be18cbaf3114d0687d9ec8",
+    "sboc-2027-junior-273-definition.mp3": "a270a9716a9796a267967756ece7d18541ae076cee10f2cd2ded39290a3ec7a0",
+    "sboc-2027-junior-273-sentence.mp3": "f7703b50a908f894ab0ab484363822e529ef406414878ae158496afd025ec5af",
+    "sboc-2027-junior-274-word.mp3": "9bbeab2c463eb747b040f11bb974859523ef338454b28ef8e544233153bb9798",
+    "sboc-2027-junior-274-definition.mp3": "2276078b14367b34403b4ad1e50c0601cf9e7146737cc8207346f7066d7d6d93",
+    "sboc-2027-junior-274-sentence.mp3": "c6e99c3b51943df7bbb695bd3670e961a06d753de54993d85cf5f5d10181565e",
+    "sboc-2027-junior-275-word.mp3": "85d5937ccac67983f73ad86ba514927bca1519a49ed3a69110c832b274f16023",
+    "sboc-2027-junior-275-definition.mp3": "05fbfe654611c525ddbc388460db274a579d4e3b45b90bc2ec5380faf40f4eac",
+    "sboc-2027-junior-275-sentence.mp3": "d6e94840a8dcce4f9ff5336df6f96dcc853d448df3221c0ece8fdeea5945d0ad",
+    "sboc-2027-junior-276-word.mp3": "6ee7703071b8e077fa1bc874ba70b1a2099c6964e7f8e0272991f4eb9a99de3f",
+    "sboc-2027-junior-276-definition.mp3": "1ae2469a8996080342605dd3165a955ba3c75adc54c6837a8ad694d405ceb159",
+    "sboc-2027-junior-276-sentence.mp3": "2f6d719a38cb2d671568b636040ab607017148f7d47c0dacb24c80e5b9164d7f",
+    "sboc-2027-junior-277-word.mp3": "760f4171a08b8c18edbd813a9126484460c6d4d6823cddc9f6b579285bbb4adf",
+    "sboc-2027-junior-277-definition.mp3": "e59017b06c956c4f73209614e2a3137ff093ddc32b84e64cf2bb3c303adbc138",
+    "sboc-2027-junior-277-sentence.mp3": "efa410fb617d3d7d0cf758e47fe736533cfd4fd32a15d8500ff48027f1c2d449",
+    "sboc-2027-junior-278-word.mp3": "39aa2653df367cb5f4f21c34eb2ee280523236903c31e44b4495f539cbba88b0",
+    "sboc-2027-junior-278-definition.mp3": "3fc2e9c38205e49299ddf43b2bf8edd70b864bc3443b403e76f7a4584003f5af",
+    "sboc-2027-junior-278-sentence.mp3": "60cd7f6360693391a4292c98e9c8680319c2c29127e39c517e46cae2e9cacf80",
+    "sboc-2027-junior-279-word.mp3": "75aab3b4e3b4fb334d11bd90bc18ab249f9f8b9088105fc61d7be9a53ece2113",
+    "sboc-2027-junior-279-definition.mp3": "da089e06ce41a7f2363ce6bde8142535be708a2778ca5f1fee63a015ec0ccc26",
+    "sboc-2027-junior-279-sentence.mp3": "dee6e42bde6061b8876df4611a49edfd4c210b1a46b002af0565caeabc78e39c",
+    "sboc-2027-junior-280-word.mp3": "5cdb4e0e61e111dc5552952a071a6721a4f4db4146eddb464b882540d695241b",
+    "sboc-2027-junior-280-definition.mp3": "2e33f90294635e0260481ef0220c03d90383ed91c6f095af66b66c0fc5c4457e",
+    "sboc-2027-junior-280-sentence.mp3": "a0560ce8fc189280f9685df0a46d3e89e69c88861319a75b336e4a3e5d19228d",
+    "sboc-2027-junior-281-word.mp3": "f0969100af73d18c84b04bd35faf7969216162b64e2f727f44570c93bfac5d69",
+    "sboc-2027-junior-281-definition.mp3": "44ae4ecd92a4d9141b00c673dffdd4484a7420475877444c1d7d363440eb4c42",
+    "sboc-2027-junior-281-sentence.mp3": "b85bca5af0a86bec584aadc26a63d5f17e15ac75a28f46fa2fbe31bd338ac883",
+    "sboc-2027-junior-282-word.mp3": "78fe4c814f59aada0322561e801f071abdb3ae10127fc2b2cc4396e60922c3b7",
+    "sboc-2027-junior-282-definition.mp3": "6c5d9d4c6826e939be62249a43a75a7b36e37c0bc11d00515946ad7ac51a58b4",
+    "sboc-2027-junior-282-sentence.mp3": "e0ca80056a194b98f708dad0469a114aff70a325984d188a2b17ec2ecda3fb0d",
+    "sboc-2027-junior-283-word.mp3": "0a0cd1e442f752f764ee49194a8ad5689faec72293fceb459874da02a06e5e86",
+    "sboc-2027-junior-283-definition.mp3": "73d59ad1da9ec0288e4a15f9cdbf7b9b290325fc4e1b077d5deee1f701000ae0",
+    "sboc-2027-junior-283-sentence.mp3": "22a99301a213c3d80abdb750d390cfdfd84d06024a85532aa13a6e46e58e10e2",
+    "sboc-2027-junior-284-word.mp3": "93828396b6b21510af573b1d1faa594cfae40e5f6d53d41d11c421eeaf67072f",
+    "sboc-2027-junior-284-definition.mp3": "592d13429f18ff01bae5a8f81556822d8a8f44bec6c5b777941abd17136190e3",
+    "sboc-2027-junior-284-sentence.mp3": "cccce74341c6f3b4f11825f622a543f91948f702c46719c933f13b54a4d92d9a",
+    "sboc-2027-junior-285-word.mp3": "691fb89fb633c7655284cdabf2222840b18309eda591037e79f68470b7d2bd13",
+    "sboc-2027-junior-285-definition.mp3": "43a9c21984ad8b2ebf6e9e7dea305d980f05bec6063c2091c4adf82f658d9bc7",
+    "sboc-2027-junior-285-sentence.mp3": "d163ccd18ec6413033f7bc7f963fa682ddb39974b19cf8a5d95ff79f9e98c879",
+    "sboc-2027-junior-286-word.mp3": "3328a4d9fc9945ba6b131d032ae9a20f10715e9e4f929caeabbdb639de572bcb",
+    "sboc-2027-junior-286-definition.mp3": "5239ab04a8cbd9a37dff56bc5d02b1450f7b8c5edf4e8b1c117b61406b8500c9",
+    "sboc-2027-junior-286-sentence.mp3": "d8e2a9f7c940362945e2cdeb517bbd0ad7dfa323ae8c90a14a7f9baf625be83c",
+    "sboc-2027-junior-287-word.mp3": "e204edd0b3ed0c7ab6259a58e96f45fc9b9a10a977f07ffb73fc4fa325010b19",
+    "sboc-2027-junior-287-definition.mp3": "d0911b1fddb5c6c78e8a988ef932d309530a90a86c8ea484ba9dd893351c80b2",
+    "sboc-2027-junior-287-sentence.mp3": "5a727d3a3f6cc01b618a794a1bdf5ffcb54b707d637a6149eba567ac92f209c9",
+    "sboc-2027-junior-288-word.mp3": "8b0566d2d3b7a16bfac4d2a797eda438c7f060e0757678252287c554996436aa",
+    "sboc-2027-junior-288-definition.mp3": "327b75106a4ca2f748e2fcfb569017809be75d47735b8922c6f036826e2571b4",
+    "sboc-2027-junior-288-sentence.mp3": "e796459f672f9d09c703b0929006986cc6d6880be65322c56484c11d85644b56",
+    "sboc-2027-junior-289-word.mp3": "3481ea530737ae6ff66a5fea28bbb3a8795f7712f6034e5379f30f29013a0977",
+    "sboc-2027-junior-289-definition.mp3": "8e19b194e6e4a602cd6d4b733faedfd92e4b7bee2695a0ee83a74dc2af0ba397",
+    "sboc-2027-junior-289-sentence.mp3": "a48c98db9be8120d6f301e0690f9324919d379dda6745abb3fe16a3aca5fc00e",
+    "sboc-2027-junior-290-word.mp3": "6bc1232c2727075945a0388d301fdbaa5511bf02652d8fc6162db41fa9c63f1a",
+    "sboc-2027-junior-290-definition.mp3": "aa5755c7bd27e2b167b9e314a97c4c54b0b51d8448132b3515e951db80c96253",
+    "sboc-2027-junior-290-sentence.mp3": "877d7a5acad1c378238a2534fdc4559e4bd2293f337704f6e391bc7375e37741",
+    "sboc-2027-junior-291-word.mp3": "53d5319a95fabd6fd3841562d2ce96177c4d3c109283bcd6f413e04946a54544",
+    "sboc-2027-junior-291-definition.mp3": "43f20c881335674b5b29e069e804a513ee83855f00d613906fe8760c2d52538c",
+    "sboc-2027-junior-291-sentence.mp3": "b43b9e0a47f3c1c7ba42960d27cbafa2320a916d5577a3ddfd02529967a7d2a5",
+    "sboc-2027-junior-292-word.mp3": "dd8065723c8ef97e30ad51ee8ca97f75c6c2565cd39257a1181a5ac770b12a1e",
+    "sboc-2027-junior-292-definition.mp3": "fba3fe98dcfc436066355062b46fff3cb737f8b2b8c4b2943e7b77c9a8834fdf",
+    "sboc-2027-junior-292-sentence.mp3": "56aa6c2a58735235be33bd6e12073b15ca3e33cf4805918345afdb307669c88a",
+    "sboc-2027-junior-293-word.mp3": "c4b1b05aaf23c25281296d1a283f9738035d488405337c52a47d51f403776c5f",
+    "sboc-2027-junior-293-definition.mp3": "a14f9962eb9cd185c67e7bc043d175743440af86943d559b5a4586341e59f3fa",
+    "sboc-2027-junior-293-sentence.mp3": "62adb812f8a9de75331852d0f041b84efe6e05d2601db752e94487953a24434c",
+    "sboc-2027-junior-294-word.mp3": "793d61b38c18f6679010c2e7f0a429731244cc5e6a698fa7485bfc94d4efe7ef",
+    "sboc-2027-junior-294-definition.mp3": "3326ffd38228b5f6a95288e3a83274b072d4a5c27aee320f1c00f3da01f82213",
+    "sboc-2027-junior-294-sentence.mp3": "0574cb8c534f687c0bb3c85d20fd206854a9747f498017d372356b11180f1fd5",
+    "sboc-2027-junior-295-word.mp3": "a0d42d04b69126c242b99beec422ac558d174c9ecc7ee5f5c7cb4d8b9f4a452f",
+    "sboc-2027-junior-295-definition.mp3": "ab7c13839fc5f5d24134a9bd03cc27c9a590d15db5933b130ee3c08c5132997f",
+    "sboc-2027-junior-295-sentence.mp3": "3f25a4eb1b6a7d6947456f5ca8656bb77a467185f254be49c06156f80e0732cc",
+    "sboc-2027-junior-296-word.mp3": "05aa77d974fe0bc2b8adacf41b0f79a465701157dbadd294ea5558770c2c7e26",
+    "sboc-2027-junior-296-definition.mp3": "7c43ea079717f07ed9d51f17fd3b75be9dec47681b2d82b74fb66dae46b42010",
+    "sboc-2027-junior-296-sentence.mp3": "cc1308f23d5c4a31370981f7156b4b958120e1c222d6c9b825ba756ac1f39676",
+    "sboc-2027-junior-297-word.mp3": "6a2857ad8d81565168f974fa63df257d3c8ff43ba4eaab602d0f320bea989716",
+    "sboc-2027-junior-297-definition.mp3": "8307cf31afa10150248d5671c3fdc72b935dd98d961639dd0d77e33b495ca7db",
+    "sboc-2027-junior-297-sentence.mp3": "9055ceef34cf5c6d6e4dfe1d5fc1a5fca2f68c5f04ee03136d1b1739b0f58893",
+    "sboc-2027-junior-298-word.mp3": "5a1a72687bf0cd38294f414f54925d27160b535953f02dcdc21361bd21801b18",
+    "sboc-2027-junior-298-definition.mp3": "ea4a27eb124d044435910b17f3d6eb95133167c68abe3240e51eac5208991d26",
+    "sboc-2027-junior-298-sentence.mp3": "89324f2d05664d22fdaebd695e92c72c189383d9f1cfceb1cf7a227c5526d140",
+    "sboc-2027-junior-299-word.mp3": "30fedd4efba166e943dff69731e09a0e07823eaa323bd66a14e4d256dcea6c38",
+    "sboc-2027-junior-299-definition.mp3": "3a1d880f0adc61a03349dea3f0d6f679564cb87d77c9e2c587c92477dc8e34c0",
+    "sboc-2027-junior-299-sentence.mp3": "1a36286a21cfe6784daeb424a734db32402adac2e26a97d4b20b545379ce037f",
+    "sboc-2027-junior-300-word.mp3": "92764b1b70ea65760ff779c423d4ff08277436712cafb532efb5d2a54b2e7ab1",
+    "sboc-2027-junior-300-definition.mp3": "21e80dd84de7649dc3ddb2ce7d254d96bfb70ea99881ae53e53419a59faa3fc6",
+    "sboc-2027-junior-300-sentence.mp3": "4a877fdbbc62831b440f6da075bc5fd7e21799c643e0797e0f121de4d004bc36",
+    "sboc-2027-junior-301-word.mp3": "917a7a9a0c68e0b2e84fc61e3a420472744a2cfd11c5ad67ad66b6ae30b9e55f",
+    "sboc-2027-junior-301-definition.mp3": "5562613e084facc035bb45f5476fec54dbc7fc9a065db3b86216648a888b8ca2",
+    "sboc-2027-junior-301-sentence.mp3": "83a58d1df5f70bae449569cb58ab45703cec4f2eeaeea79fcb5f82172706adb6",
+    "sboc-2027-junior-302-word.mp3": "ce970a9f923f857029de567af944dc1866be43c648859bcd0efa9ba1ab73358b",
+    "sboc-2027-junior-302-definition.mp3": "e5889d372966fb0419f31d014f66a49040eea374904c53e7b806d71f0a90256b",
+    "sboc-2027-junior-302-sentence.mp3": "1422128aa75f3ca4f449ca0243232ac15992182917a0d2bf6463a25b71f48813",
+    "sboc-2027-junior-303-word.mp3": "ba46af675c4d095e2dca51c901f5eeffb2e8b33cd82ddba9e84fe1c1bcb56c06",
+    "sboc-2027-junior-303-definition.mp3": "529daa60a08bda10137bb77bdf569eb4f2a824d517a1feb1993ff9096c0eef6c",
+    "sboc-2027-junior-303-sentence.mp3": "fa885a86a6e874a0681369bef97ca06dd53bb625f735121b82742bb9b8f396b5",
+    "sboc-2027-junior-304-word.mp3": "1cc93bb36cef16f112fab366933c926333dde376feecfbb74bf59243ea17ce5d",
+    "sboc-2027-junior-304-definition.mp3": "8afb03bef1b7e03f2940740ec65e7eba9d3e4f6b4f51fab13426df27f7e5cab6",
+    "sboc-2027-junior-304-sentence.mp3": "fcdc3fa24c548f13d24fbcd1f335e6ebdd31d00eb716a6d72cd57a9af56949e9",
+    "sboc-2027-junior-305-word.mp3": "a65242bf7d2b3df6dceb39e437447e315914374978697ebc6af01794d6a942be",
+    "sboc-2027-junior-305-definition.mp3": "5eab2592b85300d854b4ccbd76cf657434553bb6de7a267a015a3f325737f1cb",
+    "sboc-2027-junior-305-sentence.mp3": "fd5d8128694643dc32b549cd5e552015ee0e06c5d26ad08bc9c536e45eaddcea",
+    "sboc-2027-junior-306-word.mp3": "fc9dff8e059e7be3d316b9310be7fe1289cfb1fb8a0f7a78bbfa82cf7210beca",
+    "sboc-2027-junior-306-definition.mp3": "c0d6594c0c740158028e5d1879fdee52c915d8b3fda757eb6b8c4a2ea216b7d4",
+    "sboc-2027-junior-306-sentence.mp3": "5cc476aad9d799b3e128ffeb8eac8f37cd8bbc972e8b6390539f9eae9dc2816b",
+    "sboc-2027-junior-307-word.mp3": "da4348e86638f39088e945e8617a2ee567e92bfd7b3c000b0c59ee68358cb694",
+    "sboc-2027-junior-307-definition.mp3": "dc008c6cc089029b8bb965ef82797f4bfc1cf59e9afb80e2f7876165b2ceafc4",
+    "sboc-2027-junior-307-sentence.mp3": "f873bd3a59b0f4a94d337db3a449579a14c39a2d94a65acd9bac142b77744e9c",
+    "sboc-2027-junior-308-word.mp3": "f0cd850935302af063d624607b54c127f136a2885b3d0bb39aaf2e413bce2527",
+    "sboc-2027-junior-308-definition.mp3": "47998693c138ef2b49b78785fdb4640cbfc2ae5ca46bc2acca78556eafb9a763",
+    "sboc-2027-junior-308-sentence.mp3": "8790a878502b7dbade342377f11c8913c61a23126a2b22e0c8b7c39c944ca0fe",
+    "sboc-2027-junior-309-word.mp3": "3eda75fa33cf78a9f1df575410ddb133dfca6190bb9ad8da386b875046ecb3be",
+    "sboc-2027-junior-309-definition.mp3": "94c4d2aaa5bd25829b5c2e9cd927c84ec110a95158783c78ee4bd852009d17ae",
+    "sboc-2027-junior-309-sentence.mp3": "44516bb480b938eb687c2abe3d7545a05c2be4075b02c9def006c488252dee57",
+    "sboc-2027-junior-310-word.mp3": "2b25abd7d2e5d672e2b5e2d0a8d475b91193a25402d88c38888406cd39d76baa",
+    "sboc-2027-junior-310-definition.mp3": "7bd75788f6fecce9897c3f9023c987925aa1c972f9a2a54e554f77aee9d10180",
+    "sboc-2027-junior-310-sentence.mp3": "a0051c252a45450dbe76039df729da576df96c9c1a40c490337b89946e9db3af",
+    "sboc-2027-junior-311-word.mp3": "1ed59b20961259f732b8f77cd730fc3b131ad3a74dac0896216d429d2a02a388",
+    "sboc-2027-junior-311-definition.mp3": "0f1340c435f248902957a4cd3c9bc6579b5ad802e3f1981db4e357db32d312ba",
+    "sboc-2027-junior-311-sentence.mp3": "43d6efb0bd4e3304ffd01a622bd29725259ad48d38c76682786cdf15565b64df",
+    "sboc-2027-junior-312-word.mp3": "0fc291a898f608a8e63959876ec26dc5d38d891ad788deefd12ce45e38d0e699",
+    "sboc-2027-junior-312-definition.mp3": "f0a7ab8ecca5e47502c480f7b13a09be9fadd1eb77c24b29069763d1eed6d9d7",
+    "sboc-2027-junior-312-sentence.mp3": "05e5654941ca90ab20ae56671aecddb9ee8668f9536a46ed5c673e6a822a8d18",
+    "sboc-2027-junior-313-word.mp3": "4245215cb42227a55d705a8bd893f8663366062c156d6b92091a5810da67f07e",
+    "sboc-2027-junior-313-definition.mp3": "cddb9031df9c1705e3368f4c7c2c68d451214703cd9cb3bd89b62f8555eb436e",
+    "sboc-2027-junior-313-sentence.mp3": "2510a8640b6160441149bbe5c26c471fba780292d1ad2fb322aecce400eb0605",
+    "sboc-2027-junior-314-word.mp3": "a61e228adf0e626745eb76ff9dbc2e6f5b5c8c059bc6f042ea75575878546af6",
+    "sboc-2027-junior-314-definition.mp3": "380df9b00382659d0695773c0a8c534432039d451b62dfb6f7765f738d250bc1",
+    "sboc-2027-junior-314-sentence.mp3": "7560ed2cb1aa18b8d4ae8ca34707cc7bc95032ffc0594ac919ab4894aabf48b9",
+    "sboc-2027-junior-315-word.mp3": "7f5877ca14b9e0bb253fecbc0bfeae70f4b3d4ced847706bef1cdfdfeb49441e",
+    "sboc-2027-junior-315-definition.mp3": "31e0474f80111d346f810ceb3612c359e7256692fe5fa2e844fb9bec0ea60113",
+    "sboc-2027-junior-315-sentence.mp3": "d418e99377d902ed87fa71c530cb5f2a3da574b9228450757f8a03ff6f04125a",
+    "sboc-2027-junior-316-word.mp3": "a2a4e62be592d809d2886826aee29c2524f9376da3163fdc62c1e3633a88d3fc",
+    "sboc-2027-junior-316-definition.mp3": "883cea2897702188da88dd0c3aebe68d3f4a03f7ed606412d8fff9d1f529a78b",
+    "sboc-2027-junior-316-sentence.mp3": "42fcc16bbe074a260bcce37f7a3981ac83576701f639f7a133ffee18041ed23b",
+    "sboc-2027-junior-317-word.mp3": "c5424fe59b6b8180b664579ab539b62c6de8ad3a7d986889a71f8e64db35f8e8",
+    "sboc-2027-junior-317-definition.mp3": "23e74957c8c8c853451b9c9b1326800708d582e4f339ac3d31807485bc80ee88",
+    "sboc-2027-junior-317-sentence.mp3": "2f4cc7d9f24de84dc4c0be6262d5e48c1fd752ff155c65ab69c1bdda6953031f",
+    "sboc-2027-junior-318-word.mp3": "0dde7f99e24bead0065ec1f9cde483a315ae8bd6398f7cd721a1dce0bbed00c1",
+    "sboc-2027-junior-318-definition.mp3": "36c538c6244bab7959c4984456c58cb18c29ca7136d01819c1410f1c492d1de8",
+    "sboc-2027-junior-318-sentence.mp3": "95a350c0c3a5980848598806dbb487a64d0dfd585f037f343bd7b1d9d1d371a1",
+    "sboc-2027-junior-319-word.mp3": "5e4b60e49b3167f63e1a1b1658b2994d61e57ee0e09e3688bc53a821b8ac8059",
+    "sboc-2027-junior-319-definition.mp3": "7079798b9904710ce9bd97366b44f3d607a684efae8085ab2f404eb585a6178c",
+    "sboc-2027-junior-319-sentence.mp3": "458ff958b1c01a6036e36f3074cf2d64c76023358e07c3cf3f00cd3b610cff3b",
+    "sboc-2027-junior-320-word.mp3": "cd97eceba3b4b2bd76f5fbb029ff3a6318c4781a18f391fccfb9f21f193cf22e",
+    "sboc-2027-junior-320-definition.mp3": "249f144a6b970e6e27392f12c879ab834111d33e58e0f3510dd4a9cd96ebb6d0",
+    "sboc-2027-junior-320-sentence.mp3": "585a1ba13ee098ae50ff26ec4c18b1a5f7376979fae1a44b3a2f63b19f494804",
+    "sboc-2027-junior-321-word.mp3": "502a9ff8cfbcb0b1763c98fd61a69a6408062a5efda3163419b9c03428ec343f",
+    "sboc-2027-junior-321-definition.mp3": "0829a155846c68e2313172c0810f80b69550ff57f019cade0e3d44f09b651423",
+    "sboc-2027-junior-321-sentence.mp3": "5b204df1ce5d23dd6479e161a2a7e182240998be9efcc6fbcf73a05abc668786",
+    "sboc-2027-junior-322-word.mp3": "e113766c272b0676333c7cc51a0dc80237b081a329f9f040987144b5244d3493",
+    "sboc-2027-junior-322-definition.mp3": "d5e73f468aa89e50e85a0cbad454b03ee568f32b54b4b0c10537df721ffeccb2",
+    "sboc-2027-junior-322-sentence.mp3": "78f84e1d0912a0f388a134977f70a13f377b9ac49294a733c717908aabc5a230",
+    "sboc-2027-junior-323-word.mp3": "551c9e04df0a0d45f2d62c4e8537166b848edf4a79f2ade6b27c850f4c47ed18",
+    "sboc-2027-junior-323-definition.mp3": "1360c1586ccc5c370ddf0b1724377f3cd71a563b8887ce0716ffb1d1f622fd0a",
+    "sboc-2027-junior-323-sentence.mp3": "d7a61f31a2b3ee171af60b8c212f4d39aa20fc23dc51d427cbf165e813a810c6",
+    "sboc-2027-junior-324-word.mp3": "e77d3a0a9029a5b1cfc4515ee4d2cfb520952568ca197b8d1d25770d333fe170",
+    "sboc-2027-junior-324-definition.mp3": "37b055009c0f440390c93dd374e3c9fec999ac273ec12bc5da9925346fe38381",
+    "sboc-2027-junior-324-sentence.mp3": "53c2e589ff83994c19d663e88b756384f9026c2fa4429604a0dc6e53741407de",
+    "sboc-2027-junior-325-word.mp3": "1d1f08679c606c66c76b135ab0506e2c190e83ee1e78948ceb358a4ce37dbe3c",
+    "sboc-2027-junior-325-definition.mp3": "ffad2b8acc915613342d202be86f665e87f33966d01822a6c0d7f80544052d97",
+    "sboc-2027-junior-325-sentence.mp3": "ef2cb077bbfcd81e164c80efb6add81a15f49d5436ae93e047cc68984c157080",
+    "sboc-2027-junior-326-word.mp3": "d6a455c2174ab38dca5b4b817d20d2b631c0450a373dff45cd7873a3d7db3a29",
+    "sboc-2027-junior-326-definition.mp3": "da240a61d118677979440208a494f59475dd4f2439af447e038a701851b3e870",
+    "sboc-2027-junior-326-sentence.mp3": "453a84a450802c9d3f0f0b3c84e68461989266ae129b1827995d42139063a567",
+    "sboc-2027-junior-327-word.mp3": "980e851b4e3a8f82fb65afbf06998d38a522056dea06a749c7668df2e481dee4",
+    "sboc-2027-junior-327-definition.mp3": "f5f88a0cc38d457f1bb461d86629b9bd00c2b346796341487ea0402a6d88080d",
+    "sboc-2027-junior-327-sentence.mp3": "3c682656b01ef7f28c1b6ff67a19cd99082560becc7c2dbe3587cd40e77bbee9",
+    "sboc-2027-junior-328-word.mp3": "1aed6a1a908651752b793c9867b03484d328b1cb11ea241d58e720d1a5a3566a",
+    "sboc-2027-junior-328-definition.mp3": "30d0faafab7721ddbdb0e32e4c1c10474f788077f9f32be19e7cf44af04802b6",
+    "sboc-2027-junior-328-sentence.mp3": "8c33f38b8fdf98c4b5bf075736b575a3f690eaf5d7f4bf341b21c3ff060335e3",
+    "sboc-2027-junior-329-word.mp3": "d88b1df8a3d291ceb8d10c8421ed14c17278efd132865ee71356fd21bb28e459",
+    "sboc-2027-junior-329-definition.mp3": "d5bc8a5e62e76563ad38ef34728e552e56ae0edd477769b9f74b496fbb6c82cc",
+    "sboc-2027-junior-329-sentence.mp3": "1f397163ea3971a351bc7ad10222364892a5c1cc0433b502577e95188da18d9f",
+    "sboc-2027-junior-330-word.mp3": "c347823f48adca5b5ce4d5437dd48384eea63277f3b36facbed4b60c528c716b",
+    "sboc-2027-junior-330-definition.mp3": "66a88df296e27e8f4163a7d18dd660f56497e58102956cf198f4b313422a9fb5",
+    "sboc-2027-junior-330-sentence.mp3": "b2d130153db4177242cf9631fcedc6272afa4d04bf3e6f1252cd1489fcdaa3c8",
+    "sboc-2027-junior-331-word.mp3": "e7211084e027b63fefe8bfbf19d1efac92f9796ac9beeb43196db8908e9faf58",
+    "sboc-2027-junior-331-definition.mp3": "2a0573edfcdb3ab375ea6d22a340f9389919910806f05cdbbd850bf40f12191c",
+    "sboc-2027-junior-331-sentence.mp3": "aae9d21ecbd1e42c6465944a2026e0fbb828b192a0d630ed8e1358f4c00bcbe7",
+    "sboc-2027-junior-332-word.mp3": "48be82bd11e983c18b3eb0011d88aed446457db7131b6686364d2ea31aaa7a17",
+    "sboc-2027-junior-332-definition.mp3": "4bed51c9b8d285c7c44e8de983b6cc869760c0f1880de13d0e8f8432440fb157",
+    "sboc-2027-junior-332-sentence.mp3": "65d0e26374093900b09fe3712a73fb42c63f9b1f97d121c385f389be0d691eb4",
+    "sboc-2027-junior-333-word.mp3": "74d98e608490bedfef44885409e62da68952a01f1f77edb44983776c2317edbd",
+    "sboc-2027-junior-333-definition.mp3": "829d4cc987125c6479c5d884b85e9034fc0dc4e97ecad25299be5d9448c4d4ef",
+    "sboc-2027-junior-333-sentence.mp3": "5566b9e8cfe8ca9d861f339deecfae2f8adfb167c2b5c79f93d7764e6a61e09f",
+    "sboc-2027-junior-334-word.mp3": "41e1c417b1b92402021898c282d9895495bd0c75994f7dda31f74cbaf16b5cf0",
+    "sboc-2027-junior-334-definition.mp3": "bf5655b3157c628dabe4a227a59c92b5e64fadfcbcde0305b6227a2e0b0b157a",
+    "sboc-2027-junior-334-sentence.mp3": "b487d68f3f17461a768c8a3c0fc6a4f608249782dbf28b9db147a3b67fdd1611",
+    "sboc-2027-junior-335-word.mp3": "9ea381349f8a292f6ce1fd9015afa4940e68a32ba666f8f15a34446561c12201",
+    "sboc-2027-junior-335-definition.mp3": "0964bdf0a2d64eb71085e912ec57e9305c5ec814c7ae7c6236e85c5485bb612b",
+    "sboc-2027-junior-335-sentence.mp3": "deef396f6cfb350a86d3d24fc3394fa18282f5bb4e048f1999196675ac0df47f",
+    "sboc-2027-junior-336-word.mp3": "6d08e328416866ebaab4f39db86b228bfcd4d055ffdc0f0635e7bf4129ea54a6",
+    "sboc-2027-junior-336-definition.mp3": "4216ae2e6bb59c69e52dd3f767e067dc949f7436e4250d515de9ad8784156d01",
+    "sboc-2027-junior-336-sentence.mp3": "ea4201d0b37d31c950312486a1fd0a4aedc79e89f8cdc2d7a4e6a4b05c5de924",
+    "sboc-2027-junior-337-word.mp3": "9311bd4bf041a177d86a3aba6263b3f7e968cbe7250fc71fedb71253b6fdf554",
+    "sboc-2027-junior-337-definition.mp3": "03cfbf82e122d7bce7929dfa1fdd2c347322a1a66114242caf2823592eefec51",
+    "sboc-2027-junior-337-sentence.mp3": "fa807707376eed7f289de168ec4a07678e241fe29f918bd1b194be9c70cb0374",
+    "sboc-2027-junior-338-word.mp3": "043a8b698dac6474be136271232f2f8598560883c7c41631da62d959d846e993",
+    "sboc-2027-junior-338-definition.mp3": "0068c3b276e2dcf08273e1bf34f113e8f5754a6eca4f676f222d1c37d74f8452",
+    "sboc-2027-junior-338-sentence.mp3": "56dc9c8f0216f4e8c955b35cdbd40383d34aaa90a908f694c20afec658662b00",
+    "sboc-2027-junior-339-word.mp3": "ce8ae2b33fc9c0970e541fab2e708d52f7100564274e164d095e601cfd07ca7c",
+    "sboc-2027-junior-339-definition.mp3": "9787f0527acf255712ddc3f7f1a42ff812c7940d2677704b741c9fd7b819b33a",
+    "sboc-2027-junior-339-sentence.mp3": "5678c30b19c6649b93e7532a4cabaf282ef6764cff1d571dbbd3ea359877c6a3",
+    "sboc-2027-junior-340-word.mp3": "627e4d6abceb683a4dca1f150b8e48d2bba6eef8c159a70b3089278d9de3b778",
+    "sboc-2027-junior-340-definition.mp3": "f877ebf14c5dd5a87a327d32063c21bbe6c1cf7c6f684ea728edde303e46445d",
+    "sboc-2027-junior-340-sentence.mp3": "e02f2c14f2e68cee88bf962b67bbebd5f4422c871374739173bc73ef975b98d9",
+    "sboc-2027-junior-341-word.mp3": "1de84aaba8433b0b3a0ece76f907655111f4efea825130ff465cc80c8a4fee1a",
+    "sboc-2027-junior-341-definition.mp3": "79bdb3b61dd8a136680bb811d922834180d3aca8ad7998ce79337527b35a7304",
+    "sboc-2027-junior-341-sentence.mp3": "92d6154280f91a02c439b985a80f6ebd396ae8efcf4ffd4bac50067ec30fd136",
+    "sboc-2027-junior-342-word.mp3": "2f801e045ae383ef3a3c8c1e92d469b9804a24ff9747af78abea308229c69036",
+    "sboc-2027-junior-342-definition.mp3": "e252c861edf42106bacc7f670bb01d4ec430fd6e1b565347c21b802307c7d40d",
+    "sboc-2027-junior-342-sentence.mp3": "076297881eea390f85ddd32177375db51a2a9eae35da63a26a12b717b339644f",
+    "sboc-2027-junior-343-word.mp3": "b82b51df2d125656187edff1871f525a9f9b78a13e9d0df01c83f48e8f0e65bb",
+    "sboc-2027-junior-343-definition.mp3": "197737f5ed733ca638ef69b6ef437773b4529157d0c557e4d63f8872092b4c81",
+    "sboc-2027-junior-343-sentence.mp3": "e483ad6c8a82fe387c02f2bcc01682b96e436f9a0cefd61309502ffb609aa655",
+    "sboc-2027-junior-344-word.mp3": "879f23426f9e697ad5e81b31d5d6640e98e25122e662092699973064e159c2ef",
+    "sboc-2027-junior-344-definition.mp3": "503be94a70ccb209cc8710ca83d6f81d94ad4cdd1dccd98b2c77da7ff6499595",
+    "sboc-2027-junior-344-sentence.mp3": "f29868b7d68292ac2500567e0d81ea41ff72b23852938a0950f2b0712b335b55",
+    "sboc-2027-junior-345-word.mp3": "d44b9c6000e7fa27aebcac00540806f8f11b3a3fa86da390e5072b5bfb9ec372",
+    "sboc-2027-junior-345-definition.mp3": "4ed1330210ad12919e26c798ce70d6551683022b82009f1d198b4fdfa4f24775",
+    "sboc-2027-junior-345-sentence.mp3": "13e30ad54bbb52fd5522cf40519ef0a73fcb9c56740d1d43b0ed9218a2a7194d",
+    "sboc-2027-junior-346-word.mp3": "c9a38ed7f3395f9614c737d630351eef9f6428e735a83f514be956770f4d8197",
+    "sboc-2027-junior-346-definition.mp3": "586589dec8ecddefd366ce387928c88786fb217066988718b2c24cbd54e98a8f",
+    "sboc-2027-junior-346-sentence.mp3": "d911beebf73f739412714a80e3198d215df3977e48a8698090cfd3d59d9805cb",
+    "sboc-2027-junior-347-word.mp3": "cd17c755699281c19cace379647ae52c8bd2654c8298595df152892d29dcb67f",
+    "sboc-2027-junior-347-definition.mp3": "945e11ddd03065df9b888add3e9be60e60664e4566a9d0da933d630f03309714",
+    "sboc-2027-junior-347-sentence.mp3": "7abed327c0734a5c3fb9e39cc3b740a7e3832edded960cdb2f38d2e83db74ed7",
+    "sboc-2027-junior-348-word.mp3": "c01485e84d7884b4d8fd45db9065d5e1ea15a63e86e136f048845608fe4a039b",
+    "sboc-2027-junior-348-definition.mp3": "86c8bda565b7868344478c8eff25dd10f5d38a8048b5153c08f86131638ca14c",
+    "sboc-2027-junior-348-sentence.mp3": "bfef1193946925d1947be9c76e565e6ffa67a53a6e90fdfd47bb58ebc5e61457",
+    "sboc-2027-junior-349-word.mp3": "c1648fcacf4964af59b77b80feaa0181088fa14acb5a250ae808f763d0dc7b65",
+    "sboc-2027-junior-349-definition.mp3": "703bdf20cc0ed9327bd3ecd5096c71e9748cd4fc4535e735ff3a16a1764a1f4c",
+    "sboc-2027-junior-349-sentence.mp3": "266d5afd5c516d6e7e93ad30cbc1b5c599e3e38157bdc989dfe5a73db9c2153e",
+    "sboc-2027-junior-350-word.mp3": "aa68e0776e6e72cdad08197bf595552841676d1e174d13e52d2ce89314093c7c",
+    "sboc-2027-junior-350-definition.mp3": "d2b0b90837fe29252d6b2dba0afb6e95da7f937296cf59f62590b809f33dddb8",
+    "sboc-2027-junior-350-sentence.mp3": "d1eeeec6b2004e81b2ef38b6c5b2fc7d2cbcc1b1010260a162958779b635c6d1",
+    "sboc-2027-junior-351-word.mp3": "ed1ea889b00a62772f5d463421f5ff6ccc07e6a52525f204b9bd5e5f73948af7",
+    "sboc-2027-junior-351-definition.mp3": "48e57ce6436228aef82e934bfac28267955ff47501bb074b5fcd8f0a880c197c",
+    "sboc-2027-junior-351-sentence.mp3": "736cdf38fb19927d98ee0a5a361ac6393e726f6231a33106cae34b020df3aa5e",
+    "sboc-2027-junior-352-word.mp3": "ad8127941a6d74486367eca4d703c2e395a71eea1518c035d63627bdaf8f1a63",
+    "sboc-2027-junior-352-definition.mp3": "167e82bc63d392b2cb3359c4f01c84e9e8ffd3834578149e3572d6bd83d78d26",
+    "sboc-2027-junior-352-sentence.mp3": "8493692dd18e64a029199e485269aeaa89b713e19995b8f0b601be8aa8f3ef3a",
+    "sboc-2027-junior-353-word.mp3": "0dc7226c6f1405b0ed4c7b440686fefaffa38a1b46c2852cfb84d2d739cba446",
+    "sboc-2027-junior-353-definition.mp3": "950b24d0cdb342e0fa74a5e709f07a5c7afdf5462d1822725c4ebed5d5712902",
+    "sboc-2027-junior-353-sentence.mp3": "9e0918d095f8fa729b2ff96c31423a880ccdcd18a007eadc084ca34a4ecdd2a7",
+    "sboc-2027-junior-354-word.mp3": "d30d81c76f82bde8796be743b3a2842e44a5081f002a19f5c6efea98555620f5",
+    "sboc-2027-junior-354-definition.mp3": "7ce7da2efeb72b83d1504658cca757c813b198c3eb1acec99ee50d4c06a648c0",
+    "sboc-2027-junior-354-sentence.mp3": "7cf0ac0d4ec2696a6c7c56a25648c79a94d713fa7764fd96074f89c1a1cac240",
+    "sboc-2027-junior-355-word.mp3": "0c1c51ecd25049d701d2581bbaf903297aa82e079784fc26f14e129daa8175a9",
+    "sboc-2027-junior-355-definition.mp3": "528e60b3b9c51cc011b942b383c1dd0a87e16f9adecba7cfdc959db08027056a",
+    "sboc-2027-junior-355-sentence.mp3": "50cbc415398f9d213a5dc9c1889b6719be63958c280e32c2b85d78410a81aa7f",
+    "sboc-2027-junior-356-word.mp3": "62a9f8f955de65db0dba866c32fc8109976a3729e6e5a5e2e170348c6a5b0d14",
+    "sboc-2027-junior-356-definition.mp3": "b45bb7372adb037b1e6c613b0b3b05a3746b7e9657372f518098de750cda84a2",
+    "sboc-2027-junior-356-sentence.mp3": "744d57332951d463b117c00cfebb6d105035cc1faf69fd1cb19ae8a83f5ebad7",
+    "sboc-2027-junior-357-word.mp3": "c22d1d54574114b4149253fa587c5cdab39e8a513fe0f4ad59d63bf1854389bd",
+    "sboc-2027-junior-357-definition.mp3": "74c22dea95357acd432b9ae16e1302eab6f3ad6603d7258dd9ec6e062ae4fe85",
+    "sboc-2027-junior-357-sentence.mp3": "69a22d176830fe5d9c5778e631fdb6796ecfa1697740f6fde726e6401c0cf8e7",
+    "sboc-2027-junior-358-word.mp3": "51b9e9d65a6217c98ba75b99912361f0e5d8290ab82adb8e5da9b5b5f943fb85",
+    "sboc-2027-junior-358-definition.mp3": "9d144225d24884a7a1c0270966d0634f7aefbef8d0e8872724aa90e18f077277",
+    "sboc-2027-junior-358-sentence.mp3": "0b39aa1343cd0ce7dbaa31d0c621da25d4b8cdd1665096d830e38b6d03eb0f46",
+    "sboc-2027-junior-359-word.mp3": "3554754830d4dbb4527c833fd3c083d98b87626e7872f0c3f78b5e88206a75f7",
+    "sboc-2027-junior-359-definition.mp3": "235d19118c4a4dbfddb5bba0a0646febf844a18fe18d952864640a714ab5e83e",
+    "sboc-2027-junior-359-sentence.mp3": "3a9fd307f76fb745db947a98ae40572f92af22c1f732a5845c74a85559ad722f",
+    "sboc-2027-junior-360-word.mp3": "4eb0bb8c9c28cce4a9f9d14d2e0ce2ce02b51803dd951a9e28d496aaf0c7cd3f",
+    "sboc-2027-junior-360-definition.mp3": "d4e9872bef1a2f07b113aac6d51dacf832470c43752cd691728699d3436bfc17",
+    "sboc-2027-junior-360-sentence.mp3": "003b01d9fc6d26ab667b9d59d2c71c77536ee5d934ada7bf50385ca962dc868d",
+    "sboc-2027-junior-361-word.mp3": "26b2a3f5121512a44c9c99984bc50d07842f2b40268629c57698b79372e0f16e",
+    "sboc-2027-junior-361-definition.mp3": "798c818e8287436407373652862eefc7da9986ba9811f16d90fcdb46bb21ab36",
+    "sboc-2027-junior-361-sentence.mp3": "e4981744e30ff31ab19316587a5f1b2274d499336b0c4dc2c0040a8a706b882b",
+    "sboc-2027-junior-362-word.mp3": "79724274bc7a1af1f744b125903390e3e281bf764870a95d7c9536e1ef8ad56c",
+    "sboc-2027-junior-362-definition.mp3": "cdbf578fba175574277520580ec6bf50c5de86b95efe38893f078446cb60cd39",
+    "sboc-2027-junior-362-sentence.mp3": "15c7199644556b80cd962cfc094fe5f2bba8452c083ce3ec0d1ce995398315cf",
+    "sboc-2027-junior-363-word.mp3": "beba8396de48daf1d6545f706c6584e64a40f3c0fc196432c5d059d61d5702ed",
+    "sboc-2027-junior-363-definition.mp3": "1d7a6963ba47937cff9af2ad9ce7b5b18d6e1a4c58ee456b820b299961020364",
+    "sboc-2027-junior-363-sentence.mp3": "8483ffc35a25c95313df588ae44fed43b96e68540e2574a51972fe0cd4e2fb64",
+    "sboc-2027-junior-364-word.mp3": "18e22c7ffa71fd7604ad6ecab7028e560235558299e9499abffb72b9888af0df",
+    "sboc-2027-junior-364-definition.mp3": "8ab5543b21f2a5f32e626c2d866eb05e67e86ff3fae6afe051f0ebb5141b1ef8",
+    "sboc-2027-junior-364-sentence.mp3": "a065c7e5b4d71e07c12c62e09e76c855fe641eb750146eb6b00ba462f5036110",
+    "sboc-2027-junior-365-word.mp3": "ff7f78c1983f69ddffdd1d3b3bbf55d8fe3b35b09c79130bf9358a0f7e2f45ab",
+    "sboc-2027-junior-365-definition.mp3": "e438686d83888bf0c42e20ea9074c24bc81c4a78bf9c68cb44a4204acc0e87b2",
+    "sboc-2027-junior-365-sentence.mp3": "9625130597e9ba4c6ef1e5bfefffe7e21813b390f807c29cc8ad800fa9a899ae",
+    "sboc-2027-junior-366-word.mp3": "11b830380b46d9d228018d4ec11f4dae5c7661bfcac75e35cfc0d760c3645e32",
+    "sboc-2027-junior-366-definition.mp3": "b72d07aaa47d5a1e0c458df75ff2485696218ca3cab164af45762cdf73aff733",
+    "sboc-2027-junior-366-sentence.mp3": "f8b3c3852bc163b14d63cb7e6df422abfe2ab201ec14336a2addf61276f601e0",
+    "sboc-2027-junior-367-word.mp3": "dbea2fe3e90f103efa078d7e1d44716bd2879db4824754b166b9510bae8f4920",
+    "sboc-2027-junior-367-definition.mp3": "62d0c564f99f7c94aa15867335edd400cc9321885e4178c41b67110a2f317aab",
+    "sboc-2027-junior-367-sentence.mp3": "82ac7cd5b0f7348e8d84ff43b78c20500b84e9577712c0f96ea76629ff701f8b",
+    "sboc-2027-junior-368-word.mp3": "3a586e354dfc3ff80ab94128ff2a55174d61c8a8a818a56aa90dbda8722827b7",
+    "sboc-2027-junior-368-definition.mp3": "4e25f749dfe801dcd09f5ce5817d07e5b5ba7a62daa0b14e66a4ac5871c5ff71",
+    "sboc-2027-junior-368-sentence.mp3": "1961b6a6948dc78a3771e6e09312aa242dd6f1c08536ae08c052a32f42985385",
+    "sboc-2027-junior-369-word.mp3": "40805e7c9d7792cb8f84ecfb746a72bca02b5e0e4dbaa19d993567f6cfb12855",
+    "sboc-2027-junior-369-definition.mp3": "86e2087d657b9ef488c369f5e417589f520292fc4ab11ba8ce22288299b1bc02",
+    "sboc-2027-junior-369-sentence.mp3": "9b2f39f93f2cfa20cece0d54d161f2a0b55e936831fab09e406984ec865caae4",
+    "sboc-2027-junior-370-word.mp3": "6cea0111cf2c96a1ec1d3e9ad1dbf72994e103d80339d0e823266052f6637cfe",
+    "sboc-2027-junior-370-definition.mp3": "4fbe5d96b283240b49cf0756c4975a407c9834bf8d07103a5fe3fe4f818afb8b",
+    "sboc-2027-junior-370-sentence.mp3": "4d540b119e52a1985d42fab0a980e675ea9ec3362e232d8253ac9241da0238d8",
+    "sboc-2027-junior-371-word.mp3": "af154aafc7ecdf8d0fa9933552466eae3830798ff1a306e89a41522790d42a05",
+    "sboc-2027-junior-371-definition.mp3": "7aace1c0475cbc73a5dabd31a3098d9ee7768eacef1c923b6b21b41845a7fe95",
+    "sboc-2027-junior-371-sentence.mp3": "752e2e9520756bf99d9416a3023da8e54f7c0f73369ed925026cd3ef2d76b851",
+    "sboc-2027-junior-372-word.mp3": "64b749ee966db1dae65fcbf2d27dce1d4974c75a3714d24856d05b16e9319ac1",
+    "sboc-2027-junior-372-definition.mp3": "acf6be1da301c416e7930ff388c0bf4f12ab1b8a533f6815c154cc75215989cf",
+    "sboc-2027-junior-372-sentence.mp3": "11d18a05edb47060d228cb1980c2fe8d0b6dccbca8971be1f04851a53def43a2",
+    "sboc-2027-junior-373-word.mp3": "f6c4ca704985e2c18dfef47fe5b14e9b18bdf805cb21f2cb0139bb0e6db40bad",
+    "sboc-2027-junior-373-definition.mp3": "8e757308e56ceea1d8a15774da6022c726c0254be922434bdefc133fbec757b6",
+    "sboc-2027-junior-373-sentence.mp3": "e18edf3e50f62590b24ae2a3856246054ce484fde549ac29b027b096127cae39",
+    "sboc-2027-junior-374-word.mp3": "8e5d394f9ff4394b2d5d795f8f95a3faee1131bdc94766db2b50d618dcda6e4f",
+    "sboc-2027-junior-374-definition.mp3": "5ad10230520534d51e05ce39d057034eff6d622184186d3123950066db95802d",
+    "sboc-2027-junior-374-sentence.mp3": "4b46d517c2ae56d3f6fe08748b878f1509b152865ec2e91a2a11b7362529db7e",
+    "sboc-2027-junior-375-word.mp3": "4b53de49c5de17ffedd379da63893b72a15cddd2a436f96ac1ddfdb5a385dc36",
+    "sboc-2027-junior-375-definition.mp3": "b2cac09278ca0413abd892215a173f386f410b4b4a64b700ecb332639e891ac4",
+    "sboc-2027-junior-375-sentence.mp3": "f08e2d3c945fd12806ea6a208dc24a28b65eb4dbe2c42465128fcca2c3172e8a",
+    "sboc-2027-junior-376-word.mp3": "7918aac5ad28b788c155a461fcbd3938aea9c3d16ce7422989d5fcb76f7aba25",
+    "sboc-2027-junior-376-definition.mp3": "a0d71ef93c7ec3bd3e42692e8440f42ec789ffa6872523f7fd70ce2fc859e69a",
+    "sboc-2027-junior-376-sentence.mp3": "a192301617001f8f9810ca84fbc174196831a4b6d1082513cefeeafeaa05df78",
+    "sboc-2027-junior-377-word.mp3": "338ade672de17c178e71e92f2a8af648a301c0272d814435fd1a0284952f3a35",
+    "sboc-2027-junior-377-definition.mp3": "329995bd53e034b630a16334b9904e8d58ee4d8f19307d1949445cf7262af2e4",
+    "sboc-2027-junior-377-sentence.mp3": "17f1b75dda396e0a1fb695ec47998fc0917d6d277dba43f7b1207821c5136aaa",
+    "sboc-2027-junior-378-word.mp3": "a208939a2a10fd9f96a4d8329b2a8a2a3b645e83374cb1bc654f36aabd52754a",
+    "sboc-2027-junior-378-definition.mp3": "f215802565b4a48019a222781ecf1c32fd39770c5c0a6b936b09dbc87d2f4397",
+    "sboc-2027-junior-378-sentence.mp3": "e2317b326a0e45332f097b095616d11c03f7e1920b62f55be2c9f6e77539c3e7",
+    "sboc-2027-junior-379-word.mp3": "8dd1158512d9f9eaec01e30c954cb53f80f8bef3d74badb8d0aa3de14f8334b5",
+    "sboc-2027-junior-379-definition.mp3": "dca0e3cd2a2fc8d885ab7c2e98fbf8c2c0f54b1d2f233f3f9d2fa78b8ebfe218",
+    "sboc-2027-junior-379-sentence.mp3": "5841eb58d912cde98d0d83c1891fafb62e76c346cfda7a498335c65b65050e17",
+    "sboc-2027-junior-380-word.mp3": "133738295a22810059c25b79ca5a21fa401a9c084f90a73f6f42b8e51ae66c5c",
+    "sboc-2027-junior-380-definition.mp3": "1f5e156032b63ab80a82427d61b09181aa8e97128ed587ad47d2fe3c03015c55",
+    "sboc-2027-junior-380-sentence.mp3": "c425f0e38e1ab5841ab666ddf096b2d707f35de07266e1a30a933367cbc6df83",
+    "sboc-2027-junior-381-word.mp3": "04975fc8f08b6d52f3824e09574133766fa84712a6f0eced69ce1ffdc86dc98c",
+    "sboc-2027-junior-381-definition.mp3": "aaa308849e9a6e34d0df74f4bbcd0c6b5147ebc3b1cf173eab4f5871aa7b4f4c",
+    "sboc-2027-junior-381-sentence.mp3": "597a65f78c895344bb85cda2c93c2b5e23628d46e957484b883a71730df27b6e",
+    "sboc-2027-junior-382-word.mp3": "34c1d3fdc860ca0167e5731d2ff851822e343605d731386e4a7c329ec5ae6767",
+    "sboc-2027-junior-382-definition.mp3": "c819ed97d3a48c8b6c9ec4d9554ecbf5b146b700ba19775850ecef9c818cde38",
+    "sboc-2027-junior-382-sentence.mp3": "9a963181f313680af19c1a910f45cd5fc142d5108b4dafbe2889c6bdfbd25a9c",
+    "sboc-2027-junior-383-word.mp3": "7407a95411c17a686b7944ddf3d1412c31ce53059f88faf62e94032670499a9d",
+    "sboc-2027-junior-383-definition.mp3": "96b068d924e41d5f281a71b4b61435dbbe85815b9b2f17fb90bdade63acc4fc5",
+    "sboc-2027-junior-383-sentence.mp3": "90277f3110261e533ad68e90d6acf8111b9f87f1ecd3a66a25927101ad01b2f7",
+    "sboc-2027-junior-384-word.mp3": "69dffd252f0c56a85e55f8ab68078b9012c7ee284b018c763ed19533a5f850ef",
+    "sboc-2027-junior-384-definition.mp3": "5bb0a3e560da5155f0696e782c158ee14417d01e793a258d70cfb160ff15cde6",
+    "sboc-2027-junior-384-sentence.mp3": "f97964462d7331beaec917012b7c1dfd203f3aa83bc6afe0d9c8275f505d617c",
+    "sboc-2027-junior-385-word.mp3": "524cb00106144973e08110e4e8ff2aa8acf06da516ceff91e9a13875c486f6a9",
+    "sboc-2027-junior-385-definition.mp3": "516f1d5a51b67e4f85052df7464a2b4e77529e35b68bd1b8c94a721cc44acbe8",
+    "sboc-2027-junior-385-sentence.mp3": "1610ddc02e95a97283af7571ecdc15b587a65b08ddc912f2e3e9533ef804e25b",
+    "sboc-2027-junior-386-word.mp3": "de2e2f31a1a6a14fe7897e7aca07632cc94f4387f10f039ca93a1296c1e310c4",
+    "sboc-2027-junior-386-definition.mp3": "c7609d3f0bdfcb1158bac960d9e2190b03eafacfcee6771f6a7cb3cff360a207",
+    "sboc-2027-junior-386-sentence.mp3": "60b0d58ab834fefd7a88a47ac3fb0ed491e76266907aa5cae25f686171cad560",
+    "sboc-2027-junior-387-word.mp3": "92aea9743f93065305f484642b47a158a1e42c81ff88d8bf84b9c1c166a3fa32",
+    "sboc-2027-junior-387-definition.mp3": "d8b6b9cba8599251288308326c56895639af64a3e861cf55341dcb2356460762",
+    "sboc-2027-junior-387-sentence.mp3": "5d8a484f5582399592946e7f15f4c965b6ad962031c509a31c5e89e6e2a7e82a",
+    "sboc-2027-junior-388-word.mp3": "1e4038151848c5d2a81d0de116208cae3db85c98d771591d4abab02ea45065b5",
+    "sboc-2027-junior-388-definition.mp3": "4aeabf97fb3f361fb31b6f7e98a5f0a94b57315d136219246d1b944081b79941",
+    "sboc-2027-junior-388-sentence.mp3": "5e475168bde02f0a63e12762d06deac1f0211eb621f7c6ce2f81c39d117081ca",
+    "sboc-2027-junior-389-word.mp3": "4b4a19d78cc9acca49c764f857ddf08ab1df7304a2ed56a55b4eb304b5e1a2fe",
+    "sboc-2027-junior-389-definition.mp3": "af46586888b5d93ce932c5730d958fe0bb70799863b21a883d8cbab30a4bac86",
+    "sboc-2027-junior-389-sentence.mp3": "e6cebb26a347df51ef42b5d4c5e7e141314cf2f9989ba64e6abadbb6826b858c",
+    "sboc-2027-junior-390-word.mp3": "d4f81bccb992505a54a03a61aa061dbda001f92a54ce7786c9a4adcb4ac6fdc2",
+    "sboc-2027-junior-390-definition.mp3": "5b6c253c675e779afb99f257b60a09589d00fea7e5a5d8b256b3e7b37fe26a0c",
+    "sboc-2027-junior-390-sentence.mp3": "be4f49bf48ceac5928e4c7e5c8a2dcc9893f964a52ba9c69411d0c8646bbc828",
+    "sboc-2027-junior-391-word.mp3": "7849e55ece2b181ea162a45483b986637af57f25756c367a837e82c6f2c2a779",
+    "sboc-2027-junior-391-definition.mp3": "e6808aecd855b42f9e54e41bd7e4204f89431bd303e5c03b0e88854afd7a4223",
+    "sboc-2027-junior-391-sentence.mp3": "649f3016a6b218415a65db234890047562aadf4707ef5c671efeee294b926bf3",
+    "sboc-2027-junior-392-word.mp3": "1327dd76bde0d940b47f1f9dcf2aaa2054152cb9fc922062d3c056f0b55859cc",
+    "sboc-2027-junior-392-definition.mp3": "771a7ad8a87123f0af1a4e4900a7cbdb9baad0cb458e09c17de17ab82dd942f4",
+    "sboc-2027-junior-392-sentence.mp3": "83adeec5401cddbbac7a21e194551fe569c93aed2b4bf6628cf2b1975a16fc90",
+    "sboc-2027-junior-393-word.mp3": "46687a7b9acb4a9a29def05a4611327cf09b32149675cc684fc58366673cc2a0",
+    "sboc-2027-junior-393-definition.mp3": "36dfaa077cd9d186f78a1eb0ee3176ab1c649ce693058bd038c9974de1f5f230",
+    "sboc-2027-junior-393-sentence.mp3": "2fe69842e415e515c309839da78ffc3a652d63895d5f7a98d17006943260afd2",
+    "sboc-2027-junior-394-word.mp3": "22f59f42715c150ca880cd69f9a241342339547b3492cf185ec157c860eaf1a2",
+    "sboc-2027-junior-394-definition.mp3": "63e34aeba0d4ee8c71b2c204492a99c878ae67f5609c8487b2b7b9c35e25a85a",
+    "sboc-2027-junior-394-sentence.mp3": "641c7d6f2f499e55705cdf2ff4040dee124dcce699584046e8bc5110c76904ab",
+    "sboc-2027-junior-395-word.mp3": "7299dc66870774f77ecb51c5d67fcf88b488f537350f3f886889678cc9a7af13",
+    "sboc-2027-junior-395-definition.mp3": "8b12cb35600b6931ffb222c4c23ea15b8a48d9797093b6f227645ab340588604",
+    "sboc-2027-junior-395-sentence.mp3": "ae9a56ed445b2301537a051573a24ad6a1e52b8c0a38d3c6a2715c530812c10d",
+    "sboc-2027-junior-396-word.mp3": "faa499a1f9108fb7fdd3edaf6bd2ed5669d1fb3aa3fabc5fa11f1e3443de2703",
+    "sboc-2027-junior-396-definition.mp3": "173e715e489272cec5ff14204ff7fea525bbf59faa9e6c23d709b9ddd02b1efb",
+    "sboc-2027-junior-396-sentence.mp3": "986b9ada3d4b4cae1b35a8b076d6e03c62e299b1f7a7e68ae3256dacfb45fca4",
+    "sboc-2027-junior-397-word.mp3": "e35355592c375bea2641d1dc231db8efe2a8246b9e16029622744929f0747ad0",
+    "sboc-2027-junior-397-definition.mp3": "69dbca7f68314554fddbc184d152f1f99fff48b88e909d9ec2cc07fbd5b05107",
+    "sboc-2027-junior-397-sentence.mp3": "43f4f37b08d422ae13d3fa81e80327d556bbd683b9ae61e8e4dfd33e6c60e998",
+    "sboc-2027-junior-398-word.mp3": "54debaaa1029dd46c994893f36e2b4e160748f9ef9bd3452e4f532125cc428c9",
+    "sboc-2027-junior-398-definition.mp3": "cfd831c226bf0f002bc72b932a2768b70d6f8c85eb83466598ea27721815643f",
+    "sboc-2027-junior-398-sentence.mp3": "fa0c66bd42bcd3c663aeb5ecbbd3c8e8fc4429b2244f026bbff4549e8d0f47b4",
+    "sboc-2027-junior-399-word.mp3": "7d6e36b87a6f5d941982b5f57a6d0157da22c9ecb03011d58b09248ddf84bbbd",
+    "sboc-2027-junior-399-definition.mp3": "d463dae74aba8cce0bc9d97d8fd17aa44a20a8e967517950fb9b1df1d823c391",
+    "sboc-2027-junior-399-sentence.mp3": "8d07b869ce41f91d06ae19a06f479d3cf193d378d47b1d558433540956c47cab",
+    "sboc-2027-junior-400-word.mp3": "9723f1ddda715a57132815992ce7d2c7a4b2085034c05a991aef77c17cb6f48a",
+    "sboc-2027-junior-400-definition.mp3": "3cf1c249091334abf6912aaa5a1a2ecb71ae5516f7ce4c8f6d37a32f138749ff",
+    "sboc-2027-junior-400-sentence.mp3": "461b5d7d6e9a7179e715d5455b3fd25555a73d7a7d23c71a2f51267da961711f"
+  }
+}

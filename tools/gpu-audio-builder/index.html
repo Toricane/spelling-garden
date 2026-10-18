@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Kokoro recording build tool</title>
+<style>body{font:18px system-ui;max-width:850px;margin:50px auto;padding:20px}button{padding:15px;font:inherit}pre{white-space:pre-wrap}</style>
+<h1>Kokoro static-recording build tool</h1><p>Temporary build tool only. The finished website receives MP3s, never this tool or its model.</p>
+<p id="support"></p><button id="all">Generate remaining clips · GPU + CPU</button><pre id="status"></pre><pre id="log"></pre>
+<script type="module">
+const support=document.querySelector('#support'),status=document.querySelector('#status'),log=document.querySelector('#log');
+support.textContent=navigator.gpu?'WebGPU API is available.':'WebGPU is unavailable.';
+document.querySelector('#all').onclick=async()=>{
+ document.querySelector('#all').disabled=true;
+ try{
+  if(!navigator.gpu||!await navigator.gpu.requestAdapter())throw Error('No GPU adapter');
+  const{KokoroTTS}=await import('./kokoro.web.js');status.textContent='Loading cached fp32 Kokoro…';
+  const tts=await KokoroTTS.from_pretrained('onnx-community/Kokoro-82M-v1.0-ONNX',{dtype:'fp32',device:'webgpu',progress_callback:p=>{if(p.status==='progress')status.textContent=`Loading ${p.file}: ${Math.round(p.progress||0)}%`;}});
+  const response=await fetch('/start?cpu=1',{method:'POST'});if(!response.ok)throw Error(await response.text());
+  let n=0;const started=performance.now();
+  while(true){
+   const job=await(await fetch('/claim')).json();
+   const progress=await(await fetch('/status')).json();
+   status.textContent=`${progress.available}/1200 recordings ready. GPU: ${progress.counts.gpu}; CPU: ${progress.counts.cpu}; ${progress.elapsedSeconds}s elapsed.`;
+   if(progress.failed.length)throw Error('A recording failed. Restart the build tool to resume missing clips.');if(job.done){if(progress.available!==1200)throw Error('The collection is incomplete.');break;}if(job.waiting){await new Promise(r=>setTimeout(r,500));continue;}
+   const before=performance.now();const audio=await tts.generate(job.text,{voice:'af_heart',speed:.95});
+   const saved=await fetch('/save/'+job.key,{method:'POST',body:audio.toBlob()});if(!saved.ok)throw Error(await saved.text());
+   n++;log.textContent=`Last clip: ${job.key}, ${((performance.now()-before)/1000).toFixed(2)}s\nGPU clips in this run: ${n}`;
+  }
+  status.textContent=`COMPLETE: 1200 static recordings ready in ${((performance.now()-started)/1000).toFixed(1)}s. No model is included in the website.`;
+  await tts.model.dispose();
+ }catch(e){status.textContent='ERROR: '+e.message;console.error(e);document.querySelector('#all').disabled=false;}
+};
+</script></html>

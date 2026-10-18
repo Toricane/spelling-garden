@@ -1,0 +1,14 @@
+{
+  "additionalSpellings": {
+    "sboc-2027-junior-004": ["accouter"]
+  },
+  "sources": {
+    "sboc-2027-junior-004": "https://www.dictionary.com/browse/accouter"
+  },
+  "notes": {
+    "sboc-2027-junior-004": "The guide prints the alternative as ‘Accouter’. Lowercase ‘accouter’ is also accepted, verified against Dictionary.com under manual rule 12.",
+    "sboc-2027-junior-014": "The source labels this entry ‘v.’, although its definition describes a noun. The source label is preserved.",
+    "sboc-2027-junior-105": "The source prints the part of speech as ‘v,’. The displayed full label is verb.",
+    "sboc-2027-junior-123": "A standalone comma in the source word cell is typography, not an alternate spelling. It is excluded from accepted answers."
+  }
+}

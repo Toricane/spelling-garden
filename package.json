@@ -1,0 +1,14 @@
+{
+  "name": "spelling-garden",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "audio": "node tools/generate-audio.mjs",
+    "audio:gpu": "node tools/gpu-audio-builder/server.mjs"
+  },
+  "devDependencies": {
+    "kokoro-js": "1.2.1"
+  }
+}

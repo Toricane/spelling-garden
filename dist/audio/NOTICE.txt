@@ -1,0 +1,15 @@
+Spelling Garden static speech assets
+
+Generated with Kokoro-82M-v1.0-ONNX (q8 on CPU / fp32 on GPU), af_heart US English voice,
+using kokoro-js 1.2.1 at speed 0.95.
+Model: https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX
+Library: https://github.com/hexgrad/kokoro
+The Kokoro model and library use Apache License 2.0; see LICENSE-KOKORO.txt.
+The model and generator are build-time tools only. Visitors receive MP3 files.
+
+These are machine-generated recordings, not official SBOC audio.
+Availability in the audio manifest does not mean a human has approved pronunciation.
+The source study guide's pronunciation respellings remain available in the word library.
+
+Text content: SBOC 2027 Official Junior Word List, supplied by the user.
+Word-list content belongs to its respective rights holders.
