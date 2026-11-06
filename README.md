@@ -21,10 +21,21 @@ Deploy the contents of `dist/` to any static HTTP(S) host. Use a stable origin: 
 - Progress saves after every graded attempt. Export/import JSON backups and confirmed reset are in Settings.
 - Capitals count. Whitespace, accents and punctuation are optional under manual rule 9. Homophones are context clues, never automatically accepted alternatives.
 - Learning hints remain available; this is learning practice, not a full simulation of an oral competition.
-- Type or use the always-visible microphone controls in the spelling field. Voice uses the browser's `SpeechRecognition` service: press Start, say each letter, then press the same button to Stop. Space also toggles recording when the Start / Stop button or page has focus; other form controls retain their normal keyboard behavior. Restart stops listening and clears the ungraded answer; press Start to begin again.
-- Review or edit captured letters before checking. Say “capital” before an uppercase letter; “zee” and “zed” are supported. Input is interpreted as letter names without supplying the expected answer to recognition or correcting against the word list. Unrecognized tokens block checking until the spelling is corrected or restarted. Recognition accuracy and availability depend on the browser, microphone, and speaker. The browser service may send audio online and require internet; this app does not store recordings or ship a recognition model. The spelling field remains editable when recognition is unsupported or fails. Enter starts voice input when the field is empty, checks an existing answer, or advances after feedback; while recording, Enter or Check spelling stops listening, waits for the final transcript, and then checks in the same action.
+- Type or spell aloud with the microphone controls inside the spelling field. Both are always available together; there is no input-mode toggle.
+- Feedback stays brief: correct answers show the spelling and pronunciation. Misses compare “Yours” and “Answer” in monospace, with differing letters highlighted in soft rose and sage. The comparison uses the closest accepted spelling, respects capitalization, and ignores optional accents, spaces and punctuation. Meaning, example and alternatives are available in collapsed details.
 - Only the word autoplays for ordinary entries. Under rule 11, homophones automatically receive their source definition and sentence after the word. On-screen learning hints mask target spellings.
 - Statistics shows scheduled-review accuracy, word coverage, review intervals, missed words, recent sessions and 14-day activity. Accuracy excludes retries and extra practice; session history includes extra practice and retains the latest 100 finished sessions. Written definition/sentence hints are hidden by default and can be enabled below the practice help buttons.
+
+## Voice input and keyboard controls
+
+- **Start / Stop:** press the microphone button, say each letter, then press the same button to stop. Space also toggles recording when that button or the page has focus; typing and other controls keep their normal Space behavior.
+- **Enter:** starts voice when the input is empty and recognition is available, checks an existing answer, or advances after feedback. During recording, Enter or Check spelling stops listening, waits for the final transcript, then checks in one action. Check spelling stays enabled while recording.
+- **Restart:** stops listening and clears the ungraded spelling. It does not record a miss or change the review schedule.
+- Say “capital” or “uppercase” before an uppercase letter; both “zee” and “zed” are supported. Stop to review or edit captured letters before checking if needed. Unrecognized speech must be corrected or restarted before grading.
+
+Voice uses the browser's `SpeechRecognition` / `webkitSpeechRecognition` service. Availability and accuracy depend on the browser, microphone and speaker. If the API is unavailable, the microphone is disabled and typing still works. The browser service may send audio online and require internet; the app does not store recordings or ship a recognition model. Recognition receives no expected answer or word list, and input is parsed as letter names rather than autocorrected toward a correct spelling.
+
+Starting voice stops prompt playback. Playing audio, restarting, hiding/leaving the page or advancing cancels listening and any pending check. Late results from cancelled recordings cannot change or grade a later attempt.
 
 ## Source and data checks
 
@@ -71,7 +82,9 @@ App files and audio played successfully are cached by the service worker. After 
 npm test
 ```
 
-Tests cover the 400-entry dataset, capitals/accents/alternatives/homophones, due-first queue selection, short-set limits, interval changes, retries, calendar boundaries, backup validation, hint masking, and stable IDs across list reordering.
+Tests cover the 400-entry dataset, capitals/accents/alternatives/homophones, due-first queue selection, short-set limits, interval changes, retries, calendar boundaries, backup validation, hint masking, stable IDs across list reordering, statistics, and all 1,200 recording checksums. Voice tests cover letter parsing, interim/final transcript updates, stop-and-check, cancellation, recognition failures and keyboard shortcut eligibility. Comparison tests cover substitutions, missing/extra letters, capitals, optional characters and accepted alternatives.
+
+For UI changes, also check desktop and narrow-screen layouts, microphone Start/Stop/Restart, Enter/Space behavior, playback interruption and feedback differences in-browser. Use a separate origin or browser profile for graded QA attempts; do not reset or alter a user's saved progress. Automated recognition tests use a simulated service and do not measure real microphone accuracy.
 
 ## Content rights
 
