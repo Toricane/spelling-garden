@@ -27,10 +27,11 @@ function cancelVoice() {
   updateVoiceControls();
 }
 function updateVoiceInput({ value, invalid, message }) {
-  if (screen !== 'practice' || session?.checked) return;
+  if (screen !== 'practice' || session?.checked || state.settings.inputMode !== 'voice') return;
   document.querySelector('#answer').value = value;
   voiceInvalid = invalid;
   voiceMessage = message;
+  if (value.trim()) { session.emptyAnswer = false; renderHint(); }
   updateVoiceControls();
 }
 function updateVoiceControls() {
@@ -39,28 +40,31 @@ function updateVoiceControls() {
   if (!button || !session) return;
   const busy = voiceInput.phase !== 'idle';
   const stopping = voiceInput.phase === 'stopping';
+  const isVoice = state.settings.inputMode === 'voice';
+  const controls = document.querySelector('#voice-controls');
+  controls.inert = !isVoice; controls.setAttribute('aria-hidden', String(!isVoice));
+  document.querySelectorAll('[name="input-mode"]').forEach(radio => radio.disabled = session.checked);
   document.querySelector('#voice-status').textContent = !Recognition ? 'Unavailable' : stopping ? 'Finishing…' : voiceInput.phase === 'starting' ? 'Starting…' : busy ? 'Listening…' : 'Space to start';
   document.querySelector('#voice-status').title = voiceMessage;
   const needsHelp = voiceInvalid || /not allowed|not available|could not|did not|unavailable|No microphone|No speech|No letters|not finish/.test(voiceMessage);
-  document.querySelector('#input-help').textContent = !Recognition ? 'Voice isn’t supported here. You can still type your spelling.' : needsHelp ? voiceMessage : spellingHelp;
+  document.querySelector('#input-help').textContent = isVoice && !Recognition ? 'Voice isn’t supported here. You can still type your spelling.' : isVoice && needsHelp ? voiceMessage : spellingHelp;
   button.innerHTML = `${icon(busy ? 'stop' : 'mic')}<span>${busy ? 'Stop' : 'Start'}</span>`;
   button.setAttribute('aria-pressed', String(busy));
-  button.disabled = session.checked || !Recognition || stopping || (!busy && voiceInvalid);
+  button.disabled = session.checked || !Recognition || stopping;
   document.querySelector('#voice-restart').disabled = session.checked;
   input.readOnly = session.checked || busy;
   document.querySelector('#check').disabled = false;
   document.querySelector('#check').setAttribute('aria-busy', String(Boolean(pendingVoiceCheck)));
-  const enterStartsVoice = Recognition && !busy && !voiceInvalid && !input.value.trim();
+  const enterStartsVoice = isVoice && Recognition && !busy && !input.value.trim();
   document.querySelector('.submit-row small').textContent = session.checked ? 'Press Enter to continue' : enterStartsVoice ? 'Press Enter to start voice' : 'Press Enter to check';
 }
 function toggleVoice() {
-  if (screen !== 'practice' || session.checked) return;
-  if (voiceInput.phase === 'idle' && voiceInvalid) return;
+  if (screen !== 'practice' || session.checked || state.settings.inputMode !== 'voice') return;
   if (voiceInput.phase !== 'idle') voiceInput.stop();
   else { stopSpeech(); voiceInput.start(document.querySelector('#answer').value); }
 }
 function focusAnswer() {
-  document.querySelector('#answer')?.focus();
+  document.querySelector(state.settings.inputMode === 'typing' ? '#answer' : Recognition ? '#voice-record' : '#check')?.focus();
 }
 function stopSpeech() { speechRun++; stopAudio(); }
 const esc = text => String(text ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -142,15 +146,22 @@ async function playClip(target, kind, slow = false, button = null) {
 function renderPractice() {
   const w = currentWord(); const item = currentItem();
   const firstDone = session.attempts.filter(a => !a.retry).length;
-  app.innerHTML = `<div class="practice-shell"><header class="practice-header">${brand}<span class="practice-meta">${item.retry ? 'A little revisit' : `Word ${Math.min(firstDone + 1, session.total)} of ${session.total}`}</span><button class="text-button" id="end">End session</button></header><div class="progress-track" role="progressbar" aria-label="Session progress" aria-valuenow="${firstDone}" aria-valuemin="0" aria-valuemax="${session.total}"><div class="progress-fill" style="width:${100 * firstDone / session.total}%"></div></div>${notice()}<main id="main" class="practice-main"><form id="answer-form" class="answer-form" novalidate><label class="sr-only" for="answer">Your spelling</label><div class="answer-toolbar"><div class="listen-row"><button class="button" id="hear" type="button">${icon('sound')}Hear word</button><button class="button" id="slow" type="button">Hear slowly</button></div></div><p class="caption" id="audio-status" role="status"></p><div class="answer-entry"><input class="word-input" id="answer" name="answer" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-describedby="input-help" ${session.checked ? 'readonly' : ''}><div id="voice-controls" class="voice-controls"><span id="voice-status" class="voice-status" role="status">Space to start</span><div class="voice-actions"><button class="button voice-start" id="voice-record" type="button" aria-pressed="false" aria-keyshortcuts="Space" aria-describedby="voice-help" title="Space to start / stop. Your browser may process audio online.">${icon('mic')}<span>Start</span></button><button class="button voice-restart" id="voice-restart" type="button" aria-label="Restart spelling" title="Restart spelling">${icon('restart')}</button></div></div></div><span id="voice-help" class="sr-only">Say each letter. Say capital before an uppercase letter. Space starts or stops when this button or the page has focus. Restart clears your spelling.</span><p class="input-help" id="input-help" role="status">${spellingHelp}</p><div id="feedback" aria-live="polite"></div><div class="submit-row" style="margin-top:22px"><small>${session.checked ? 'Press Enter to continue' : 'Press Enter to check'}</small><button class="button primary" id="check" type="submit">${session.checked ? 'Next word' : 'Check spelling'}${icon(session.checked ? 'arrow' : 'check')}</button></div></form><div class="help-controls" aria-label="Learning help"><button class="button" id="definition">Definition</button><button class="button" id="sentence">Use in a sentence</button><button class="button" id="part">Word type</button></div><label class="hint-setting"><input type="checkbox" id="show-hint-text" ${state.settings.showHintText ? 'checked' : ''}> Show definition and sentence text</label><div class="hint" id="hint" role="status"></div></main></div>`;
+  app.innerHTML = `<div class="practice-shell"><header class="practice-header">${brand}<span class="practice-meta">${item.retry ? 'A little revisit' : `Word ${Math.min(firstDone + 1, session.total)} of ${session.total}`}</span><button class="text-button" id="end">End session</button></header><div class="progress-track" role="progressbar" aria-label="Session progress" aria-valuenow="${firstDone}" aria-valuemin="0" aria-valuemax="${session.total}"><div class="progress-fill" style="width:${100 * firstDone / session.total}%"></div></div>${notice()}<main id="main" class="practice-main"><form id="answer-form" class="answer-form" novalidate><label class="sr-only" for="answer">Your spelling</label><div class="answer-toolbar"><div class="listen-row"><button class="button" id="hear" type="button">${icon('sound')}Hear word</button><button class="button" id="slow" type="button">Hear slowly</button></div><fieldset class="segmented input-mode" aria-label="Answer input">${[['typing', 'Text'], ['voice', 'Voice']].map(([id, label]) => `<label><input type="radio" name="input-mode" value="${id}" ${state.settings.inputMode === id ? 'checked' : ''}>${label}</label>`).join('')}</fieldset></div><p class="caption" id="audio-status" role="status"></p><div class="answer-entry"><input class="word-input" id="answer" name="answer" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-describedby="input-help" ${session.checked ? 'readonly' : ''}><div id="voice-controls" class="voice-controls"><span id="voice-status" class="voice-status" role="status">Space to start</span><div class="voice-actions"><button class="button voice-start" id="voice-record" type="button" aria-pressed="false" aria-keyshortcuts="Space" aria-describedby="voice-help" title="Space to start / stop. Your browser may process audio online.">${icon('mic')}<span>Start</span></button><button class="button voice-restart" id="voice-restart" type="button" aria-label="Restart spelling" title="Restart spelling">${icon('restart')}</button></div></div></div><span id="voice-help" class="sr-only">Say each letter. Say capital before an uppercase letter. Space starts or stops when this button or the page has focus. Restart clears your spelling.</span><p class="input-help" id="input-help" role="status">${spellingHelp}</p><div id="feedback" aria-live="polite"></div><div class="submit-row" style="margin-top:22px"><small>${session.checked ? 'Press Enter to continue' : 'Press Enter to check'}</small><button class="button primary" id="check" type="submit">${session.checked ? 'Next word' : 'Check spelling'}${icon(session.checked ? 'arrow' : 'check')}</button></div></form><div class="help-controls" aria-label="Learning help"><button class="button" id="definition">Definition</button><button class="button" id="sentence">Use in a sentence</button><button class="button" id="part">Word type</button></div><label class="hint-setting"><input type="checkbox" id="show-hint-text" ${state.settings.showHintText ? 'checked' : ''}> Show definition and sentence text</label><div class="hint" id="hint" role="status"></div></main></div>`;
   voiceInvalid = false; voiceMessage = '';
+  document.querySelectorAll('[name="input-mode"]').forEach(radio => radio.onchange = event => {
+    const answer = document.querySelector('#answer').value;
+    cancelVoice(); state.settings.inputMode = event.target.value;
+    document.querySelector('#answer').value = answer;
+    voiceMessage = ''; session.emptyAnswer = false; renderHint();
+    persist(); updateVoiceControls(); focusAnswer();
+  });
   document.querySelector('#voice-record').onclick = toggleVoice;
   document.querySelector('#voice-restart').onclick = () => {
     cancelVoice(); voiceInvalid = false; document.querySelector('#answer').value = '';
-    voiceMessage = '';
+    voiceMessage = ''; session.emptyAnswer = false; renderHint();
     updateVoiceControls(); document.querySelector('#voice-record').focus();
   };
-  document.querySelector('#answer').oninput = () => { voiceInvalid = false; voiceMessage = ''; updateVoiceControls(); };
+  document.querySelector('#answer').oninput = () => { voiceInvalid = false; voiceMessage = ''; session.emptyAnswer = false; renderHint(); updateVoiceControls(); };
   updateVoiceControls();
   document.querySelector('#end').onclick = finishSession;
   document.querySelector('.brand').onclick = e => { e.preventDefault(); finishSession(); };
@@ -169,6 +180,7 @@ function renderPractice() {
 function renderHint() {
   const w = currentWord();
   const hint = document.querySelector('#hint');
+  if (session.emptyAnswer) { hint.textContent = 'Enter your spelling first, then check it.'; return; }
   const masked = text => esc(maskAnswer(text, { ...w, acceptedSpellings: [...w.acceptedSpellings, ...extraForms(w)] }));
   if (session.hint === 'part') hint.innerHTML = `<p><strong>Word type:</strong> ${esc(partName(w))}</p>`;
   else if (!state.settings.showHintText) hint.textContent = '';
@@ -191,11 +203,10 @@ async function checkAnswer() {
     updateVoiceControls();
     if (!finished) return;
   }
-  if (voiceInvalid) { document.querySelector('#answer').focus(); return; }
   const input = document.querySelector('#answer');
   const w = currentWord(); const item = currentItem();
   const assessment = grade(w, input.value, extraForms(w));
-  if (assessment.reason === 'empty') { document.querySelector('#hint').textContent = 'Enter your spelling first, then check it.'; input.focus(); return; }
+  if (assessment.reason === 'empty') { session.emptyAnswer = true; renderHint(); focusAnswer(); return; }
   stopSpeech();
   cancelVoice();
   session.checked = true;
@@ -228,7 +239,7 @@ function nextWord() {
   cancelVoice(); stopSpeech();
   session.index++;
   if (session.index >= session.queue.length) return finishSession();
-  session.checked = false; session.feedback = null; session.hint = null; renderPractice();
+  session.checked = false; session.feedback = null; session.hint = null; session.emptyAnswer = false; renderPractice();
   focusAnswer(); playPrompt();
 }
 function playPrompt() { const w = currentWord(); w.homophones.length ? playHomophone(w) : play('word'); }
@@ -355,11 +366,11 @@ window.addEventListener('keydown', event => {
     event.preventDefault();
     if (event.repeat) return;
     if (session.checked) nextWord();
-    else if (Recognition && voiceInput.phase === 'idle' && !voiceInvalid && !pendingVoiceCheck && !document.querySelector('#answer').value.trim()) toggleVoice();
+    else if (state.settings.inputMode === 'voice' && Recognition && voiceInput.phase === 'idle' && !pendingVoiceCheck && !document.querySelector('#answer').value.trim()) toggleVoice();
     else checkAnswer();
     return;
   }
-  if (session.checked || !voiceSpaceShortcut(event)) return;
+  if (session.checked || state.settings.inputMode !== 'voice' || !voiceSpaceShortcut(event)) return;
   event.preventDefault();
   if (!event.repeat) toggleVoice();
 });

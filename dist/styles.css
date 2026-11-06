@@ -47,3 +47,9 @@
 .spelling-comparison mark{padding:1px 0;border-radius:3px;background:#f3dcd6;color:#823c36;text-decoration:none}
 .spelling-comparison>div:last-child mark{background:var(--sage);color:var(--green)}
 @media(max-width:620px){.spelling-comparison>div{grid-template-columns:48px minmax(0,1fr);gap:8px}.spelling-comparison code{font-size:1.1rem}}
+
+.answer-toolbar .input-mode{width:174px;min-width:0;margin:0;padding:3px;gap:2px;border-radius:9px}
+.input-mode label{padding:7px 10px;min-height:38px;font-size:.78rem;display:grid;place-items:center;border-radius:6px}
+.voice-controls[aria-hidden=true]{visibility:hidden;pointer-events:none}
+@media(max-width:480px){.answer-toolbar{gap:8px;flex-wrap:wrap}.answer-toolbar .listen-row{gap:6px}.answer-toolbar .listen-row .button{padding:9px 10px;font-size:.75rem;gap:6px}.answer-toolbar .input-mode{width:130px}.input-mode label{padding-inline:6px}}
+@media(max-width:360px){.answer-toolbar .input-mode{width:116px}.answer-toolbar .listen-row .button{padding-inline:8px;font-size:.7rem}.answer-toolbar .listen-row svg{width:16px;height:16px}}

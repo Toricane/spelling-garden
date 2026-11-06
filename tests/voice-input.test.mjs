@@ -9,6 +9,9 @@ test('letter input preserves repeats, mistakes and explicit capitals without kno
   assert.equal(parseSpokenLetters('C A T').value, 'cat');
   assert.deepEqual(parseSpokenLetters('cat'), { value: '', unknown: ['cat'] });
   assert.ok(parseSpokenLetters('A capital').unknown.length);
+  assert.deepEqual(parseSpokenLetters('SUV'), { value: 'suv', unknown: [] });
+  assert.deepEqual(parseSpokenLetters('S U B'), { value: 'sub', unknown: [] });
+  assert.deepEqual(parseSpokenLetters('muscular'), { value: '', unknown: ['muscular'] });
 });
 
 function setup() {
@@ -25,6 +28,101 @@ function setup() {
   const voice = createVoiceInput(Recognition, state => changes.push(state));
   return { voice, instances, changes, latest: () => changes.at(-1) };
 }
+
+test('a whole-word rewrite preserves previously observed spelling through stop-and-check', async () => {
+  const { voice, instances, latest } = setup();
+  voice.start(); const engine = instances[0];
+  engine.result([['M U S C U L A R', false]]);
+  assert.equal(latest().value, 'muscular');
+  const finished = voice.finish();
+  engine.result([['muscular', true]]);
+  assert.equal(latest().value, 'muscular');
+  assert.equal(latest().invalid, false);
+  engine.onend();
+  assert.deepEqual(await finished, { value: 'muscular', invalid: false });
+});
+
+test('reformatted spelling can be followed by more letters without duplication', () => {
+  const { voice, instances, latest } = setup();
+  voice.start(); const engine = instances[0];
+  engine.result([['M U S C U L A R B', false]]);
+  engine.result([['muscular B', true], ['C', false]]);
+  assert.equal(latest().value, 'muscularbc');
+  engine.result([['muscular B', true], ['C D', true]]);
+  engine.onend();
+  assert.equal(latest().value, 'muscularbcd');
+  assert.equal(latest().invalid, false);
+});
+
+test('collapsed merged interim chunks preserve capitals and repeated letters', () => {
+  const { voice, instances, latest } = setup();
+  voice.start(); const engine = instances[0];
+  engine.result([['capital A B', false], ['B E S S', false]]);
+  engine.result([['abbess', true]]); engine.onend();
+  assert.equal(latest().value, 'Abbess');
+  assert.equal(latest().invalid, false);
+});
+
+test('a conflicting acronym retains earlier explicit letters with a review advisory', async () => {
+  const { voice, instances, latest } = setup();
+  voice.start(); const engine = instances[0];
+  engine.result([['S U B', false]]);
+  const finished = voice.finish(); engine.result([['SUV', true]]); engine.onend();
+  assert.deepEqual(await finished, { value: 'sub', invalid: true });
+  assert.equal(latest().value, 'sub');
+});
+
+test('an acronym without earlier letter evidence decodes as heard, without correcting V to B', () => {
+  const { voice, instances, latest } = setup();
+  voice.start(); instances[0].result([['SUV', true]]); instances[0].onend();
+  assert.equal(latest().value, 'suv');
+});
+
+test('a collapsed word cannot invent letters that were never captured', () => {
+  const { voice, instances, latest } = setup();
+  voice.start(); const engine = instances[0];
+  engine.result([['M U S', false]]); engine.result([['muscular', true]]); engine.onend();
+  assert.equal(latest().value, 'mus');
+  assert.equal(latest().invalid, true);
+});
+
+test('a spoken whole word without previous spelling evidence remains invalid', () => {
+  const { voice, instances, latest } = setup();
+  voice.start(); instances[0].result([['muscular', true]]); instances[0].onend();
+  assert.equal(latest().value, '');
+  assert.equal(latest().invalid, true);
+});
+
+test('withdrawn or unfinalized letters remain visible with a review advisory', async () => {
+  for (const revision of [[], [['M U', false]]]) {
+    const { voice, instances, latest } = setup();
+    voice.start(); const engine = instances[0]; engine.result([['M U S', false]]);
+    const finished = voice.finish(); engine.result(revision); engine.onend();
+    assert.equal(latest().value, 'mus');
+    assert.deepEqual(await finished, { value: 'mus', invalid: true });
+  }
+});
+
+test('withdrawing a provisional tail after a final chunk does not erase its letters', () => {
+  const { voice, instances, latest } = setup();
+  voice.start(); const engine = instances[0];
+  engine.result([['M U S', true], ['C U L A R', false]]);
+  engine.result([['M U S', true]]);
+  assert.equal(latest().value, 'muscular');
+  assert.equal(latest().invalid, true);
+  engine.result([['M U S', true], ['C U L A R', true]]); engine.onend();
+  assert.equal(latest().value, 'muscular');
+  assert.equal(latest().invalid, false);
+});
+
+test('an unknown rewrite cannot wipe out known letters from a partially understood chunk', () => {
+  const { voice, instances, latest } = setup();
+  voice.start(); const engine = instances[0];
+  engine.result([['M U S banana', false]]);
+  engine.result([['muscular', true]]); engine.onend();
+  assert.equal(latest().value, 'mus');
+  assert.equal(latest().invalid, true);
+});
 
 test('interim revisions replace text; stop waits for final results and resume appends', () => {
   const { voice, instances, latest } = setup();
@@ -96,7 +194,7 @@ test('cancellation discards interim text and ignores late callbacks after restar
   assert.equal(latest().value, 'd');
 });
 
-test('unknown speech blocks checking and permission failures release the controller', () => {
+test('unknown speech carries a review advisory and permission failures release the controller', () => {
   const { voice, instances, latest } = setup();
   voice.start(); instances[0].result([['B banana', true]]); instances[0].onend();
   assert.equal(latest().invalid, true);
@@ -119,6 +217,8 @@ test('Space shortcut leaves editable fields and other native controls alone', ()
   assert.equal(voiceSpaceShortcut(event), true);
   assert.equal(voiceSpaceShortcut({ ...event, target: { closest: () => ({}) } }), false);
   assert.equal(voiceSpaceShortcut({ ...event, target: { id: 'voice-record' } }), true);
+  assert.equal(voiceSpaceShortcut({ ...event, target: { id: 'answer', readOnly: true, closest: () => ({}) } }), true);
+  assert.equal(voiceSpaceShortcut({ ...event, target: { id: 'answer', readOnly: false, closest: () => ({}) } }), false);
   assert.equal(voiceSpaceShortcut({ ...event, ctrlKey: true }), false);
   assert.equal(voiceSpaceShortcut({ ...event, isComposing: true }), false);
 });

@@ -7,8 +7,13 @@ const letterNames = Object.freeze({
   you: 'u', vee: 'v', ex: 'x', why: 'y', zee: 'z', zed: 'z',
 });
 
+function expandAcronyms(transcript) {
+  // Preserve spelling-style uppercase runs before lowercasing letter names.
+  return transcript.replace(/\b[A-Z]{2,5}\b/g, token => token.split('').join(' '));
+}
+
 export function parseSpokenLetters(transcript) {
-  const tokens = transcript.toLowerCase().replace(/double[ -]+(?:you|u)/g, 'w')
+  const tokens = expandAcronyms(transcript).toLowerCase().replace(/double[ -]+(?:you|u)/g, 'w')
     .replace(/[.,!?;:]/g, ' ').trim().split(/\s+/).filter(Boolean);
   let value = '', capital = false;
   const unknown = [];
@@ -23,6 +28,42 @@ export function parseSpokenLetters(transcript) {
   return { value, unknown };
 }
 
+function spokenSequence(value) {
+  return Array.from(value, letter => letter === letter.toUpperCase() ? `capital ${letter}` : letter).join(' ');
+}
+
+function reconcileTranscript(transcript, previous) {
+  const prior = parseSpokenLetters(previous);
+  if (!prior.value) return { transcript, review: false };
+  if (prior.unknown.length) {
+    return parseSpokenLetters(transcript).unknown.length
+      ? { transcript: previous, review: true }
+      : { transcript, review: false };
+  }
+  let cursor = 0;
+  const rewritten = transcript.replace(/[A-Za-z]+/g, token => {
+    const parsed = parseSpokenLetters(token);
+    if (!parsed.unknown.length) {
+      const value = parsed.value.toLowerCase();
+      if (prior.value.toLowerCase().slice(cursor, cursor + value.length) === value) cursor += value.length;
+      return token;
+    }
+    // A whole word is accepted only as a reformatting of letters actually
+    // observed earlier in this same result, never by consulting the answer.
+    const captured = prior.value.slice(cursor, cursor + token.length);
+    if (token.length > 1 && captured.toLowerCase() === token.toLowerCase()) {
+      cursor += token.length;
+      return spokenSequence(captured);
+    }
+    return token;
+  });
+  const parsed = parseSpokenLetters(rewritten);
+  const acronymRevision = /\b[A-Z]{2,5}\b/.test(transcript) && !parsed.value.toLowerCase().startsWith(prior.value.toLowerCase());
+  const removedTail = parsed.value.length < prior.value.length && prior.value.toLowerCase().startsWith(parsed.value.toLowerCase());
+  if (parsed.unknown.length || acronymRevision || removedTail) return { transcript: previous, review: true };
+  return { transcript: rewritten, review: false };
+}
+
 export function practiceEnterShortcut(event) {
   if (event.key !== 'Enter' || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey || event.isComposing) return false;
   if (['answer', 'check', 'voice-record', 'voice-restart'].includes(event.target?.id)) return true;
@@ -32,7 +73,7 @@ export function practiceEnterShortcut(event) {
 export function voiceSpaceShortcut(event) {
   if (event.code !== 'Space' || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey || event.isComposing) return false;
   const target = event.target;
-  if (target?.id === 'voice-record') return true;
+  if (target?.id === 'voice-record' || (target?.id === 'answer' && target.readOnly)) return true;
   // Preserve native button, radio, checkbox, link, and editing behavior.
   return !target?.closest?.('button, a, input, textarea, select, summary, [contenteditable]:not([contenteditable="false"]), [role="button"]');
 }
@@ -56,6 +97,7 @@ export function createVoiceInput(Recognition, onChange) {
     value = committed = base; invalid = committedInvalid = false;
     if (!Recognition) { emit('Voice input is unavailable in this browser. Try Chrome or use Typing.'); return; }
     let current, finalValue = base, finalInvalid = false, errorMessage = '', heard = false;
+    let capturedResults = [];
     try {
       current = new Recognition(); engine = current;
       current.lang = 'en-US'; current.continuous = true; current.interimResults = true;
@@ -66,18 +108,33 @@ export function createVoiceInput(Recognition, onChange) {
       };
       current.onresult = event => {
         if (engine !== current) return;
-        const all = [], final = [];
-        for (const result of Array.from(event.results)) {
-          all.push(result[0].transcript);
-          if (result.isFinal) final.push(result[0].transcript);
+        const results = Array.from(event.results);
+        const next = results.map((result, index) => {
+          const previous = capturedResults[index];
+          if (previous?.final) return previous;
+          // Some engines merge multiple provisional chunks into one final word.
+          const proof = index === results.length - 1 && results.length < capturedResults.length
+            ? capturedResults.slice(index).map(entry => entry.transcript).join(' ')
+            : previous?.transcript || '';
+          return { ...reconcileTranscript(result[0].transcript, proof), final: result.isFinal };
+        });
+        if (next.length && next.length < capturedResults.length && capturedResults[next.length - 1]?.final) {
+          next.push(...capturedResults.slice(next.length).map(entry => ({ ...entry, review: true })));
         }
+        if (!next.length && capturedResults.length) {
+          capturedResults = capturedResults.map(entry => entry.final ? entry : { ...entry, review: true });
+        } else capturedResults = next;
+        const all = capturedResults.map(entry => entry.transcript);
+        const final = capturedResults.filter(entry => entry.final).map(entry => entry.transcript);
         heard = true;
         const parsed = parseSpokenLetters(all.join(' '));
         const finished = parseSpokenLetters(final.join(' '));
-        value = base + parsed.value; invalid = parsed.unknown.length > 0;
-        finalValue = base + finished.value; finalInvalid = finished.unknown.length > 0;
+        value = base + parsed.value; invalid = parsed.unknown.length > 0 || capturedResults.some(entry => entry.review);
+        finalValue = base + finished.value;
+        finalInvalid = finished.unknown.length > 0 || capturedResults.some(entry => entry.final && entry.review);
         committed = finalValue; committedInvalid = finalInvalid;
-        emit(invalid ? `Could not read every letter. Heard: “${all.join(' ')}”. Restart or correct the spelling after stopping.` : 'Listening. Say each letter, then press Stop.');
+        const raw = results.map(result => result[0].transcript).join(' ');
+        emit(invalid ? `The browser revised the spelling. Kept the letters captured so far. Heard: “${raw}”. You can edit the letters or check this spelling.` : 'Listening. Say each letter, then press Stop.');
       };
       current.onerror = event => {
         if (engine !== current) return;
@@ -94,9 +151,12 @@ export function createVoiceInput(Recognition, onChange) {
       };
       current.onend = () => {
         if (engine !== current) return;
-        value = finalValue; invalid = finalInvalid;
+        const unfinished = capturedResults.some(entry => !entry.final);
+        value = unfinished ? value : finalValue;
+        invalid = finalInvalid || unfinished;
+        committed = value; committedInvalid = invalid;
         cancel({ value, invalid });
-        emit(errorMessage || (invalid ? 'Some speech was not recognized as letters. Restart or correct the spelling before checking.' : heard ? 'Review your spelling, then check it. Press Start to add more letters.' : 'No letters were captured. Press Start to try again.'));
+        emit(errorMessage || (invalid ? 'Kept the captured letters. You can edit them or check this spelling.' : heard ? 'Review your spelling, then check it. Press Start to add more letters.' : 'No letters were captured. Press Start to try again.'));
       };
       phase = 'starting'; emit('Opening microphone…'); current.start();
       timeout = setTimeout(() => {
@@ -113,7 +173,7 @@ export function createVoiceInput(Recognition, onChange) {
     clearTimeout(timeout);
     timeout = setTimeout(() => {
       if (!engine) return;
-      cancel(); invalid = true; emit('Recognition did not finish. Restart or correct the spelling before checking.');
+      cancel(); invalid = true; emit('Recognition did not finish. Kept the visible letters; you can edit or check them.');
     }, 5000);
     try { engine.stop(); } catch { cancel(); emit('Voice input stopped. Review your spelling.'); }
   }
