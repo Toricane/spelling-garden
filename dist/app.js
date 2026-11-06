@@ -1,7 +1,9 @@
+import { compareSpelling } from './answer-diff.js';
 import { practiceStatistics } from './statistics.js';
 import { dayKey, stats, makeQueue, grade, updateProgress, insertRetry, maskAnswer, validateState, freshState } from './core.js';
 import { loadState, saveState, exportState } from './storage.js';
 import { speak, stopSpeech as stopAudio, voices } from './audio.js';
+import { createVoiceInput, voiceSpaceShortcut, practiceEnterShortcut } from './voice-input.js';
 
 const app = document.querySelector('#app');
 const loaded = loadState();
@@ -11,6 +13,55 @@ let warning = loaded.warning;
 let data, overrides, words, byId, session, screen = 'home', result, pendingImport;
 let query = '', libraryPage = 0;
 let speechRun = 0;
+let voiceInvalid = false;
+let voiceMessage = '';
+let pendingVoiceCheck = null;
+const spellingHelp = 'Capitals count. Accents, spaces and punctuation are optional.';
+const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+const voiceInput = createVoiceInput(Recognition, updateVoiceInput);
+function cancelVoice() {
+  pendingVoiceCheck = null;
+  const busy = voiceInput.phase !== 'idle';
+  const saved = voiceInput.cancel();
+  if (busy) updateVoiceInput({ ...saved, message: 'Stopped. Review your spelling.' });
+  updateVoiceControls();
+}
+function updateVoiceInput({ value, invalid, message }) {
+  if (screen !== 'practice' || session?.checked) return;
+  document.querySelector('#answer').value = value;
+  voiceInvalid = invalid;
+  voiceMessage = message;
+  updateVoiceControls();
+}
+function updateVoiceControls() {
+  const input = document.querySelector('#answer');
+  const button = document.querySelector('#voice-record');
+  if (!button || !session) return;
+  const busy = voiceInput.phase !== 'idle';
+  const stopping = voiceInput.phase === 'stopping';
+  document.querySelector('#voice-status').textContent = !Recognition ? 'Unavailable' : stopping ? 'Finishing…' : voiceInput.phase === 'starting' ? 'Starting…' : busy ? 'Listening…' : 'Space to start';
+  document.querySelector('#voice-status').title = voiceMessage;
+  const needsHelp = voiceInvalid || /not allowed|not available|could not|did not|unavailable|No microphone|No speech|No letters|not finish/.test(voiceMessage);
+  document.querySelector('#input-help').textContent = !Recognition ? 'Voice isn’t supported here. You can still type your spelling.' : needsHelp ? voiceMessage : spellingHelp;
+  button.innerHTML = `${icon(busy ? 'stop' : 'mic')}<span>${busy ? 'Stop' : 'Start'}</span>`;
+  button.setAttribute('aria-pressed', String(busy));
+  button.disabled = session.checked || !Recognition || stopping || (!busy && voiceInvalid);
+  document.querySelector('#voice-restart').disabled = session.checked;
+  input.readOnly = session.checked || busy;
+  document.querySelector('#check').disabled = false;
+  document.querySelector('#check').setAttribute('aria-busy', String(Boolean(pendingVoiceCheck)));
+  const enterStartsVoice = Recognition && !busy && !voiceInvalid && !input.value.trim();
+  document.querySelector('.submit-row small').textContent = session.checked ? 'Press Enter to continue' : enterStartsVoice ? 'Press Enter to start voice' : 'Press Enter to check';
+}
+function toggleVoice() {
+  if (screen !== 'practice' || session.checked) return;
+  if (voiceInput.phase === 'idle' && voiceInvalid) return;
+  if (voiceInput.phase !== 'idle') voiceInput.stop();
+  else { stopSpeech(); voiceInput.start(document.querySelector('#answer').value); }
+}
+function focusAnswer() {
+  document.querySelector('#answer')?.focus();
+}
 function stopSpeech() { speechRun++; stopAudio(); }
 const esc = text => String(text ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const iconPaths = {
@@ -19,6 +70,9 @@ const iconPaths = {
   leaf: '<path d="M19 3C9 2 3 7 5 14c2 7 14 5 14-11Z"/><path d="M4 21 15 9"/>',
   book: '<path d="M12 5C9 3 5 3 2 4v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1Zm0 0v15"/>',
   check: '<path d="m5 12 4 4L19 6"/>',
+  mic: '<rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3m-4 0h8"/>',
+  stop: '<rect x="6" y="6" width="12" height="12" rx="2"/>',
+  restart: '<path d="M3 10a9 9 0 1 1 2 8M3 4v6h6"/>',
   sprig: '<path d="M12 22V3M12 17C2 18 2 10 12 12M12 11C22 12 22 4 12 6"/>',
 };
 const icon = (name, cls = '') => `<svg class="${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${iconPaths[name] || ''}</svg>`;
@@ -61,12 +115,13 @@ function startSession(extra = false) {
   if (!queue.length) return navigate('home');
   screen = 'practice'; history.replaceState(null, '', '#practice'); render();
   playPrompt();
-  document.querySelector('#answer')?.focus();
+  focusAnswer();
 }
 function pronunciations(w) {
   return w.pronunciations.map(p => p.segments.map(s => s.stress ? `<strong>${esc(s.text)}</strong>` : esc(s.text)).join('')).join(' · ');
 }
 async function play(kind, slow = false, word = null, button = null) {
+  cancelVoice();
   speechRun++;
   return playClip(word || currentWord(), kind, slow, button);
 }
@@ -87,7 +142,16 @@ async function playClip(target, kind, slow = false, button = null) {
 function renderPractice() {
   const w = currentWord(); const item = currentItem();
   const firstDone = session.attempts.filter(a => !a.retry).length;
-  app.innerHTML = `<div class="practice-shell"><header class="practice-header">${brand}<span class="practice-meta">${item.retry ? 'A little revisit' : `Word ${Math.min(firstDone + 1, session.total)} of ${session.total}`}</span><button class="text-button" id="end">End session</button></header><div class="progress-track" role="progressbar" aria-label="Session progress" aria-valuenow="${firstDone}" aria-valuemin="0" aria-valuemax="${session.total}"><div class="progress-fill" style="width:${100 * firstDone / session.total}%"></div></div>${notice()}<main id="main" class="practice-main"><div class="listen-row"><button class="button" id="hear">${icon('sound')}Hear word</button><button class="button" id="slow">Hear slowly</button></div><p class="caption" id="audio-status" role="status"></p><form id="answer-form" class="answer-form" novalidate><label class="input-label" for="answer">Your spelling</label><input class="word-input" id="answer" name="answer" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-describedby="input-help" ${session.checked ? 'readonly' : ''}><p class="input-help" id="input-help">Capitals count. Accents, spaces and punctuation are optional.</p><div id="feedback" aria-live="polite"></div><div class="submit-row" style="margin-top:22px"><small>${session.checked ? 'Press Enter to continue' : 'Press Enter to check'}</small><button class="button primary" id="check" type="submit">${session.checked ? 'Next word' : 'Check spelling'}${icon(session.checked ? 'arrow' : 'check')}</button></div></form><div class="help-controls" aria-label="Learning help"><button class="button" id="definition">Definition</button><button class="button" id="sentence">Use in a sentence</button><button class="button" id="part">Word type</button></div><label class="hint-setting"><input type="checkbox" id="show-hint-text" ${state.settings.showHintText ? 'checked' : ''}> Show definition and sentence text</label><div class="hint" id="hint" role="status"></div></main></div>`;
+  app.innerHTML = `<div class="practice-shell"><header class="practice-header">${brand}<span class="practice-meta">${item.retry ? 'A little revisit' : `Word ${Math.min(firstDone + 1, session.total)} of ${session.total}`}</span><button class="text-button" id="end">End session</button></header><div class="progress-track" role="progressbar" aria-label="Session progress" aria-valuenow="${firstDone}" aria-valuemin="0" aria-valuemax="${session.total}"><div class="progress-fill" style="width:${100 * firstDone / session.total}%"></div></div>${notice()}<main id="main" class="practice-main"><form id="answer-form" class="answer-form" novalidate><label class="sr-only" for="answer">Your spelling</label><div class="answer-toolbar"><div class="listen-row"><button class="button" id="hear" type="button">${icon('sound')}Hear word</button><button class="button" id="slow" type="button">Hear slowly</button></div></div><p class="caption" id="audio-status" role="status"></p><div class="answer-entry"><input class="word-input" id="answer" name="answer" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-describedby="input-help" ${session.checked ? 'readonly' : ''}><div id="voice-controls" class="voice-controls"><span id="voice-status" class="voice-status" role="status">Space to start</span><div class="voice-actions"><button class="button voice-start" id="voice-record" type="button" aria-pressed="false" aria-keyshortcuts="Space" aria-describedby="voice-help" title="Space to start / stop. Your browser may process audio online.">${icon('mic')}<span>Start</span></button><button class="button voice-restart" id="voice-restart" type="button" aria-label="Restart spelling" title="Restart spelling">${icon('restart')}</button></div></div></div><span id="voice-help" class="sr-only">Say each letter. Say capital before an uppercase letter. Space starts or stops when this button or the page has focus. Restart clears your spelling.</span><p class="input-help" id="input-help" role="status">${spellingHelp}</p><div id="feedback" aria-live="polite"></div><div class="submit-row" style="margin-top:22px"><small>${session.checked ? 'Press Enter to continue' : 'Press Enter to check'}</small><button class="button primary" id="check" type="submit">${session.checked ? 'Next word' : 'Check spelling'}${icon(session.checked ? 'arrow' : 'check')}</button></div></form><div class="help-controls" aria-label="Learning help"><button class="button" id="definition">Definition</button><button class="button" id="sentence">Use in a sentence</button><button class="button" id="part">Word type</button></div><label class="hint-setting"><input type="checkbox" id="show-hint-text" ${state.settings.showHintText ? 'checked' : ''}> Show definition and sentence text</label><div class="hint" id="hint" role="status"></div></main></div>`;
+  voiceInvalid = false; voiceMessage = '';
+  document.querySelector('#voice-record').onclick = toggleVoice;
+  document.querySelector('#voice-restart').onclick = () => {
+    cancelVoice(); voiceInvalid = false; document.querySelector('#answer').value = '';
+    voiceMessage = '';
+    updateVoiceControls(); document.querySelector('#voice-record').focus();
+  };
+  document.querySelector('#answer').oninput = () => { voiceInvalid = false; voiceMessage = ''; updateVoiceControls(); };
+  updateVoiceControls();
   document.querySelector('#end').onclick = finishSession;
   document.querySelector('.brand').onclick = e => { e.preventDefault(); finishSession(); };
   document.querySelector('#hear').onclick = () => play('word');
@@ -115,13 +179,25 @@ function renderHint() {
 function showHint(kind) {
   session.hint = kind; renderHint(); play(kind);
 }
-function checkAnswer() {
-  if (session.checked) return;
+async function checkAnswer() {
+  if (session.checked || pendingVoiceCheck) return;
+  if (voiceInput.phase !== 'idle') {
+    const request = { session, index: session.index };
+    pendingVoiceCheck = request;
+    const finished = await voiceInput.finish();
+    if (pendingVoiceCheck !== request) return;
+    pendingVoiceCheck = null;
+    if (screen !== 'practice' || session !== request.session || session.index !== request.index || session.checked) return;
+    updateVoiceControls();
+    if (!finished) return;
+  }
+  if (voiceInvalid) { document.querySelector('#answer').focus(); return; }
   const input = document.querySelector('#answer');
   const w = currentWord(); const item = currentItem();
   const assessment = grade(w, input.value, extraForms(w));
-  if (assessment.reason === 'empty') { document.querySelector('#hint').textContent = 'Type your spelling first, then check it.'; input.focus(); return; }
+  if (assessment.reason === 'empty') { document.querySelector('#hint').textContent = 'Enter your spelling first, then check it.'; input.focus(); return; }
   stopSpeech();
+  cancelVoice();
   session.checked = true;
   session.feedback = { ...assessment, answer: input.value, wordId: w.id, retry: item.retry, extra: item.extra };
   session.attempts.push(session.feedback);
@@ -132,21 +208,28 @@ function checkAnswer() {
   input.readOnly = true;
   document.querySelector('#check').innerHTML = `${session.index === session.queue.length - 1 ? 'See results' : 'Next word'}${icon('arrow')}`;
   document.querySelector('.submit-row small').textContent = 'Press Enter to continue';
+  updateVoiceControls();
   renderFeedback();
+  document.querySelector('#check').focus();
 }
 function renderFeedback() {
   const w = currentWord(); const f = session.feedback;
   const alternatives = [...new Set([...w.acceptedSpellings, ...extraForms(w)])].filter(x => x !== w.word);
   const box = document.querySelector('#feedback');
   box.className = `feedback ${f.correct ? '' : 'missed'}`;
-  box.innerHTML = `<h2>${f.correct ? 'Nicely done.' : f.reason === 'capital' ? 'The letters are there. Check the capitals.' : 'A word to grow with.'}</h2><p class="answer-word">${esc(w.word)}</p><p class="pronunciations">${pronunciations(w)}</p>${alternatives.length ? `<p class="small muted">Also accepted: ${alternatives.map(esc).join(', ')}</p>` : ''}<p class="small">${f.extra ? 'Extra practice leaves your review schedule unchanged.' : f.correct ? (f.retry ? 'A good revisit. Your next review is still tomorrow.' : f.extra ? 'A little extra confidence. Your schedule stays the same.' : 'We’ll give this word a little space before its next review.') : (f.retry ? 'That’s enough for today. We’ll revisit this word tomorrow.' : 'You’ll get another try a few words from now.')}</p><details><summary>Meaning &amp; example</summary><p class="small"><strong>${esc(partName(w))}.</strong> ${esc(w.definition)}</p><p class="small"><em>${esc(w.sentence)}</em></p><p class="small muted">Official word #${w.number} · Guide page ${w.sourcePage}</p></details>`;
+  const comparison = compareSpelling(f.answer, [...new Set([...w.acceptedSpellings, ...extraForms(w)])]);
+  const diffText = tokens => tokens.map(token => token.changed ? `<mark>${esc(token.text)}</mark>` : esc(token.text)).join('');
+  const answer = f.correct
+    ? `<p class="answer-word spelling-code">${diffText(comparison.expected)}</p>`
+    : `<div class="spelling-comparison"><div><span class="comparison-label">Yours</span><code>${diffText(comparison.yours)}</code></div><div><span class="comparison-label">Answer</span><code>${diffText(comparison.expected)}</code></div></div>`;
+  box.innerHTML = `<span class="sr-only">${f.correct ? 'Correct.' : f.reason === 'capital' ? 'Incorrect capitalization.' : 'Incorrect spelling.'}</span>${answer}<p class="pronunciations">${pronunciations(w)}</p><details><summary>Meaning &amp; example</summary><p class="small"><strong>${esc(partName(w))}.</strong> ${esc(w.definition)}</p><p class="small"><em>${esc(w.sentence)}</em></p>${alternatives.length ? `<p class="small muted">Also accepted: ${alternatives.map(esc).join(', ')}</p>` : ''}<p class="small muted">Official word #${w.number} · Guide page ${w.sourcePage}</p></details>`;
 }
 function nextWord() {
-  stopSpeech();
+  cancelVoice(); stopSpeech();
   session.index++;
   if (session.index >= session.queue.length) return finishSession();
   session.checked = false; session.feedback = null; session.hint = null; renderPractice();
-  document.querySelector('#answer').focus(); playPrompt();
+  focusAnswer(); playPrompt();
 }
 function playPrompt() { const w = currentWord(); w.homophones.length ? playHomophone(w) : play('word'); }
 async function playHomophone(w) {
@@ -158,7 +241,7 @@ async function playHomophone(w) {
   await playClip(w, 'sentence');
 }
 function finishSession() {
-  stopSpeech();
+  cancelVoice(); stopSpeech();
   if (!session) return navigate('home');
   const first = session.attempts.filter(a => !a.retry);
   result = { first, attempts: [...session.attempts], correct: first.filter(a => a.correct).length, extra: first[0]?.extra || false };
@@ -208,7 +291,7 @@ function renderStatistics() {
     </div><p class="small muted statistics-note">Session history keeps the latest 100 finished sessions, including sessions ended early. Activity and recent sessions use that history; review accuracy and word progress include all saved scheduled attempts. Extra practice and retries do not change review accuracy. Statistics stay in this browser and travel with your exported backup.</p>`, 'statistics');
 }
 function renderGuide() {
-  app.innerHTML = layout(`<article class="guide"><div class="page-heading"><p class="eyebrow">A little guidance</p><h1>Practice with purpose.</h1><p class="muted">Learn the words, understand them, and leave a little space between revisits.</p></div><section><h2>How your garden grows</h2><p>Due words come first, followed by new words. A short set has up to 10 different words plus one retry for each miss. Open-ended practice continues through the available words until you stop.</p><p>Correct scheduled reviews move through 1, 3, 7, 14 and 30-day intervals. A miss returns later in the session, after three other attempts where possible, then comes back tomorrow. Same-session retries don’t advance the interval.</p><p>There’s no timer or penalty for taking your time. Extra practice, available when reviews are up to date and all words have been introduced, leaves your schedule unchanged.</p></section><section><h2>What counts as correct?</h2><ul><li><strong>Capitals matter.</strong> Type proper names such as Andorra with the required capital.</li><li><strong>Spaces, accents and punctuation are optional.</strong> For example, eclair counts for éclair.</li><li><strong>Listed alternatives count.</strong> The guide includes forms such as enamoured and enamored.</li><li><strong>A sound-alike isn’t an alternative.</strong> For words marked as homophones, use the meaning and sentence to identify the intended word.</li></ul><p>Manual rule 12 also permits relevant Dictionary.com alternatives. This app includes the guide’s alternatives plus explicitly verified additions. If you find another valid form, verify its meaning against Dictionary.com before adding it to the data.</p></section><section><h2>Practice and the real Bee</h2><p>This is a typed learning tool. The official competition is oral. Practice saying each letter aloud as well as typing it.</p><p>In ordinary official-list rounds, you may ask for the word to be repeated before beginning. Definitions and sentences are generally not supplied, except that homophones receive both automatically under rule 11. Once spelling begins, you cannot request more help or change letters already spoken.</p><p>Our learning buttons stay available so you can understand the word. At the Bee, follow the officials’ rules. Tie-breaker rounds use a separate list that is not included in this guide.</p></section><section><h2>Words and pronunciations</h2><p>Entries #1–400 come from the <em>SBOC 2027 Official Junior Word List</em>, pages 21–59. Pronunciation guides retain the source’s bold stress marks. Word types, definitions and example sentences are preserved.</p><p>All recordings use Kokoro’s US English neural voice and are generated ahead of time. Machine speech can mispronounce unusual words; check the printed pronunciation and use an adult’s help if something sounds wrong. Select your device voice in Settings when you prefer it.</p><p>Source quirks are identified in individual library entries, including the verb label for “amercement” and “Accouter” printed with a capital. A standalone comma in the “epact” word cell is excluded as typography. Lowercase “accouter” is accepted using <a href="https://www.dictionary.com/browse/accouter" target="_blank" rel="noreferrer">Dictionary.com</a>.</p><p class="small muted">Word-list content belongs to its respective rights holders. This independent family practice tool is not affiliated with or endorsed by Spelling Bee of Canada. The source PDF is not redistributed.</p></section><section><h2>Your progress stays here</h2><p>There is no account. Progress is stored in this browser on this website. Clearing browser data or switching devices won’t carry it over. Export a backup in Settings and import it on your other device.</p></section></article>`, 'guide');
+  app.innerHTML = layout(`<article class="guide"><div class="page-heading"><p class="eyebrow">A little guidance</p><h1>Practice with purpose.</h1><p class="muted">Learn the words, understand them, and leave a little space between revisits.</p></div><section><h2>How your garden grows</h2><p>Due words come first, followed by new words. A short set has up to 10 different words plus one retry for each miss. Open-ended practice continues through the available words until you stop.</p><p>Correct scheduled reviews move through 1, 3, 7, 14 and 30-day intervals. A miss returns later in the session, after three other attempts where possible, then comes back tomorrow. Same-session retries don’t advance the interval.</p><p>There’s no timer or penalty for taking your time. Extra practice, available when reviews are up to date and all words have been introduced, leaves your schedule unchanged.</p></section><section><h2>What counts as correct?</h2><ul><li><strong>Capitals matter.</strong> Type proper names such as Andorra with the required capital.</li><li><strong>Spaces, accents and punctuation are optional.</strong> For example, eclair counts for éclair.</li><li><strong>Listed alternatives count.</strong> The guide includes forms such as enamoured and enamored.</li><li><strong>A sound-alike isn’t an alternative.</strong> For words marked as homophones, use the meaning and sentence to identify the intended word.</li></ul><p>Manual rule 12 also permits relevant Dictionary.com alternatives. This app includes the guide’s alternatives plus explicitly verified additions. If you find another valid form, verify its meaning against Dictionary.com before adding it to the data.</p></section><section><h2>Practice and the real Bee</h2><p>Type your spelling or use the microphone in the spelling field. Press Start and Stop (or Space with the Start / Stop button or page focused), and say each letter aloud. Restart clears the attempt without grading it. Review the captured letters before checking; speech recognition can make mistakes. Say “capital” before a letter when needed. Browser support varies, and the browser’s speech service may process audio online. The official competition is oral.</p><p>In ordinary official-list rounds, you may ask for the word to be repeated before beginning. Definitions and sentences are generally not supplied, except that homophones receive both automatically under rule 11. Once spelling begins, you cannot request more help or change letters already spoken.</p><p>Our learning buttons stay available so you can understand the word. At the Bee, follow the officials’ rules. Tie-breaker rounds use a separate list that is not included in this guide.</p></section><section><h2>Words and pronunciations</h2><p>Entries #1–400 come from the <em>SBOC 2027 Official Junior Word List</em>, pages 21–59. Pronunciation guides retain the source’s bold stress marks. Word types, definitions and example sentences are preserved.</p><p>All recordings use Kokoro’s US English neural voice and are generated ahead of time. Machine speech can mispronounce unusual words; check the printed pronunciation and use an adult’s help if something sounds wrong. Select your device voice in Settings when you prefer it.</p><p>Source quirks are identified in individual library entries, including the verb label for “amercement” and “Accouter” printed with a capital. A standalone comma in the “epact” word cell is excluded as typography. Lowercase “accouter” is accepted using <a href="https://www.dictionary.com/browse/accouter" target="_blank" rel="noreferrer">Dictionary.com</a>.</p><p class="small muted">Word-list content belongs to its respective rights holders. This independent family practice tool is not affiliated with or endorsed by Spelling Bee of Canada. The source PDF is not redistributed.</p></section><section><h2>Your progress stays here</h2><p>There is no account. Progress is stored in this browser on this website. Clearing browser data or switching devices won’t carry it over. Export a backup in Settings and import it on your other device.</p></section></article>`, 'guide');
 }
 function renderSettings() {
   app.innerHTML = layout(`<div class="page-heading"><p class="eyebrow">Make yourself comfortable</p><h1>A few little preferences.</h1><p class="muted">Set your sound, keep a backup, and make this space your own.</p></div><div class="settings-grid"><section class="settings-panel"><h2>Listen your way</h2><div class="field"><label for="audio-engine">Audio source</label><select id="audio-engine"><option value="recorded">Kokoro recordings · US English</option><option value="browser">My device’s voice</option></select></div><p>Kokoro recordings load as needed. There is no voice model to download or run. You can choose a device voice as an alternative.</p><div class="field"><label for="voice">Device voice</label><select id="voice"></select></div><div class="field"><label for="rate">Reading speed</label><select id="rate"><option value="0.8">A little slower</option><option value="1">Normal</option><option value="1.1">A little faster</option></select></div><button class="button" id="test-audio">${icon('sound')}Try the sound</button><p class="caption" id="audio-status" role="status"></p></section><section class="settings-panel"><h2>Keep your progress</h2><p>Your reviews save automatically in this browser. Download a backup before clearing browser data, changing the website address, or moving to another device.</p><div class="button-stack"><button class="button" id="export">Export backup</button><button class="button" id="import">Import backup</button><input type="file" id="backup-file" accept=".json,application/json" hidden></div><p id="backup-status" role="status"></p><hr style="border:0;border-top:1px solid var(--line);margin:30px 0"><h3>A fresh beginning</h3><p>Resetting removes review progress and session history from this browser. Export a backup first if you’d like to keep it.</p><button class="button danger" id="reset">Reset progress</button></section></div><dialog id="confirm-dialog" aria-labelledby="dialog-title"><h2 id="dialog-title"></h2><p id="dialog-message"></p><div class="dialog-actions"><button class="button" id="cancel-dialog">Cancel</button><button class="button primary" id="confirm-action">Continue</button></div></dialog>`, 'settings');
@@ -264,7 +347,22 @@ window.addEventListener('hashchange', () => {
   if (location.hash === '#main') { const main = document.querySelector('#main'); main?.setAttribute('tabindex', '-1'); main?.focus(); return; }
   navigate(location.hash.slice(1));
 });
-window.addEventListener('pagehide', stopSpeech);
+window.addEventListener('pagehide', () => { cancelVoice(); stopSpeech(); });
+document.addEventListener('visibilitychange', () => { if (document.hidden) cancelVoice(); });
+window.addEventListener('keydown', event => {
+  if (screen !== 'practice' || !session) return;
+  if (practiceEnterShortcut(event)) {
+    event.preventDefault();
+    if (event.repeat) return;
+    if (session.checked) nextWord();
+    else if (Recognition && voiceInput.phase === 'idle' && !voiceInvalid && !pendingVoiceCheck && !document.querySelector('#answer').value.trim()) toggleVoice();
+    else checkAnswer();
+    return;
+  }
+  if (session.checked || !voiceSpaceShortcut(event)) return;
+  event.preventDefault();
+  if (!event.repeat) toggleVoice();
+});
 
 try {
   const responses = await Promise.all([fetch('./data/words.json'), fetch('./data/overrides.json')]);

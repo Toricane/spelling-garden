@@ -1,6 +1,6 @@
 export const INTERVALS = [1, 3, 7, 14, 30];
 export const VERSION = 1;
-export const DEFAULT_SETTINGS = { mode: 'short', voice: '', rate: 1, audio: 'recorded', showHintText: false };
+export const DEFAULT_SETTINGS = { mode: 'short', voice: '', rate: 1, audio: 'recorded', showHintText: false, inputMode: 'typing' };
 
 export function dayKey(date = new Date()) {
   return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
@@ -96,7 +96,8 @@ export function validateState(input) {
     voice: typeof settings.voice === 'string' ? settings.voice.slice(0, 300) : '',
     rate: [0.8, 1, 1.1].includes(settings.rate) ? settings.rate : 1,
     audio: settings.audio === 'browser' ? 'browser' : 'recorded',
-    showHintText: settings.showHintText === true };
+    showHintText: settings.showHintText === true,
+    inputMode: settings.inputMode === 'voice' ? 'voice' : 'typing' };
   state.sessions = (Array.isArray(input.sessions) ? input.sessions : []).filter(s =>
     s && validDay(s.day) && Number.isInteger(s.total) && s.total >= 0 && s.total <= 400 && Number.isInteger(s.correct) && s.correct >= 0 && s.correct <= s.total).slice(-100)
     .map(s => ({ day: s.day, total: s.total, correct: s.correct }));
